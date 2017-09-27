@@ -24,12 +24,20 @@ class ViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    
     segmentedControl.backgroundColor = UIColor.brown
-    segmentedControl.segmentStyle = .textOnly
-    segmentedControl.insertSegment(withTitle: "White", image: nil, at: 0)
-    segmentedControl.insertSegment(withTitle: "Red", image: nil , at: 1)
-    segmentedControl.insertSegment(withTitle: "Green", image: nil, at: 2)
-    segmentedControl.insertSegment(withTitle: "Blue", image: nil, at: 3)
+    segmentedControl.segmentStyle = .imageOnTop
+    
+    segmentedControl.frame.size = CGSize.init(width: UIScreen.main.bounds.width / 5, height: segmentedControl.frame.size.height)
+    segmentedControl.insertSegment(withTitle: "White", image: UIImage.init(named: "segment-1"), at: 0)
+    segmentedControl.insertSegment(withTitle: "Red", image: UIImage.init(named: "segment-2") , at: 1)
+    segmentedControl.insertSegment(withTitle: "Green", image: UIImage.init(named: "segment-3"), at: 2)
+    segmentedControl.insertSegment(withTitle: "Blue", image: UIImage.init(named: "segment-4"), at: 3)
+    segmentedControl.insertSegment(withTitle: "White", image: UIImage.init(named: "segment-1"), at: 4)
+    segmentedControl.insertSegment(withTitle: "Red", image: UIImage.init(named: "segment-2") , at: 5)
+    segmentedControl.insertSegment(withTitle: "Green", image: UIImage.init(named: "segment-3"), at: 6)
+    segmentedControl.insertSegment(withTitle: "Blue", image: UIImage.init(named: "segment-4"), at: 7)
+
     
     segmentedControl.underlineSelected = true
     segmentedControl.selectedSegmentIndex = 0

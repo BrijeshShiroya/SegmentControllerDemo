@@ -295,14 +295,13 @@ public class ScrollableSegmentedControl: UIControl {
         case .imageOnLeft:
             width = longestTextWidth + BaseSegmentCollectionViewCell.imageSize + BaseSegmentCollectionViewCell.imageToTextMargin * 2
         default:
-            if collectionView!.frame.size.width > longestTextWidth * CGFloat(segmentsData.count) {
-                width = collectionView!.frame.size.width / CGFloat(segmentsData.count)
+            if collectionView!.frame.size.width > longestTextWidth * 5.0 {
+                width = collectionView!.frame.size.width / 5.0
             } else {
                 width = longestTextWidth
             }
         }
-        
-        
+      
         let itemSize = CGSize(width: width, height: frame.size.height)
         flowLayout.itemSize = itemSize
     }
