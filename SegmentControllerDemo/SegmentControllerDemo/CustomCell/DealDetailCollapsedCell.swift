@@ -1,19 +1,21 @@
 //
-//  SubCategoryCollapsedCell.swift
+//  DealDetailCollapsedCell.swift
 //  SegmentControllerDemo
 //
-//  Created by Creole02 on 10/6/17.
+//  Created by Creole02 on 10/9/17.
 //  Copyright © 2017 CreoleStudios. All rights reserved.
 //
 
 import UIKit
 
-class SubCategoryCollapsedCell: UITableViewCell {
-  //MARK: - Outlets -
-  @IBOutlet var lblTitle: AwfirLabel!
-  @IBOutlet var btnExpand: UIButton!
+class DealDetailCollapsedCell: UITableViewCell {
   
-  //MARK: - Life cycle -
+  //MARK: - Outlets
+  @IBOutlet var btnExpand: AwfirButton!
+  
+  //MARK: - Variables
+  
+  //MARK: - Life cycle
   override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -24,6 +26,6 @@ class SubCategoryCollapsedCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-  
-  //MARK: - Other functions -
+  //MARK: - Other functions
+    
 }

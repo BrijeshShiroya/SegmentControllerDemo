@@ -54,6 +54,10 @@
 		E9BE12F51F865FBC005696E4 /* MyProfileCollapsedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BE12F31F865FBC005696E4 /* MyProfileCollapsedCell.swift */; };
 		E9BE12F61F865FBC005696E4 /* MyProfileCollapsedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9BE12F41F865FBC005696E4 /* MyProfileCollapsedCell.xib */; };
 		E9CBCF341F8B93820038F111 /* DealDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CBCF331F8B93820038F111 /* DealDetailVC.swift */; };
+		E9CBCF371F8B9A580038F111 /* DealDetailExpandedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CBCF351F8B9A580038F111 /* DealDetailExpandedCell.swift */; };
+		E9CBCF381F8B9A580038F111 /* DealDetailExpandedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9CBCF361F8B9A580038F111 /* DealDetailExpandedCell.xib */; };
+		E9CBCF3B1F8B9B350038F111 /* DealDetailCollapsedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CBCF391F8B9B350038F111 /* DealDetailCollapsedCell.swift */; };
+		E9CBCF3C1F8B9B350038F111 /* DealDetailCollapsedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9CBCF3A1F8B9B350038F111 /* DealDetailCollapsedCell.xib */; };
 		E9DF40891F834E7300E1037D /* TZSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DF40871F834E7200E1037D /* TZSegmentedControl.swift */; };
 		E9DF408A1F834E7300E1037D /* TZScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DF40881F834E7200E1037D /* TZScrollView.swift */; };
 		E9E62C011F84B8F5008C9618 /* CategoryListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E62C001F84B8F5008C9618 /* CategoryListVC.swift */; };
@@ -132,6 +136,10 @@
 		E9BE12F31F865FBC005696E4 /* MyProfileCollapsedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileCollapsedCell.swift; sourceTree = "<group>"; };
 		E9BE12F41F865FBC005696E4 /* MyProfileCollapsedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyProfileCollapsedCell.xib; sourceTree = "<group>"; };
 		E9CBCF331F8B93820038F111 /* DealDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealDetailVC.swift; sourceTree = "<group>"; };
+		E9CBCF351F8B9A580038F111 /* DealDetailExpandedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealDetailExpandedCell.swift; sourceTree = "<group>"; };
+		E9CBCF361F8B9A580038F111 /* DealDetailExpandedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DealDetailExpandedCell.xib; sourceTree = "<group>"; };
+		E9CBCF391F8B9B350038F111 /* DealDetailCollapsedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealDetailCollapsedCell.swift; sourceTree = "<group>"; };
+		E9CBCF3A1F8B9B350038F111 /* DealDetailCollapsedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DealDetailCollapsedCell.xib; sourceTree = "<group>"; };
 		E9DF40871F834E7200E1037D /* TZSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZSegmentedControl.swift; sourceTree = "<group>"; };
 		E9DF40881F834E7200E1037D /* TZScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZScrollView.swift; sourceTree = "<group>"; };
 		E9E62C001F84B8F5008C9618 /* CategoryListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListVC.swift; sourceTree = "<group>"; };
@@ -223,6 +231,10 @@
 				E95A3B341F87AA22009F441D /* FilterMainCategoryCell.xib */,
 				E95A3B371F87AC42009F441D /* FilterSubCategoryCell.swift */,
 				E95A3B381F87AC42009F441D /* FilterSubCategoryCell.xib */,
+				E9CBCF351F8B9A580038F111 /* DealDetailExpandedCell.swift */,
+				E9CBCF361F8B9A580038F111 /* DealDetailExpandedCell.xib */,
+				E9CBCF391F8B9B350038F111 /* DealDetailCollapsedCell.swift */,
+				E9CBCF3A1F8B9B350038F111 /* DealDetailCollapsedCell.xib */,
 			);
 			path = CustomCell;
 			sourceTree = "<group>";
@@ -432,6 +444,7 @@
 				E95A3B361F87AA22009F441D /* FilterMainCategoryCell.xib in Resources */,
 				E9BE12F21F865F89005696E4 /* MyProfileExpandedCell.xib in Resources */,
 				E95A3B301F876294009F441D /* SubCategoryCollapsedCell.xib in Resources */,
+				E9CBCF3C1F8B9B350038F111 /* DealDetailCollapsedCell.xib in Resources */,
 				E9BBA7FD1F7A623D00EF15A4 /* LaunchScreen.storyboard in Resources */,
 				E9E62C201F84F7B2008C9618 /* FavoriteListCell.xib in Resources */,
 				E9BBA7FA1F7A623D00EF15A4 /* Assets.xcassets in Resources */,
@@ -442,6 +455,7 @@
 				E9BBA7F81F7A623D00EF15A4 /* Main.storyboard in Resources */,
 				E95A3B2C1F87626A009F441D /* SubCategoryExpandedCell.xib in Resources */,
 				E93B5ED81F83891300B370D6 /* dealCollectionCell.xib in Resources */,
+				E9CBCF381F8B9A580038F111 /* DealDetailExpandedCell.xib in Resources */,
 				E93B5EC21F83838B00B370D6 /* DealCell.xib in Resources */,
 				E95A3B3A1F87AC42009F441D /* FilterSubCategoryCell.xib in Resources */,
 			);
@@ -576,7 +590,9 @@
 				E9BBA7F31F7A623D00EF15A4 /* AppDelegate.swift in Sources */,
 				E9DF40891F834E7300E1037D /* TZSegmentedControl.swift in Sources */,
 				E9BE12E61F863D2B005696E4 /* CGFloat+Extensions.swift in Sources */,
+				E9CBCF371F8B9A580038F111 /* DealDetailExpandedCell.swift in Sources */,
 				E95A3B391F87AC42009F441D /* FilterSubCategoryCell.swift in Sources */,
+				E9CBCF3B1F8B9B350038F111 /* DealDetailCollapsedCell.swift in Sources */,
 				E9DF408A1F834E7300E1037D /* TZScrollView.swift in Sources */,
 				E95A3B2F1F876294009F441D /* SubCategoryCollapsedCell.swift in Sources */,
 				E9E62C041F84B9B0008C9618 /* CategoryListCell.swift in Sources */,

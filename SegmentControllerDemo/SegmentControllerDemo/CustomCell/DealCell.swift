@@ -14,16 +14,16 @@ protocol DealCellDelegate {
 }
 class DealCell: UITableViewCell {
   
-  //TODO: - Outlets -
+  //MARK: - Outlets -
   var delegate:DealCellDelegate?
   @IBOutlet var dealCollectionView: UICollectionView!
   @IBOutlet var lblDealTitle: AwfirLabel!
   
-  //TODO: - variables -
+  //MARK: - variables -
   var arrDealList:NSMutableArray?
   var dicCurrentDeal:NSMutableDictionary?
   
-  //TODO: - Life cycle -
+  //MARK: - Life cycle -
   override func awakeFromNib() {
     super.awakeFromNib()
     let layout = UICollectionViewFlowLayout()
@@ -45,7 +45,7 @@ class DealCell: UITableViewCell {
     // Configure the view for the selected state
   }
   
-  //TODO: - Other function -
+  //MARK: - Other function -
   
   func setDealcollectionViewCell(dic: NSMutableDictionary)
   {
@@ -55,7 +55,7 @@ class DealCell: UITableViewCell {
     self.dealCollectionView.reloadData()
   }
   
-  //TODO: - Actions -
+  //MARK: - Actions -
   func btnLikeClick(_ sender: UIButton) {
     let dic = self.arrDealList?[sender.tag] as! NSMutableDictionary
     if sender.isSelected{
@@ -66,7 +66,7 @@ class DealCell: UITableViewCell {
       dic[ApiKey.dealIsFav] = true
     }
   }
-  //TODO: - DealCellDelegate -
+  //MARK: - DealCellDelegate -
   
   func btnMoreViewClick(_ sender: UIButton) {
     print("more presssed")
@@ -75,7 +75,7 @@ class DealCell: UITableViewCell {
 }
 
 
-//TODO: - CollectionView Delegates -
+//MARK: - CollectionView Delegates -
 extension DealCell: UICollectionViewDelegate,UICollectionViewDataSource{
   func numberOfSections(in collectionView: UICollectionView) -> Int {
     return 1

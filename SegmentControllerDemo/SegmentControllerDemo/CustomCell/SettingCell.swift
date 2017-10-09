@@ -9,11 +9,11 @@
 import UIKit
 
 class SettingCell: UITableViewCell {
-  //TODO: - Outlets -
+  //MARK: - Outlets -
   @IBOutlet var btnNext: UIButton!
   @IBOutlet var lblTitle: UILabel!
   
-  //TODO: - Life cycle -
+  //MARK: - Life cycle -
   override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

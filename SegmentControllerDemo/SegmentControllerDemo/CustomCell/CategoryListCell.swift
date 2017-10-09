@@ -10,7 +10,7 @@ import UIKit
 
 class CategoryListCell: UITableViewCell {
 
-  //TODO :- Outlets -
+  //MARK :- Outlets -
   @IBOutlet var lblDiscount: AwfirLabel!
   @IBOutlet var lblPrice: AwfirLabel!
   @IBOutlet var lblTitle: AwfirLabel!
@@ -31,7 +31,7 @@ class CategoryListCell: UITableViewCell {
         // Configure the view for the selected state
     }
   
-  //TODO: - Other functions -
+  //MARK: - Other functions -
   
   func setCategoryListCellData(dicCurrent:NSMutableDictionary){
     self.lblPrice.text = "\(dicCurrent[ApiKey.dealPrice] as! String) KWD"

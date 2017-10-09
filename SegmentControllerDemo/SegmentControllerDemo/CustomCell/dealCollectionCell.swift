@@ -9,23 +9,23 @@
 import UIKit
 
 class dealCollectionCell: UICollectionViewCell {
-  //TODO: - Outlets -
+  //MARK: - Outlets -
   @IBOutlet var imgDeal: UIImageView!
   @IBOutlet var lblPrice: AwfirLabel!
   @IBOutlet var lblDiscount: AwfirLabel!
   @IBOutlet var lblDealDescription: AwfirLabel!
   @IBOutlet var btnFav: AwfirButton!
   @IBOutlet var dealRatingView: FloatRatingView!
-  //TODO: - variables -
+  //MARK: - variables -
   
-  //TODO: - Life cycle -
+  //MARK: - Life cycle -
   override func awakeFromNib() {
     super.awakeFromNib()
     self.lblDealDescription.numberOfLines = 2
     // Initialization code
   }
   
-  //TODO: - Other function -
+  //MARK: - Other function -
   
   func setDealData(dicCurrent:NSMutableDictionary){
     self.lblPrice.text = "\(dicCurrent[ApiKey.dealPrice] as! String) KWD"

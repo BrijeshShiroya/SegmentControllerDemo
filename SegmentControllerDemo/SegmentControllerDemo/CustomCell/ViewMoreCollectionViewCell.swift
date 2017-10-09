@@ -10,16 +10,16 @@ import UIKit
 
 class ViewMoreCollectionViewCell: UICollectionViewCell {
   
-  //TODO: - Outlets -
+  //MARK: - Outlets -
   @IBOutlet var btnMore: UIButton!
   
-  //TODO: - Life Cycle -
+  //MARK: - Life Cycle -
   override func awakeFromNib() {
     super.awakeFromNib()
     // Initialization code
   }
   
-  //TODO: - Action -
+  //MARK: - Action -
   
 }
 

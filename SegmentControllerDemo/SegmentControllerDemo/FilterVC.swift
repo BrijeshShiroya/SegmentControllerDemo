@@ -16,11 +16,11 @@ struct FilterKey{
 }
 
 class FilterVC: UIViewController {
-  //TODO: - Outlets -
+  //MARK: - Outlets -
   @IBOutlet var tblSubCategory: UITableView!
   @IBOutlet var tblMainCategory: UITableView!
   
-  //TODO: - Variables -
+  //MARK: - Variables -
   var arrMainData = NSMutableArray()
   var selectedSection:Int = 0// store selected filter type
   
@@ -242,7 +242,7 @@ class FilterVC: UIViewController {
     self.tblSubCategory.reloadData()
 
   }
-  //TODO: - Actions -
+  //MARK: - Actions -
   @IBAction func btnCloseClicked(_ sender: UIButton) {
     self.dismiss(animated: true, completion: nil)
   }
@@ -292,7 +292,7 @@ class FilterVC: UIViewController {
   }
 }
 
-//TODO: - TableView Delegates -
+//MARK: - TableView Delegates -
 
 extension FilterVC : UITableViewDataSource, UITableViewDelegate{
   func numberOfSections(in tableView: UITableView) -> Int {

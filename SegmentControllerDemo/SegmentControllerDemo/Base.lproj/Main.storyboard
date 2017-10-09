@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -54,6 +55,186 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bcI-Wo-9rb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="425" y="391"/>
+        </scene>
+        <!--Deal DetailVC-->
+        <scene sceneID="i4s-DN-QrX">
+            <objects>
+                <viewController storyboardIdentifier="DealDetailVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="D5W-Fo-HPK" customClass="DealDetailVC" customModule="SegmentControllerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xKT-49-isX"/>
+                        <viewControllerLayoutGuide type="bottom" id="LFT-xs-kBu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MYF-47-i61">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MAL-iA-hxY" userLabel="MainView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="M46-Fl-flb">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="D5W-Fo-HPK" id="KJO-hD-WHW"/>
+                                            <outlet property="delegate" destination="D5W-Fo-HPK" id="ZBr-NE-14B"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="M46-Fl-flb" firstAttribute="top" secondItem="MAL-iA-hxY" secondAttribute="top" id="Ah0-k0-CLb"/>
+                                    <constraint firstAttribute="trailing" secondItem="M46-Fl-flb" secondAttribute="trailing" id="ZN6-bq-Jbw"/>
+                                    <constraint firstAttribute="bottom" secondItem="M46-Fl-flb" secondAttribute="bottom" id="srG-eH-dJF"/>
+                                    <constraint firstItem="M46-Fl-flb" firstAttribute="leading" secondItem="MAL-iA-hxY" secondAttribute="leading" id="xbo-cn-mKX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LFT-xs-kBu" firstAttribute="top" secondItem="MAL-iA-hxY" secondAttribute="bottom" id="43R-xZ-XKb"/>
+                            <constraint firstItem="MAL-iA-hxY" firstAttribute="leading" secondItem="MYF-47-i61" secondAttribute="leading" id="OaM-In-xyG"/>
+                            <constraint firstAttribute="trailing" secondItem="MAL-iA-hxY" secondAttribute="trailing" id="aey-BN-YBf"/>
+                            <constraint firstItem="MAL-iA-hxY" firstAttribute="top" secondItem="MYF-47-i61" secondAttribute="top" id="jzG-6a-brk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="headerView" destination="lWL-hA-kaT" id="Frf-BF-roc"/>
+                        <outlet property="imgDeal" destination="dnv-pW-HJx" id="d5z-8x-OSN"/>
+                        <outlet property="tblDealDetail" destination="M46-Fl-flb" id="8rL-1F-0nB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6OF-km-cRi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="lWL-hA-kaT" userLabel="HeaderView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dnv-pW-HJx">
+                            <rect key="frame" x="10" y="10" width="355" height="180"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="dnv-pW-HJx" secondAttribute="height" multiplier="71:36" id="Qij-ev-7HX"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Big and little's kuwait city" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vhm-hq-Rbo">
+                            <rect key="frame" x="10" y="198" width="189" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.1058823529" green="0.73725490199999999" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="74r-xM-JHO" customClass="FloatRatingView" customModule="SegmentControllerDemo" customModuleProvider="target">
+                            <rect key="frame" x="251" y="198" width="114" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                    <real key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="StarEmpty"/>
+                                <userDefinedRuntimeAttribute type="image" keyPath="fullImage" value="StarFull"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zWk-Qp-e1U" userLabel="OverView">
+                            <rect key="frame" x="10" y="225" width="231" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="share" translatesAutoresizingMaskIntoConstraints="NO" id="Y12-z5-MNA">
+                                    <rect key="frame" x="0.0" y="8" width="14" height="14"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Over 2000+Deals solid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ej-Vr-axO" customClass="AwfirLabel" customModule="SegmentControllerDemo" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="5" width="211" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                            <real key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KwZ-4g-lqU" userLabel="OverView">
+                            <rect key="frame" x="72" y="135" width="231" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="share" translatesAutoresizingMaskIntoConstraints="NO" id="pgc-O0-cZ3">
+                                    <rect key="frame" x="0.0" y="8" width="14" height="14"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Over 2000+Deals solid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3G-Ug-gci" customClass="AwfirLabel" customModule="SegmentControllerDemo" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="5" width="211" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                            <real key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MhO-Vu-3zr" userLabel="hotdeal">
+                            <rect key="frame" x="241" y="225" width="124" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fire" translatesAutoresizingMaskIntoConstraints="NO" id="yOI-E8-dVV">
+                                    <rect key="frame" x="0.0" y="8" width="14" height="14"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hot deals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJw-yQ-dlz" customClass="AwfirLabel" customModule="SegmentControllerDemo" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="5" width="104" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                            <real key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b2W-7r-5La" userLabel="timeView">
+                            <rect key="frame" x="10" y="263" width="189" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="share" translatesAutoresizingMaskIntoConstraints="NO" id="qTx-G4-dII">
+                                    <rect key="frame" x="0.0" y="8" width="14" height="14"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3 Days. 13:12:17" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQx-7I-Owr" customClass="AwfirLabel" customModule="SegmentControllerDemo" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="5" width="169" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                            <real key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="dnv-pW-HJx" firstAttribute="leading" secondItem="lWL-hA-kaT" secondAttribute="leading" constant="10" id="9BC-Lu-eJP"/>
+                        <constraint firstAttribute="trailing" secondItem="dnv-pW-HJx" secondAttribute="trailing" constant="10" id="BtO-Jx-Gf6"/>
+                        <constraint firstItem="dnv-pW-HJx" firstAttribute="top" secondItem="lWL-hA-kaT" secondAttribute="top" constant="10" id="u0L-J5-dl9"/>
+                    </constraints>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="-263" y="1206"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -1211,6 +1392,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="StarEmpty" width="22" height="22"/>
+        <image name="StarFull" width="22" height="22"/>
         <image name="a" width="70" height="44"/>
         <image name="b" width="70" height="44"/>
         <image name="button:SpC-Uf-N0c:image" width="64" height="64">
@@ -1865,5 +2048,7 @@ Si1KMEpCSkVKSgAAAAAAAAIBAAAAAAAAAEEAAAAAAAAAAAAAAAAAAEpMA
         <image name="cross" width="64" height="64"/>
         <image name="e" width="70" height="44"/>
         <image name="filter" width="64" height="64"/>
+        <image name="fire" width="64" height="64"/>
+        <image name="share" width="64" height="64"/>
     </resources>
 </document>

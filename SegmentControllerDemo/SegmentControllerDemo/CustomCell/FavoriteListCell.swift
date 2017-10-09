@@ -9,12 +9,12 @@
 import UIKit
 
 class FavoriteListCell: UITableViewCell {
-  //TODO: - Outlets -
+  //MARK: - Outlets -
   
   @IBOutlet var btnBuy: AwfirButton!
-  //TODO: - Variables -
+  //MARK: - Variables -
   
-  //TODO: - Life Cycle -
+  //MARK: - Life Cycle -
   @IBOutlet var ViewMain: UIView!
   override func awakeFromNib() {
         super.awakeFromNib()
@@ -33,6 +33,6 @@ class FavoriteListCell: UITableViewCell {
         // Configure the view for the selected state
     }
   
-  //TODO: - Other functions -
+  //MARK: - Other functions -
     
 }

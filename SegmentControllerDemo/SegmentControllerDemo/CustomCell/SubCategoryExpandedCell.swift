@@ -9,10 +9,10 @@
 import UIKit
 
 class SubCategoryExpandedCell: UITableViewCell {
-  //TODO: - Outlets -
+  //MARK: - Outlets -
     @IBOutlet var titleExpanded: AwfirLabel!
   
-  //TODO: - Life cycle -
+  //MARK: - Life cycle -
   override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -24,6 +24,6 @@ class SubCategoryExpandedCell: UITableViewCell {
         // Configure the view for the selected state
     }
   
-  //TODO: - Other functions -
+  //MARK: - Other functions -
 
 }
