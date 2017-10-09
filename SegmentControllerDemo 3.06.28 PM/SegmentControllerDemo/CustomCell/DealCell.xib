@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DealCell" rowHeight="182" id="KGk-i7-Jjw" customClass="DealCell" customModule="SegmentControllerDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="182"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="181.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOT DEALS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tN3-lj-YNP" customClass="AwfirLabel" customModule="SegmentControllerDemo" customModuleProvider="target">
+                        <rect key="frame" x="10" y="0.0" width="355" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.1058823529" green="0.73725490199999999" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KpJ-zk-iec" userLabel="ContainerView">
+                        <rect key="frame" x="10" y="21.5" width="355" height="160"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="CaE-3a-iLh">
+                                <rect key="frame" x="0.0" y="0.0" width="355" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="OyF-nF-wnT">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="CaE-3a-iLh" secondAttribute="bottom" constant="10" id="5sk-RM-QWM"/>
+                            <constraint firstItem="CaE-3a-iLh" firstAttribute="leading" secondItem="KpJ-zk-iec" secondAttribute="leading" id="M0G-MF-s3P"/>
+                            <constraint firstItem="CaE-3a-iLh" firstAttribute="top" secondItem="KpJ-zk-iec" secondAttribute="top" id="jYy-xh-g3z"/>
+                            <constraint firstAttribute="trailing" secondItem="CaE-3a-iLh" secondAttribute="trailing" id="mIX-Uh-D9U"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="KpJ-zk-iec" secondAttribute="trailing" constant="10" id="BC1-WF-ukn"/>
+                    <constraint firstItem="tN3-lj-YNP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Fa5-AP-ERq"/>
+                    <constraint firstItem="tN3-lj-YNP" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Pb2-SH-km6"/>
+                    <constraint firstItem="KpJ-zk-iec" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="YUO-FE-K82"/>
+                    <constraint firstItem="KpJ-zk-iec" firstAttribute="top" secondItem="tN3-lj-YNP" secondAttribute="bottom" constant="7" id="fs0-Mw-Ddp"/>
+                    <constraint firstAttribute="bottom" secondItem="KpJ-zk-iec" secondAttribute="bottom" id="gVG-Pr-zW0"/>
+                    <constraint firstAttribute="trailing" secondItem="tN3-lj-YNP" secondAttribute="trailing" constant="10" id="myA-l7-1nL"/>
+                    <constraint firstItem="KpJ-zk-iec" firstAttribute="centerX" secondItem="tN3-lj-YNP" secondAttribute="centerX" id="o7o-XX-KRC"/>
+                    <constraint firstItem="KpJ-zk-iec" firstAttribute="width" secondItem="tN3-lj-YNP" secondAttribute="width" id="sg8-HN-7xv"/>
+                    <constraint firstItem="tN3-lj-YNP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zLk-2L-O4w"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dealCollectionView" destination="CaE-3a-iLh" id="w03-rb-InC"/>
+                <outlet property="lblDealTitle" destination="tN3-lj-YNP" id="3EU-ry-5hZ"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="95"/>
+        </tableViewCell>
+    </objects>
+</document>

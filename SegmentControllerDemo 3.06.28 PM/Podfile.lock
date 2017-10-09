@@ -1,0 +1,15 @@
+PODS:
+  - EasyTransition (2.0)
+  - STPopup (1.8.2)
+
+DEPENDENCIES:
+  - EasyTransition (~> 2.0)
+  - STPopup
+
+SPEC CHECKSUMS:
+  EasyTransition: 82ed335e8cf9760329f8b0ccc7b99e09ff946e73
+  STPopup: b69b3e7484ef7d2baec5f9ab2939f8a7bcdfe218
+
+PODFILE CHECKSUM: ae13c5dd4be3caa77c5f3dc134d818236c014fad
+
+COCOAPODS: 1.2.1

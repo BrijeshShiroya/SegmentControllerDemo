@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="dealCollectionCell" customModule="SegmentControllerDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="144" height="144"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="144" height="144"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nhc-Pt-f57">
+                        <rect key="frame" x="0.0" y="0.0" width="144" height="144"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="room1" translatesAutoresizingMaskIntoConstraints="NO" id="8AQ-pe-LFQ">
+                                <rect key="frame" x="0.0" y="0.0" width="144" height="97"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="31A-yn-Ye8">
+                                <rect key="frame" x="0.0" y="97" width="144" height="47"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terrece top restaurant Couple Dinner Deal" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOd-cM-Ef3" customClass="AwfirLabel" customModule="SegmentControllerDemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="144" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="7"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                                <real key="value" value="7"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15 % Off" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n11-hH-TMJ">
+                                        <rect key="frame" x="0.0" y="29" width="72" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="72" id="PHh-IV-Def"/>
+                                            <constraint firstAttribute="height" constant="18" id="vyD-qc-lPf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isDynamicFont" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isFontDynamic" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  160 KWD" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3C7-7y-j53">
+                                        <rect key="frame" x="72" y="29" width="72" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1058823529" green="0.73725490199999999" blue="0.69803921570000005" alpha="0.44582841979999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="3C7-7y-j53" firstAttribute="height" secondItem="n11-hH-TMJ" secondAttribute="height" id="DRJ-qT-bhf"/>
+                                    <constraint firstItem="3C7-7y-j53" firstAttribute="width" secondItem="n11-hH-TMJ" secondAttribute="width" id="Dgi-96-952"/>
+                                    <constraint firstAttribute="width" secondItem="31A-yn-Ye8" secondAttribute="height" multiplier="144:47" id="G5v-RY-SXr"/>
+                                    <constraint firstAttribute="trailing" secondItem="eOd-cM-Ef3" secondAttribute="trailing" id="UnF-9q-vhM"/>
+                                    <constraint firstItem="3C7-7y-j53" firstAttribute="top" secondItem="eOd-cM-Ef3" secondAttribute="bottom" id="VRK-yG-yNj"/>
+                                    <constraint firstItem="n11-hH-TMJ" firstAttribute="leading" secondItem="31A-yn-Ye8" secondAttribute="leading" id="WyD-Pi-JLZ"/>
+                                    <constraint firstItem="eOd-cM-Ef3" firstAttribute="top" secondItem="31A-yn-Ye8" secondAttribute="top" id="YtW-em-oFb"/>
+                                    <constraint firstAttribute="bottom" secondItem="n11-hH-TMJ" secondAttribute="bottom" id="nC5-bo-4Vj"/>
+                                    <constraint firstItem="3C7-7y-j53" firstAttribute="centerY" secondItem="n11-hH-TMJ" secondAttribute="centerY" id="vcc-nm-z8K"/>
+                                    <constraint firstAttribute="trailing" secondItem="3C7-7y-j53" secondAttribute="trailing" id="xBG-a0-QxZ"/>
+                                    <constraint firstItem="eOd-cM-Ef3" firstAttribute="leading" secondItem="31A-yn-Ye8" secondAttribute="leading" id="zmU-Ap-b91"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XMu-aU-cFP" customClass="FloatRatingView" customModule="SegmentControllerDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="82" width="88" height="15"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="cEN-YA-EUC"/>
+                                    <constraint firstAttribute="width" constant="88" id="qwC-1p-ctE"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="fullImage" value="StarFull"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="StarEmpty"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zS4-9b-EFU">
+                                <rect key="frame" x="116" y="0.0" width="28" height="28"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="79C-LN-Ysn"/>
+                                    <constraint firstAttribute="width" constant="28" id="HRQ-FR-1JK"/>
+                                </constraints>
+                                <state key="normal" image="fav-remove"/>
+                                <state key="selected" image="fav.png"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8AQ-pe-LFQ" firstAttribute="top" secondItem="nhc-Pt-f57" secondAttribute="top" id="4jT-dV-oa2"/>
+                            <constraint firstItem="zS4-9b-EFU" firstAttribute="top" secondItem="8AQ-pe-LFQ" secondAttribute="top" id="8Ww-Xs-eJH"/>
+                            <constraint firstAttribute="trailing" secondItem="31A-yn-Ye8" secondAttribute="trailing" id="Fro-4R-n2x"/>
+                            <constraint firstItem="8AQ-pe-LFQ" firstAttribute="leading" secondItem="nhc-Pt-f57" secondAttribute="leading" id="Hxa-D1-5uT"/>
+                            <constraint firstItem="zS4-9b-EFU" firstAttribute="trailing" secondItem="8AQ-pe-LFQ" secondAttribute="trailing" id="Z3c-i0-Sk4"/>
+                            <constraint firstItem="31A-yn-Ye8" firstAttribute="leading" secondItem="nhc-Pt-f57" secondAttribute="leading" id="cJK-kx-5at"/>
+                            <constraint firstItem="31A-yn-Ye8" firstAttribute="top" secondItem="8AQ-pe-LFQ" secondAttribute="bottom" id="ebv-kS-9ED"/>
+                            <constraint firstAttribute="bottom" secondItem="31A-yn-Ye8" secondAttribute="bottom" id="mIG-84-emV"/>
+                            <constraint firstItem="XMu-aU-cFP" firstAttribute="leading" secondItem="8AQ-pe-LFQ" secondAttribute="leading" id="oCA-gp-TjN"/>
+                            <constraint firstAttribute="trailing" secondItem="8AQ-pe-LFQ" secondAttribute="trailing" id="u8Z-uJ-lbj"/>
+                            <constraint firstItem="XMu-aU-cFP" firstAttribute="bottom" secondItem="8AQ-pe-LFQ" secondAttribute="bottom" id="xoG-Si-vhA"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="nhc-Pt-f57" secondAttribute="trailing" id="CVZ-Pj-T6s"/>
+                <constraint firstAttribute="bottom" secondItem="nhc-Pt-f57" secondAttribute="bottom" id="Ooi-O0-OQj"/>
+                <constraint firstItem="nhc-Pt-f57" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dU0-FU-Zso"/>
+                <constraint firstItem="nhc-Pt-f57" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="rE4-vN-BGg"/>
+            </constraints>
+            <connections>
+                <outlet property="btnFav" destination="zS4-9b-EFU" id="bh8-ai-A4o"/>
+                <outlet property="dealRatingView" destination="XMu-aU-cFP" id="Hb1-2S-tpg"/>
+                <outlet property="imgDeal" destination="8AQ-pe-LFQ" id="tzP-ZU-JVY"/>
+                <outlet property="lblDealDescription" destination="eOd-cM-Ef3" id="kde-Js-74F"/>
+                <outlet property="lblDiscount" destination="n11-hH-TMJ" id="WgT-ac-FHD"/>
+                <outlet property="lblPrice" destination="3C7-7y-j53" id="klh-nd-oC6"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="StarEmpty" width="22" height="22"/>
+        <image name="StarFull" width="22" height="22"/>
+        <image name="fav-remove" width="64" height="64"/>
+        <image name="fav.png" width="16" height="16"/>
+        <image name="room1" width="318" height="159"/>
+    </resources>
+</document>
