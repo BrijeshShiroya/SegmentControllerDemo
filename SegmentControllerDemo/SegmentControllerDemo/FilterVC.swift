@@ -261,19 +261,32 @@ class FilterVC: UIViewController {
   
   @IBAction func btnResetClicked(_ sender: UIButton) {
     //set false in dictionary value isSelected
-    self.arrMainData.setValue(false, forKeyPath: "subCategoryItems.isSelected")
+    self.arrMainData.setValue(false, forKeyPath: "\(FilterKey.FilterSubCategoryItems).\(FilterKey.isSelected)")//"subCategoryItems.isSelected")
     self.tblSubCategory.reloadData()
   }
   
   @IBAction func btnApplyClicked(_ sender: UIButton) {
     let arrSelectedFilterData = NSMutableArray()
-    //get dictionary which is selected and store into 
+    //get dictionary which is selected and store into
+    for dic in self.arrMainData{
+      let arrItems = (dic as! NSMutableDictionary).value(forKey: FilterKey.FilterSubCategoryItems) as! NSMutableArray
+      let arrSelect = arrItems.value(forKey: FilterKey.isSelected) as! NSArray
+      if arrSelect.contains(true){
+        for (index,selected) in arrSelect.enumerated(){
+          if selected as! Bool{
+            arrSelectedFilterData.add(arrItems[index] as! NSMutableDictionary)
+          }
+        }
+      }
+    }
+    /*
     for dic in self.arrMainData{
       let a = ((dic as! NSMutableDictionary)["subCategoryItems"] as! NSArray).filtered(using: NSPredicate.init(format: "isSelected = %@", true as CVarArg)) as NSArray
       if a.count != 0{
         arrSelectedFilterData.addObjects(from: a as! [Any])
       }
     }
+     */
     print(arrSelectedFilterData)
     
   }
