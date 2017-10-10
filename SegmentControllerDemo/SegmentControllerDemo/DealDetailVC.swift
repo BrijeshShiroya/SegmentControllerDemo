@@ -150,8 +150,18 @@ extension DealDetailVC : UITableViewDataSource, UITableViewDelegate{
             return cell
         }else{
             let cell = tableView.dequeueReusableCell(withIdentifier: "DealOfferCell", for: indexPath) as! DealOfferCell
-            
+            cell.setDealOfferCell()
+            cell.btnOfferSelect.tag = indexPath.row
+            cell.btnOfferSelect.addTarget(self, action: #selector(self.btnOptionClick(_:)), for: .touchUpInside)
             return cell
+        }
+    }
+    
+    func btnOptionClick(_ sender:UIButton){
+        if sender.isSelected{
+            sender.isSelected = false
+        }else{
+            sender.isSelected = true
         }
     }
     

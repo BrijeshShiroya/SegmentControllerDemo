@@ -34,7 +34,7 @@ class DealOfferCell: UITableViewCell {
     }
     
     //MARK: - Other functions
-    func setDealOfferCell(dicCurrent:NSMutableDictionary){
+    func setDealOfferCell(){
         
     }
     
