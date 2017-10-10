@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CartCell" rowHeight="105.5" id="KGk-i7-Jjw" customClass="CartCell" customModule="SegmentControllerDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="107.5"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="107"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Loy-GX-NpU">
+                        <rect key="frame" x="0.0" y="10" width="320" height="97"/>
+                        <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ifr-pp-36Z">
+                                <rect key="frame" x="0.0" y="0.0" width="10" height="97"/>
+                                <color key="backgroundColor" red="0.44148089169999999" green="0.57396994430000003" blue="0.37216361460000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="RLH-Me-XUe"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Two love it Sized italian meal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Be-rP-etc" customClass="AwfirLabel" customModule="SegmentControllerDemo" customModuleProvider="target">
+                                <rect key="frame" x="18" y="6" width="160" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <color key="textColor" red="0.1058823529" green="0.73725490199999999" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                        <real key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200KWD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="433-jL-S3b" customClass="AwfirLabel" customModule="SegmentControllerDemo" customModuleProvider="target">
+                                <rect key="frame" x="213.5" y="5" width="44.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                        <real key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="130 KWD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7T-cW-Y4Q" customClass="AwfirLabel" customModule="SegmentControllerDemo" customModuleProvider="target">
+                                <rect key="frame" x="267.5" y="5" width="44.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35 % Off" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHS-k6-o9K">
+                                <rect key="frame" x="257" y="34" width="55" height="21"/>
+                                <color key="backgroundColor" red="0.1058823529" green="0.73725490199999999" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="EHS-k6-o9K" secondAttribute="height" multiplier="55:21" id="psI-jW-94u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JxO-jR-hGH" customClass="GMStepper" customModule="SegmentControllerDemo" customModuleProvider="target">
+                                <rect key="frame" x="206" y="65" width="106" height="22"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantity: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTb-QC-onG" customClass="AwfirLabel" customModule="SegmentControllerDemo" customModuleProvider="target">
+                                <rect key="frame" x="140" y="65" width="58" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5i4-Ti-oIa" customClass="AwfirButton" customModule="SegmentControllerDemo" customModuleProvider="target">
+                                <rect key="frame" x="18" y="65" width="83" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="Send as gift">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                        <real key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90980392160000001" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="EHS-k6-o9K" firstAttribute="top" secondItem="K7T-cW-Y4Q" secondAttribute="bottom" constant="8" id="14c-lw-wIh"/>
+                            <constraint firstItem="DTb-QC-onG" firstAttribute="height" secondItem="5i4-Ti-oIa" secondAttribute="height" id="7lc-Ev-qOl"/>
+                            <constraint firstItem="JxO-jR-hGH" firstAttribute="leading" secondItem="DTb-QC-onG" secondAttribute="trailing" constant="8" id="8DG-eW-wGh"/>
+                            <constraint firstItem="K7T-cW-Y4Q" firstAttribute="height" secondItem="Loy-GX-NpU" secondAttribute="height" multiplier="21/97" id="Bwv-No-NGW"/>
+                            <constraint firstItem="DTb-QC-onG" firstAttribute="width" secondItem="Loy-GX-NpU" secondAttribute="width" multiplier="58/320" id="CXt-G8-gYN"/>
+                            <constraint firstItem="0Be-rP-etc" firstAttribute="top" secondItem="Loy-GX-NpU" secondAttribute="top" constant="6" id="Cix-FZ-7OV"/>
+                            <constraint firstAttribute="trailing" secondItem="EHS-k6-o9K" secondAttribute="trailing" constant="8" id="EKN-Ec-Q4E"/>
+                            <constraint firstItem="Ifr-pp-36Z" firstAttribute="leading" secondItem="Loy-GX-NpU" secondAttribute="leading" id="HG4-69-igL"/>
+                            <constraint firstItem="5i4-Ti-oIa" firstAttribute="leading" secondItem="Ifr-pp-36Z" secondAttribute="trailing" constant="8" id="Ioh-HO-N6E"/>
+                            <constraint firstAttribute="trailing" secondItem="K7T-cW-Y4Q" secondAttribute="trailing" constant="8" id="Jqk-KG-ieU"/>
+                            <constraint firstItem="DTb-QC-onG" firstAttribute="height" secondItem="JxO-jR-hGH" secondAttribute="height" id="K8C-Tl-dzb"/>
+                            <constraint firstItem="0Be-rP-etc" firstAttribute="height" secondItem="Loy-GX-NpU" secondAttribute="height" multiplier="21/97" id="MGX-2u-X9S"/>
+                            <constraint firstItem="K7T-cW-Y4Q" firstAttribute="leading" secondItem="433-jL-S3b" secondAttribute="trailing" constant="9.5" id="Rp9-fb-Vt9"/>
+                            <constraint firstItem="433-jL-S3b" firstAttribute="centerY" secondItem="K7T-cW-Y4Q" secondAttribute="centerY" id="TYy-M5-HFh"/>
+                            <constraint firstItem="JxO-jR-hGH" firstAttribute="top" secondItem="EHS-k6-o9K" secondAttribute="bottom" constant="10" id="XBc-tz-ykR"/>
+                            <constraint firstItem="Ifr-pp-36Z" firstAttribute="top" secondItem="Loy-GX-NpU" secondAttribute="top" id="Xkn-9b-Poh"/>
+                            <constraint firstItem="DTb-QC-onG" firstAttribute="centerY" secondItem="JxO-jR-hGH" secondAttribute="centerY" id="YFf-Nl-k7F"/>
+                            <constraint firstItem="433-jL-S3b" firstAttribute="width" secondItem="K7T-cW-Y4Q" secondAttribute="width" id="ZDa-Nm-tuh"/>
+                            <constraint firstAttribute="bottom" secondItem="Ifr-pp-36Z" secondAttribute="bottom" id="beh-2B-mJ6"/>
+                            <constraint firstItem="0Be-rP-etc" firstAttribute="leading" secondItem="Ifr-pp-36Z" secondAttribute="trailing" constant="8" id="f38-gi-H6v"/>
+                            <constraint firstAttribute="trailing" secondItem="JxO-jR-hGH" secondAttribute="trailing" constant="8" id="gxJ-y4-mwc"/>
+                            <constraint firstItem="433-jL-S3b" firstAttribute="height" secondItem="K7T-cW-Y4Q" secondAttribute="height" id="hzR-sn-ovm"/>
+                            <constraint firstItem="K7T-cW-Y4Q" firstAttribute="top" secondItem="Loy-GX-NpU" secondAttribute="top" constant="5" id="moD-Ts-fXM"/>
+                            <constraint firstItem="JxO-jR-hGH" firstAttribute="height" secondItem="Loy-GX-NpU" secondAttribute="height" multiplier="22/97" id="r83-mQ-s1r"/>
+                            <constraint firstItem="K7T-cW-Y4Q" firstAttribute="width" secondItem="Loy-GX-NpU" secondAttribute="width" multiplier="44.5/320" id="u9g-bZ-ZJ9"/>
+                            <constraint firstItem="0Be-rP-etc" firstAttribute="width" secondItem="Loy-GX-NpU" secondAttribute="width" multiplier="160/320" id="ufO-rV-myw"/>
+                            <constraint firstItem="EHS-k6-o9K" firstAttribute="width" secondItem="Loy-GX-NpU" secondAttribute="width" multiplier="55/320" id="v9I-sf-rM1"/>
+                            <constraint firstItem="5i4-Ti-oIa" firstAttribute="width" secondItem="Loy-GX-NpU" secondAttribute="width" multiplier="83/320" id="vnn-tF-fl0"/>
+                            <constraint firstItem="5i4-Ti-oIa" firstAttribute="centerY" secondItem="DTb-QC-onG" secondAttribute="centerY" id="xlk-gy-Prp"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Loy-GX-NpU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Anz-Bh-DVC"/>
+                    <constraint firstAttribute="trailing" secondItem="Loy-GX-NpU" secondAttribute="trailing" id="H9A-jx-bG7"/>
+                    <constraint firstItem="JxO-jR-hGH" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="106/320" id="M3J-BY-F72"/>
+                    <constraint firstAttribute="bottom" secondItem="Loy-GX-NpU" secondAttribute="bottom" id="RxP-2b-jO5"/>
+                    <constraint firstItem="Loy-GX-NpU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="mvC-J7-FhY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ViewExtra" destination="Ifr-pp-36Z" id="WsO-BN-Sk6"/>
+                <outlet property="viewMain" destination="Loy-GX-NpU" id="wUG-pY-7WO"/>
+            </connections>
+            <point key="canvasLocation" x="33" y="116"/>
+        </tableViewCell>
+    </objects>
+</document>

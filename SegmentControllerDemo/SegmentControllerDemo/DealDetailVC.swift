@@ -112,6 +112,11 @@ class DealDetailVC: UIViewController {
     }
     
     //MARK: - Actions
+    
+    @IBAction func btnBackClicked(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
 }
 
 

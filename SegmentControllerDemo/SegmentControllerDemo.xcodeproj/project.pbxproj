@@ -63,6 +63,9 @@
 		E9E337141F8C946C00207EE0 /* DealOfferCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E337121F8C946C00207EE0 /* DealOfferCell.swift */; };
 		E9E337151F8C946C00207EE0 /* DealOfferCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9E337131F8C946C00207EE0 /* DealOfferCell.xib */; };
 		E9E337171F8C9BF300207EE0 /* GMStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E337161F8C9BF300207EE0 /* GMStepper.swift */; };
+		E9E3371B1F8CDD4B00207EE0 /* CartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E3371A1F8CDD4B00207EE0 /* CartVC.swift */; };
+		E9E3371E1F8CDE9600207EE0 /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E3371C1F8CDE9600207EE0 /* CartCell.swift */; };
+		E9E3371F1F8CDE9600207EE0 /* CartCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9E3371D1F8CDE9600207EE0 /* CartCell.xib */; };
 		E9E62C011F84B8F5008C9618 /* CategoryListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E62C001F84B8F5008C9618 /* CategoryListVC.swift */; };
 		E9E62C041F84B9B0008C9618 /* CategoryListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E62C021F84B9B0008C9618 /* CategoryListCell.swift */; };
 		E9E62C051F84B9B0008C9618 /* CategoryListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9E62C031F84B9B0008C9618 /* CategoryListCell.xib */; };
@@ -148,6 +151,9 @@
 		E9E337121F8C946C00207EE0 /* DealOfferCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealOfferCell.swift; sourceTree = "<group>"; };
 		E9E337131F8C946C00207EE0 /* DealOfferCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DealOfferCell.xib; sourceTree = "<group>"; };
 		E9E337161F8C9BF300207EE0 /* GMStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMStepper.swift; sourceTree = "<group>"; };
+		E9E3371A1F8CDD4B00207EE0 /* CartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartVC.swift; sourceTree = "<group>"; };
+		E9E3371C1F8CDE9600207EE0 /* CartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
+		E9E3371D1F8CDE9600207EE0 /* CartCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartCell.xib; sourceTree = "<group>"; };
 		E9E62C001F84B8F5008C9618 /* CategoryListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListVC.swift; sourceTree = "<group>"; };
 		E9E62C021F84B9B0008C9618 /* CategoryListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListCell.swift; sourceTree = "<group>"; };
 		E9E62C031F84B9B0008C9618 /* CategoryListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryListCell.xib; sourceTree = "<group>"; };
@@ -243,6 +249,8 @@
 				E9CBCF3A1F8B9B350038F111 /* DealDetailCollapsedCell.xib */,
 				E9E337121F8C946C00207EE0 /* DealOfferCell.swift */,
 				E9E337131F8C946C00207EE0 /* DealOfferCell.xib */,
+				E9E3371C1F8CDE9600207EE0 /* CartCell.swift */,
+				E9E3371D1F8CDE9600207EE0 /* CartCell.xib */,
 			);
 			path = CustomCell;
 			sourceTree = "<group>";
@@ -297,6 +305,7 @@
 				E95A3B271F875F67009F441D /* SubCategoryVC.swift */,
 				E95A3B311F8794A5009F441D /* FilterVC.swift */,
 				E9CBCF331F8B93820038F111 /* DealDetailVC.swift */,
+				E9E3371A1F8CDD4B00207EE0 /* CartVC.swift */,
 			);
 			path = SegmentControllerDemo;
 			sourceTree = "<group>";
@@ -459,6 +468,7 @@
 				E9E62C201F84F7B2008C9618 /* FavoriteListCell.xib in Resources */,
 				E9BBA7FA1F7A623D00EF15A4 /* Assets.xcassets in Resources */,
 				E93B5EDC1F838A0200B370D6 /* ViewMoreCollectionViewCell.xib in Resources */,
+				E9E3371F1F8CDE9600207EE0 /* CartCell.xib in Resources */,
 				E9BE12E41F8639B7005696E4 /* SettingCell.xib in Resources */,
 				E9E62C051F84B9B0008C9618 /* CategoryListCell.xib in Resources */,
 				E9BE12F61F865FBC005696E4 /* MyProfileCollapsedCell.xib in Resources */,
@@ -578,6 +588,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9E3371B1F8CDD4B00207EE0 /* CartVC.swift in Sources */,
 				E9E337141F8C946C00207EE0 /* DealOfferCell.swift in Sources */,
 				E9E62C011F84B8F5008C9618 /* CategoryListVC.swift in Sources */,
 				E9BE12EC1F8643DF005696E4 /* HelpVC.swift in Sources */,
@@ -592,6 +603,7 @@
 				E9BE12D81F85FDF0005696E4 /* AwfirButton.swift in Sources */,
 				E9BE12D61F85F63A005696E4 /* AwfirLabel.swift in Sources */,
 				E9E337171F8C9BF300207EE0 /* GMStepper.swift in Sources */,
+				E9E3371E1F8CDE9600207EE0 /* CartCell.swift in Sources */,
 				E9BE12DC1F8609C5005696E4 /* UINavigation+Extensions.swift in Sources */,
 				E9BBA8131F7A627700EF15A4 /* ScrollableSegmentedControl.swift in Sources */,
 				E9BE12DE1F860A02005696E4 /* UIFont+Extensions.swift in Sources */,

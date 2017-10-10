@@ -70,7 +70,7 @@ extension SettingVC : UITableViewDataSource, UITableViewDelegate{
       let nextVC = storyboard?.instantiateViewController(withIdentifier: "HelpVC") as! HelpVC
       self.pushToViewControllerWithClass(nextVC, andAnimated: true)
     case 3:
-      let nextVC = storyboard?.instantiateViewController(withIdentifier: "RedViewController") as! RedViewController
+      let nextVC = storyboard?.instantiateViewController(withIdentifier: "CartVC") as! CartVC
       self.pushToViewControllerWithClass(nextVC, andAnimated: true)
     default:
       return
