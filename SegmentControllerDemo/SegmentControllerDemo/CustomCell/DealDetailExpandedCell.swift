@@ -27,4 +27,9 @@ class DealDetailExpandedCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    //MARK: - Other functions
+    func setDealDetailExpandedCell(dictionary:NSMutableDictionary){
+        
+    }
+    
 }

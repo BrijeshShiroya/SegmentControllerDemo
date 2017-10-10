@@ -21,13 +21,14 @@
                 <subviews>
                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDA-Ys-tdg" customClass="AwfirButton" customModule="SegmentControllerDemo" customModuleProvider="target">
                         <rect key="frame" x="8" y="10" width="304" height="22"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <state key="normal" title="  Detail" image="sort-down">
                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
+                        <state key="selected" image="sort-up"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
-                                <real key="value" value="15"/>
+                                <real key="value" value="12"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </button>
@@ -40,11 +41,12 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="btnExpand" destination="DDA-Ys-tdg" id="HBj-bi-jOn"/>
+                <outlet property="btnExpand" destination="DDA-Ys-tdg" id="r1o-Nt-qKd"/>
             </connections>
         </tableViewCell>
     </objects>
     <resources>
         <image name="sort-down" width="25" height="25"/>
+        <image name="sort-up" width="25" height="25"/>
     </resources>
 </document>
