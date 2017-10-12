@@ -13,6 +13,7 @@
 		E926FE1E1F8F65D9009629A2 /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E926FE1D1F8F65D9009629A2 /* Notification.storyboard */; };
 		E926FE211F8F6866009629A2 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E926FE1F1F8F6866009629A2 /* NotificationCell.swift */; };
 		E926FE221F8F6866009629A2 /* NotificationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E926FE201F8F6866009629A2 /* NotificationCell.xib */; };
+		E926FE241F8F6FEE009629A2 /* MyPurchase.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E926FE231F8F6FEE009629A2 /* MyPurchase.storyboard */; };
 		E93B5EC11F83838B00B370D6 /* DealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93B5EBF1F83838B00B370D6 /* DealCell.swift */; };
 		E93B5EC21F83838B00B370D6 /* DealCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E93B5EC01F83838B00B370D6 /* DealCell.xib */; };
 		E93B5ED71F83891300B370D6 /* dealCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93B5ED51F83891300B370D6 /* dealCollectionCell.swift */; };
@@ -101,6 +102,7 @@
 		E926FE1D1F8F65D9009629A2 /* Notification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notification.storyboard; sourceTree = "<group>"; };
 		E926FE1F1F8F6866009629A2 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		E926FE201F8F6866009629A2 /* NotificationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationCell.xib; sourceTree = "<group>"; };
+		E926FE231F8F6FEE009629A2 /* MyPurchase.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPurchase.storyboard; sourceTree = "<group>"; };
 		E93B5EBF1F83838B00B370D6 /* DealCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealCell.swift; sourceTree = "<group>"; };
 		E93B5EC01F83838B00B370D6 /* DealCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DealCell.xib; sourceTree = "<group>"; };
 		E93B5ED51F83891300B370D6 /* dealCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dealCollectionCell.swift; sourceTree = "<group>"; };
@@ -321,6 +323,7 @@
 				E9E337201F8CF62E00207EE0 /* MyPurchaseVC.swift */,
 				E926FE1B1F8F64B7009629A2 /* NotificationListVC.swift */,
 				E926FE1D1F8F65D9009629A2 /* Notification.storyboard */,
+				E926FE231F8F6FEE009629A2 /* MyPurchase.storyboard */,
 			);
 			path = SegmentControllerDemo;
 			sourceTree = "<group>";
@@ -481,6 +484,7 @@
 				E9E337151F8C946C00207EE0 /* DealOfferCell.xib in Resources */,
 				E9BBA7FD1F7A623D00EF15A4 /* LaunchScreen.storyboard in Resources */,
 				E9E62C201F84F7B2008C9618 /* FavoriteListCell.xib in Resources */,
+				E926FE241F8F6FEE009629A2 /* MyPurchase.storyboard in Resources */,
 				E9BBA7FA1F7A623D00EF15A4 /* Assets.xcassets in Resources */,
 				E93B5EDC1F838A0200B370D6 /* ViewMoreCollectionViewCell.xib in Resources */,
 				E926FE1E1F8F65D9009629A2 /* Notification.storyboard in Resources */,

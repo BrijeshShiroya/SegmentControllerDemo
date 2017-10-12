@@ -154,7 +154,7 @@ extension ViewController:UITabBarDelegate{
             
             vc2.didMove(toParentViewController: self)
         }else if selectedIndex == 3{
-            let vc2 = self.storyboard?.instantiateViewController(withIdentifier: "MyPurchaseVC") as! MyPurchaseVC
+            let vc2 = STORYBOARD_MYPURCHASE.instantiateViewController(withIdentifier: "MyPurchaseVC") as! MyPurchaseVC
             self.addChildViewController(vc2)
             vc2.view.frame = CGRect.init(x: 0, y: 0, width: self.containerView.frame.size.width, height: self.containerView.frame.size.height)
             self.containerView.addSubview(vc2.view)
