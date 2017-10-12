@@ -37,7 +37,7 @@ class HomeVC: UIViewController,SubCategoryDelegate {
         
         segment?.backgroundColor = UIColor.red
         
-        segment?.frame = CGRect(x: 0, y: UIApplication.shared.statusBarFrame.size.height, width: UIScreen.main.bounds.width, height: 64)
+        segment?.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 64)
         segment?.verticalDividerEnabled = false
         
         segment?.segmentWidthStyle = .fixed

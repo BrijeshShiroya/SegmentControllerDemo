@@ -25,6 +25,7 @@ class ViewController: UIViewController {
     //TODO: - Life cycle -
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupNavigationBar()
 //        self.currentVC = delegate?.getData()
         let vc2 = self.storyboard?.instantiateViewController(withIdentifier: "HomeVC") as! HomeVC
         self.addChildViewController(vc2)
@@ -73,8 +74,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.isNavigationBarHidden = true
+        //self.navigationController?.isNavigationBarHidden = true
        
     }
     
@@ -140,7 +142,7 @@ extension ViewController:UITabBarDelegate{
         let selectedIndex = item.tag
         print("selected tab at index \(item.tag)  selected")
         if selectedIndex == 1{
-            self.navigationController?.isNavigationBarHidden = true
+            self.navigationController?.isNavigationBarHidden = false//true
             let vc2 = self.storyboard?.instantiateViewController(withIdentifier: "HomeVC") as! HomeVC
             self.addChildViewController(vc2)
             vc2.view.frame = CGRect.init(x: 0, y: 0, width: self.containerView.frame.size.width, height: self.containerView.frame.size.height)
