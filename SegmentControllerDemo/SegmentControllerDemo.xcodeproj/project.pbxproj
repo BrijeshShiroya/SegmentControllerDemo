@@ -14,6 +14,9 @@
 		E926FE211F8F6866009629A2 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E926FE1F1F8F6866009629A2 /* NotificationCell.swift */; };
 		E926FE221F8F6866009629A2 /* NotificationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E926FE201F8F6866009629A2 /* NotificationCell.xib */; };
 		E926FE241F8F6FEE009629A2 /* MyPurchase.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E926FE231F8F6FEE009629A2 /* MyPurchase.storyboard */; };
+		E926FE2B1F8F83B2009629A2 /* ReviewListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E926FE291F8F83B2009629A2 /* ReviewListCell.swift */; };
+		E926FE2C1F8F83B2009629A2 /* ReviewListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E926FE2A1F8F83B2009629A2 /* ReviewListCell.xib */; };
+		E926FE2E1F8F8482009629A2 /* ReviewListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E926FE2D1F8F8482009629A2 /* ReviewListVC.swift */; };
 		E93B5EC11F83838B00B370D6 /* DealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93B5EBF1F83838B00B370D6 /* DealCell.swift */; };
 		E93B5EC21F83838B00B370D6 /* DealCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E93B5EC01F83838B00B370D6 /* DealCell.xib */; };
 		E93B5ED71F83891300B370D6 /* dealCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93B5ED51F83891300B370D6 /* dealCollectionCell.swift */; };
@@ -103,6 +106,9 @@
 		E926FE1F1F8F6866009629A2 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		E926FE201F8F6866009629A2 /* NotificationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationCell.xib; sourceTree = "<group>"; };
 		E926FE231F8F6FEE009629A2 /* MyPurchase.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPurchase.storyboard; sourceTree = "<group>"; };
+		E926FE291F8F83B2009629A2 /* ReviewListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewListCell.swift; sourceTree = "<group>"; };
+		E926FE2A1F8F83B2009629A2 /* ReviewListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewListCell.xib; sourceTree = "<group>"; };
+		E926FE2D1F8F8482009629A2 /* ReviewListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewListVC.swift; sourceTree = "<group>"; };
 		E93B5EBF1F83838B00B370D6 /* DealCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealCell.swift; sourceTree = "<group>"; };
 		E93B5EC01F83838B00B370D6 /* DealCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DealCell.xib; sourceTree = "<group>"; };
 		E93B5ED51F83891300B370D6 /* dealCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dealCollectionCell.swift; sourceTree = "<group>"; };
@@ -265,6 +271,8 @@
 				E9E3371D1F8CDE9600207EE0 /* CartCell.xib */,
 				E926FE1F1F8F6866009629A2 /* NotificationCell.swift */,
 				E926FE201F8F6866009629A2 /* NotificationCell.xib */,
+				E926FE291F8F83B2009629A2 /* ReviewListCell.swift */,
+				E926FE2A1F8F83B2009629A2 /* ReviewListCell.xib */,
 			);
 			path = CustomCell;
 			sourceTree = "<group>";
@@ -324,6 +332,7 @@
 				E926FE1B1F8F64B7009629A2 /* NotificationListVC.swift */,
 				E926FE1D1F8F65D9009629A2 /* Notification.storyboard */,
 				E926FE231F8F6FEE009629A2 /* MyPurchase.storyboard */,
+				E926FE2D1F8F8482009629A2 /* ReviewListVC.swift */,
 			);
 			path = SegmentControllerDemo;
 			sourceTree = "<group>";
@@ -444,6 +453,7 @@
 				TargetAttributes = {
 					E9BBA7EE1F7A623D00EF15A4 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = EZ4V48EFUL;
 						ProvisioningStyle = Automatic;
 					};
 					E9BBA8021F7A623E00EF15A4 = {
@@ -485,6 +495,7 @@
 				E9BBA7FD1F7A623D00EF15A4 /* LaunchScreen.storyboard in Resources */,
 				E9E62C201F84F7B2008C9618 /* FavoriteListCell.xib in Resources */,
 				E926FE241F8F6FEE009629A2 /* MyPurchase.storyboard in Resources */,
+				E926FE2C1F8F83B2009629A2 /* ReviewListCell.xib in Resources */,
 				E9BBA7FA1F7A623D00EF15A4 /* Assets.xcassets in Resources */,
 				E93B5EDC1F838A0200B370D6 /* ViewMoreCollectionViewCell.xib in Resources */,
 				E926FE1E1F8F65D9009629A2 /* Notification.storyboard in Resources */,
@@ -638,10 +649,12 @@
 				E9BE12E61F863D2B005696E4 /* CGFloat+Extensions.swift in Sources */,
 				E9CBCF371F8B9A580038F111 /* DealDetailExpandedCell.swift in Sources */,
 				E95A3B391F87AC42009F441D /* FilterSubCategoryCell.swift in Sources */,
+				E926FE2B1F8F83B2009629A2 /* ReviewListCell.swift in Sources */,
 				E9CBCF3B1F8B9B350038F111 /* DealDetailCollapsedCell.swift in Sources */,
 				E9DF408A1F834E7300E1037D /* TZScrollView.swift in Sources */,
 				E95A3B2F1F876294009F441D /* SubCategoryCollapsedCell.swift in Sources */,
 				E9E62C041F84B9B0008C9618 /* CategoryListCell.swift in Sources */,
+				E926FE2E1F8F8482009629A2 /* ReviewListVC.swift in Sources */,
 				E9E62C1F1F84F7B2008C9618 /* FavoriteListCell.swift in Sources */,
 				E9BE12EE1F86561B005696E4 /* MyProfileVC.swift in Sources */,
 				E9E337211F8CF62E00207EE0 /* MyPurchaseVC.swift in Sources */,
@@ -798,10 +811,14 @@
 			baseConfigurationReference = 2ABE75B124C5047E2D3D3F5A /* Pods-SegmentControllerDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EZ4V48EFUL;
 				INFOPLIST_FILE = SegmentControllerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.creolestudios.SegmentControllerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SegmentControllerDemo/SegmentControllerDemo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
@@ -812,10 +829,14 @@
 			baseConfigurationReference = 56B9B9262835FFD5D0FC2AD2 /* Pods-SegmentControllerDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EZ4V48EFUL;
 				INFOPLIST_FILE = SegmentControllerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.creolestudios.SegmentControllerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SegmentControllerDemo/SegmentControllerDemo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};

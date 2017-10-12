@@ -294,6 +294,56 @@
             </objects>
             <point key="canvasLocation" x="-263.19999999999999" y="1205.8470764617691"/>
         </scene>
+        <!--Review ListVC-->
+        <scene sceneID="IbK-jd-qvZ">
+            <objects>
+                <viewController storyboardIdentifier="ReviewListVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BO6-Mu-iZP" customClass="ReviewListVC" customModule="SegmentControllerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9xo-Gm-DtV"/>
+                        <viewControllerLayoutGuide type="bottom" id="IDh-V5-gUY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bud-Hb-3C5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P4o-mp-Wqa" userLabel="MainView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1u2-Cj-454">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BO6-Mu-iZP" id="CBX-Ba-8h2"/>
+                                            <outlet property="delegate" destination="BO6-Mu-iZP" id="0I9-hU-5vW"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="1u2-Cj-454" secondAttribute="bottom" id="Tvm-aY-apA"/>
+                                    <constraint firstItem="1u2-Cj-454" firstAttribute="top" secondItem="P4o-mp-Wqa" secondAttribute="top" id="hBA-Yu-jQP"/>
+                                    <constraint firstAttribute="trailing" secondItem="1u2-Cj-454" secondAttribute="trailing" id="kZa-gv-21b"/>
+                                    <constraint firstItem="1u2-Cj-454" firstAttribute="leading" secondItem="P4o-mp-Wqa" secondAttribute="leading" id="wXO-2m-md8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="P4o-mp-Wqa" firstAttribute="leading" secondItem="bud-Hb-3C5" secondAttribute="leading" id="0o9-99-tUm"/>
+                            <constraint firstItem="IDh-V5-gUY" firstAttribute="top" secondItem="P4o-mp-Wqa" secondAttribute="bottom" id="Jef-e6-uiF"/>
+                            <constraint firstAttribute="trailing" secondItem="P4o-mp-Wqa" secondAttribute="trailing" id="VfR-WP-mAD"/>
+                            <constraint firstItem="P4o-mp-Wqa" firstAttribute="top" secondItem="9xo-Gm-DtV" secondAttribute="bottom" id="uad-Yw-fme"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <connections>
+                        <outlet property="tblReviewList" destination="1u2-Cj-454" id="ffT-rE-ORq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XDR-CX-2Pz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="447.19999999999999" y="1113.1934032983509"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -1466,9 +1516,10 @@
         <!--Navigation Controller-->
         <scene sceneID="BIg-Nf-oaG">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="dcp-L1-BIN" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dcp-L1-BIN" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6mp-nZ-lug">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

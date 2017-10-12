@@ -147,7 +147,7 @@ extension ViewController:UITabBarDelegate{
             self.containerView.addSubview(vc2.view)
         }else if selectedIndex == 2{
             // sender.insertSegment(withTitle: "Red", image: UIImage.init(named: "segment-4"), at: 1)
-            let vc2 = self.storyboard?.instantiateViewController(withIdentifier: "FavoriteListVC") as! FavoriteListVC
+            let vc2 = self.storyboard?.instantiateViewController(withIdentifier: "ReviewListVC") as! ReviewListVC
             self.addChildViewController(vc2)
             vc2.view.frame = CGRect.init(x: 0, y: 0, width: self.containerView.frame.size.width, height: self.containerView.frame.size.height)
             self.containerView.addSubview(vc2.view)

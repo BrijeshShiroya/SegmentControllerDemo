@@ -115,7 +115,7 @@ class HomeVC: UIViewController,SubCategoryDelegate {
              */
         }else if selectedIndex == 3{
             let subCategoryVC = self.storyboard?.instantiateViewController(withIdentifier: "SubCategoryVC") as! SubCategoryVC
-            
+            subCategoryVC.delegate = self
             self.pushToViewControllerWithClass(subCategoryVC, andAnimated: true)
             /*
              let vc2 = self.storyboard?.instantiateViewController(withIdentifier: "CategoryListVC") as! CategoryListVC
