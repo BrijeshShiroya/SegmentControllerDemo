@@ -24,3 +24,6 @@ let IS_IPHONE_6P = (IS_IPHONE && SCREEN_MAX_LENGTH == 736.0)
 let SCREEN_WIDTH = UIScreen.main.bounds.width
 let SCREEN_HEIGHT = UIScreen.main.bounds.height
 
+
+let STORYBOARD_MAIN = UIStoryboard.init(name: "Main", bundle: nil)
+let STORYBOARD_NOTIFICATION = UIStoryboard.init(name: "Notification", bundle: nil)

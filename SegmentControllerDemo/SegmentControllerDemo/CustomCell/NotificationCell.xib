@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotificationCell" id="KGk-i7-Jjw" customClass="NotificationCell" customModule="SegmentControllerDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7qC-cg-GSe">
+                        <rect key="frame" x="0.0" y="42" width="320" height="2"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="TeA-VW-BRK"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15 % off on spa and saloo and other also" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wLk-Ti-PFn" customClass="AwfirLabel" customModule="SegmentControllerDemo" customModuleProvider="target">
+                        <rect key="frame" x="8" y="11" width="249" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="apq-Cc-cqs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                <real key="value" value="9"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12 Sep" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DqV-gy-i4x" customClass="AwfirLabel" customModule="SegmentControllerDemo" customModuleProvider="target">
+                        <rect key="frame" x="265" y="11" width="47" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                <real key="value" value="9"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.1058823529" green="0.73725490199999999" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="7qC-cg-GSe" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="5lt-gG-Jbt"/>
+                    <constraint firstItem="DqV-gy-i4x" firstAttribute="centerY" secondItem="wLk-Ti-PFn" secondAttribute="centerY" id="Da4-vO-wBp"/>
+                    <constraint firstItem="DqV-gy-i4x" firstAttribute="height" secondItem="wLk-Ti-PFn" secondAttribute="height" id="IoE-Hf-3om"/>
+                    <constraint firstAttribute="bottom" secondItem="7qC-cg-GSe" secondAttribute="bottom" constant="-0.5" id="dZC-KC-gm5"/>
+                    <constraint firstItem="7qC-cg-GSe" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="myb-QI-PqO"/>
+                    <constraint firstAttribute="trailing" secondItem="DqV-gy-i4x" secondAttribute="trailing" constant="8" id="q3F-Fd-tAC"/>
+                    <constraint firstItem="wLk-Ti-PFn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="slc-ua-0hz"/>
+                    <constraint firstItem="DqV-gy-i4x" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="47/320" id="tdn-gl-eFW"/>
+                    <constraint firstItem="wLk-Ti-PFn" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="z4O-iz-Z5w"/>
+                    <constraint firstItem="wLk-Ti-PFn" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="249/320" id="z9S-SG-AdC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notification ListVC-->
+        <scene sceneID="uDX-qN-080">
+            <objects>
+                <viewController storyboardIdentifier="NotificationListVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TM3-m5-sMU" customClass="NotificationListVC" customModule="SegmentControllerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cMa-aX-vth"/>
+                        <viewControllerLayoutGuide type="bottom" id="3R2-RW-0nN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jnU-QP-jpW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xAw-AN-Isw" userLabel="MainView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwM-CW-zl6" customClass="AwfirButton" customModule="SegmentControllerDemo" customModuleProvider="target">
+                                        <rect key="frame" x="224" y="8" width="143" height="30"/>
+                                        <color key="backgroundColor" red="0.1058823529" green="0.73725490199999999" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="hF4-gb-CgG"/>
+                                            <constraint firstAttribute="width" constant="143" id="x2D-TF-LV0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="Mark as read">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="61h-WW-A15">
+                                        <rect key="frame" x="0.0" y="46" width="375" height="557"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="TM3-m5-sMU" id="f2k-ct-PBi"/>
+                                            <outlet property="delegate" destination="TM3-m5-sMU" id="LWR-c2-gO6"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="61h-WW-A15" secondAttribute="trailing" id="SIY-Si-f5C"/>
+                                    <constraint firstItem="61h-WW-A15" firstAttribute="leading" secondItem="xAw-AN-Isw" secondAttribute="leading" id="T6l-k3-1pv"/>
+                                    <constraint firstAttribute="trailing" secondItem="lwM-CW-zl6" secondAttribute="trailing" constant="8" id="uLv-OX-Bjh"/>
+                                    <constraint firstItem="lwM-CW-zl6" firstAttribute="top" secondItem="xAw-AN-Isw" secondAttribute="top" constant="8" id="y17-RS-cZj"/>
+                                    <constraint firstAttribute="bottom" secondItem="61h-WW-A15" secondAttribute="bottom" id="z9j-iz-8Uw"/>
+                                    <constraint firstItem="61h-WW-A15" firstAttribute="top" secondItem="lwM-CW-zl6" secondAttribute="bottom" constant="8" id="zJO-KZ-RaH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xAw-AN-Isw" firstAttribute="top" secondItem="cMa-aX-vth" secondAttribute="bottom" id="Aug-G7-fSh"/>
+                            <constraint firstAttribute="trailing" secondItem="xAw-AN-Isw" secondAttribute="trailing" id="Qyg-xd-l8W"/>
+                            <constraint firstItem="3R2-RW-0nN" firstAttribute="top" secondItem="xAw-AN-Isw" secondAttribute="bottom" id="XPQ-oW-pNF"/>
+                            <constraint firstItem="xAw-AN-Isw" firstAttribute="leading" secondItem="jnU-QP-jpW" secondAttribute="leading" id="sbn-aS-Na2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gXj-TD-Xqo"/>
+                    <connections>
+                        <outlet property="tblNotificationListData" destination="61h-WW-A15" id="EIA-Rk-bF1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FAi-b3-YlV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="424.80000000000001" y="-206.44677661169416"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hrk-E6-9FM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="397-yq-Pfz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="m0h-7v-Zas">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="TM3-m5-sMU" kind="relationship" relationship="rootViewController" id="m2h-fl-bcC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HN6-zP-UaT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-262" y="-206"/>
+        </scene>
+    </scenes>
+</document>
