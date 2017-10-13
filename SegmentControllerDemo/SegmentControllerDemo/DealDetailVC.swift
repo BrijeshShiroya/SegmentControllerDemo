@@ -38,12 +38,14 @@ class DealDetailVC: UIViewController {
     let arrSelectedSectionIndex = NSMutableArray()
     var isMultipleExpansionAllowed:Bool = true
     let dicMainData = NSMutableDictionary()
+    var dealTitle = ""
     
     //MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setHeaderView()
         self.setDealDetailData()
+        self.setupNavigationBar(isLeft: false, isRightFirst: true, isRightSecond: true)
         if !isMultipleExpansionAllowed{
             arrSelectedSectionIndex.add(NSNumber.init(value: count+2))
         }

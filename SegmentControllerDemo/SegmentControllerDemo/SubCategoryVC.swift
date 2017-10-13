@@ -7,10 +7,6 @@
 //
 
 import UIKit
-protocol SubCategoryDelegate {
-    func didFinishSubCategory()
-}
-
 struct SubCategoryKey{
     static let mainCategoryName = "mainCategoryName"
     static let subCategoryName = "subCategoryName"
@@ -25,7 +21,6 @@ class SubCategoryVC: UIViewController {
     var arrMainData = NSMutableArray()
     let arrSelectedSectionIndex = NSMutableArray()
     var isMultipleExpansionAllowed:Bool = true
-    var delegate: SubCategoryDelegate?
     //MARK: - Life cycle -
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -167,8 +162,9 @@ extension SubCategoryVC : UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("cell clicked : \(indexPath)")
-        let vc2 = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
-        delegate?.didFinishSubCategory()
+        let vc2 = self.storyboard?.instantiateViewController(withIdentifier: "CategoryListVC") as! CategoryListVC
+        let currentCategory = ((self.arrMainData[indexPath.section] as! NSMutableDictionary)[SubCategoryKey.subCategoryItems] as! NSMutableArray)[indexPath.row] as! String
+        vc2.strCategoryName = currentCategory
         self.pushToViewControllerWithClass(vc2, andAnimated: true)
     }
     func btnTapShowHideSection(_ sender:UIButton){

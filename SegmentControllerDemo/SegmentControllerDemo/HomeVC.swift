@@ -9,7 +9,7 @@
 import UIKit
 import STPopup
 
-class HomeVC: UIViewController,SubCategoryDelegate {
+class HomeVC: UIViewController {
     //MARK: - Outlets -
     @IBOutlet var containerView: UIView!
     
@@ -33,7 +33,7 @@ class HomeVC: UIViewController,SubCategoryDelegate {
     //MARK: - Other functions -
     
     //subcategory delegate
-    func didFinishSubCategory() {
+    func didFinishSubCategory(strTitle:String) {
         
         let viewControllers:[UIViewController] = self.childViewControllers
         for viewContoller in viewControllers{
@@ -42,6 +42,7 @@ class HomeVC: UIViewController,SubCategoryDelegate {
             viewContoller.removeFromParentViewController()
         }
         let homeScrollVC = self.storyboard?.instantiateViewController(withIdentifier: "CategoryListVC") as! CategoryListVC
+        homeScrollVC.strCategoryName = strTitle
         self.addChildViewController(homeScrollVC)
         homeScrollVC.view.frame = CGRect.init(x: 0, y: 0, width: self.containerView.frame.size.width, height: self.containerView.frame.size.height)
         self.containerView.addSubview(homeScrollVC.view)
@@ -104,11 +105,9 @@ class HomeVC: UIViewController,SubCategoryDelegate {
             //            }
         }else if selectedIndex == 1{
             let subCategoryVC = self.storyboard?.instantiateViewController(withIdentifier: "SubCategoryVC") as! SubCategoryVC
-            subCategoryVC.delegate = self
             self.pushToViewControllerWithClass(subCategoryVC, andAnimated: true)
         }else if selectedIndex == 2{
             let subCategoryVC = self.storyboard?.instantiateViewController(withIdentifier: "SubCategoryVC") as! SubCategoryVC
-            subCategoryVC.delegate = self
             self.pushToViewControllerWithClass(subCategoryVC, andAnimated: true)
             /*
              let vc2 = self.storyboard?.instantiateViewController(withIdentifier: "GreenViewController") as! GreenViewController
@@ -120,7 +119,6 @@ class HomeVC: UIViewController,SubCategoryDelegate {
              */
         }else if selectedIndex == 3{
             let subCategoryVC = self.storyboard?.instantiateViewController(withIdentifier: "SubCategoryVC") as! SubCategoryVC
-            subCategoryVC.delegate = self
             self.pushToViewControllerWithClass(subCategoryVC, andAnimated: true)
             /*
              let vc2 = self.storyboard?.instantiateViewController(withIdentifier: "CategoryListVC") as! CategoryListVC

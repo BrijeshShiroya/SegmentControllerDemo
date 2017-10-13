@@ -10,19 +10,22 @@ import UIKit
 import EasyTransition
 
 class CategoryListVC: UIViewController {
-    //TODO: - Outlets -
+    //MARK: - Outlets -
     
     @IBOutlet var filterView: UIView!
     @IBOutlet var tblCategoryList: UITableView!
-    //TODO: - Variables -
+    //MARK: - Variables -
     
     var arrDealList:NSMutableArray = NSMutableArray()
     var transition: EasyTransition?
+    var strCategoryName:String = ""
     
-    //TODO: - Life cycle -
+    //MARK: - Life cycle -
     override func viewDidLoad() {
         super.viewDidLoad()
         tblCategoryList.register(UINib(nibName: "CategoryListCell", bundle: nil), forCellReuseIdentifier: "CategoryListCell")
+        self.setupNavigationBar(isLeft: false, isRightFirst: true, isRightSecond: true)
+        self.navigationController?.setTitle(strTitle: strCategoryName)
         setData()
         // Do any additional setup after loading the view.
     }
@@ -32,10 +35,20 @@ class CategoryListVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.isNavigationBarHidden = false
     }
     
-    //TODO: - Other function -
+    //MARK: - Navigation
+    
+    override func didTapCartButton() {
+        print("Tap cart from CategorylistVC")
+    }
+    
+    override func didTapSearchButton() {
+        print("Tap search from CategorylistVC")
+    }
+    
+    
+    //MARK: - Other function
     func setData(){
         //1-1
         var aDic = NSMutableDictionary()
@@ -115,7 +128,7 @@ class CategoryListVC: UIViewController {
         arrDealList.add(aDic)
     }
     
-    //TODO: - Actions -
+    //MARK: - Actions -
     func btnFavoriteClick(_ sender: UIButton) {
         let dic = self.arrDealList[sender.tag] as! NSMutableDictionary
         if sender.isSelected{
@@ -139,7 +152,7 @@ class CategoryListVC: UIViewController {
     
 }
 
-//TODO: - TableView Delegates -
+//MARK: - TableView Delegates -
 
 extension CategoryListVC : UITableViewDataSource, UITableViewDelegate{
     func numberOfSections(in tableView: UITableView) -> Int {
