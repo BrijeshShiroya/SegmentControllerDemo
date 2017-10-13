@@ -85,21 +85,43 @@ extension UIViewController{
         print("Pressed right")
     }
     
+    /*  ____________________________________
+     | isLeft   isRightFirst   isRightSecond|
+     ---------------------------------------
+     */
     
-    func setupNavigationBar(){
+    func setupNavigationBar(isLeft:Bool, isRightFirst:Bool, isRightSecond:Bool){
+        self.navigationItem.rightBarButtonItems = nil
+        self.navigationItem.leftBarButtonItem = nil
+        
         let editImage   = UIImage(named: "cart")!
         let searchImage = UIImage(named: "search")!
+        let arrBarButton: NSMutableArray = NSMutableArray()
         
-        let editButton = UIBarButtonItem.init(image: editImage, style: .plain, target: self, action: #selector(self.didTapEditButton))
+        if isLeft{
+            let button = UIButton.init(type: .custom)
+            button.setImage(UIImage.init(named: "location1"), for: UIControlState.normal)
+            button.addTarget(self, action:#selector(self.leftSideMenuButtonPressed), for: UIControlEvents.touchUpInside)
+            button.frame = CGRect.init(x: 0, y: 0, width: 30, height: 30)
+            button.setTitle(" SelectLocation", for: UIControlState.normal)
+            let barButton = UIBarButtonItem.init(customView: button)
+            self.navigationItem.leftBarButtonItem = barButton
+        }
         
-        let searchButton = UIBarButtonItem.init(image: searchImage, style: .plain, target: self, action: #selector(self.didTapSearchButton))
+        if isRightSecond{
+            let editButton = UIBarButtonItem.init(image: editImage, style: .plain, target: self, action: #selector(self.didTapCartButton))
+            arrBarButton.add(editButton)
+        }
         
-        self.navigationItem.leftBarButtonItem =  UIBarButtonItem.init(image: UIImage.init(named: "location1"), style: .plain, target: self, action: #selector(self.leftSideMenuButtonPressed))
-        
-        self.navigationItem.rightBarButtonItems = [editButton, searchButton]
+        if isRightFirst{
+            let searchButton = UIBarButtonItem.init(image: searchImage, style: .plain, target: self, action: #selector(self.didTapSearchButton))
+            arrBarButton.add(searchButton)
+        }
+        self.navigationItem.rightBarButtonItems = arrBarButton as NSArray as? [UIBarButtonItem]
+     
     }
     
-    func didTapEditButton(){
+    func didTapCartButton(){
         print("call cart")
     }
     

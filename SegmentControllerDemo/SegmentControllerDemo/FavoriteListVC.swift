@@ -18,8 +18,6 @@ class FavoriteListVC: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     self.navigationController?.setTitle(strTitle: "My Favorite")
-    self.navigationController?.isNavigationBarHidden = false
-    
     tblFavoriteList.register(UINib(nibName: "FavoriteListCell", bundle: nil), forCellReuseIdentifier: "FavoriteListCell")
 
     // Do any additional setup after loading the view.
@@ -32,6 +30,10 @@ class FavoriteListVC: UIViewController {
   
   override func viewWillDisappear(_ animated: Bool) {
   }
+    
+    override func viewWillAppear(_ animated: Bool) {
+      
+    }
   
   //MARK: - Actions -
 

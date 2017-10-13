@@ -816,7 +816,7 @@
 				DEVELOPMENT_TEAM = EZ4V48EFUL;
 				INFOPLIST_FILE = SegmentControllerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.creolestudios.SegmentControllerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.creole.segmentControllerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SegmentControllerDemo/SegmentControllerDemo-Bridging-Header.h";
@@ -834,7 +834,7 @@
 				DEVELOPMENT_TEAM = EZ4V48EFUL;
 				INFOPLIST_FILE = SegmentControllerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.creolestudios.SegmentControllerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.creole.segmentControllerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SegmentControllerDemo/SegmentControllerDemo-Bridging-Header.h";

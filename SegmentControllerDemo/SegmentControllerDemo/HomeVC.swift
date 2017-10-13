@@ -19,44 +19,7 @@ class HomeVC: UIViewController,SubCategoryDelegate {
     //MARK: - Life cycle -
     override func viewDidLoad() {
         super.viewDidLoad()
-        segment = TZSegmentedControl(sectionTitles: ["TRENDING","EDITOR'S PICKS", "FOR YOU", "VIDEOS", "MORE"], sectionImages: [
-            UIImage(named: "a")!,
-            UIImage(named: "b")!,
-            UIImage(named: "c")!,
-            UIImage(named: "e")!,
-            UIImage(named: "moreselected")!
-            ],
-                                     selectedImages: [UIImage(named: "s")!,
-                                                      UIImage(named: "s")!,
-                                                      UIImage(named: "s")!,
-                                                      UIImage(named: "s")!,
-                                                      UIImage(named: "more")!
-            ])
-        
-        
-        
-        segment?.backgroundColor = UIColor.red
-        
-        segment?.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 64)
-        segment?.verticalDividerEnabled = false
-        
-        segment?.segmentWidthStyle = .fixed
-        segment?.indicatorWidthPercent = 0.8
-        //        segment?.selectionStyle = .box
-        segment?.selectionIndicatorColor = UIColor.lightGray
-        segment?.backgroundColor = UIColor.white
-        segment?.selectedTitleTextAttributes = [NSForegroundColorAttributeName:UIColor.darkGray]
-        segment?.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.darkGray,
-                                        NSFontAttributeName:UIFont(name: "Tahoma", size: 10.0) ?? UIFont.systemFont(ofSize: 9)]
-        segment?.indicatorWidthPercent = 0.0
-        segment?.indexChangeBlock = { (index) in
-            self.segmentSelect(selectedIndex: index)
-        }
-        self.view.addSubview(segment!)
-        let homeScrollVC = self.storyboard?.instantiateViewController(withIdentifier: "GreenViewController") as! GreenViewController
-        self.addChildViewController(homeScrollVC)
-        homeScrollVC.view.frame = CGRect.init(x: 0, y: 0, width: self.containerView.frame.size.width, height: self.containerView.frame.size.height)
-        self.containerView.addSubview(homeScrollVC.view)
+        self.setSegment()
         
         // Do any additional setup after loading the view.
     }
@@ -66,6 +29,10 @@ class HomeVC: UIViewController,SubCategoryDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+   
+    //MARK: - Other functions -
+    
+    //subcategory delegate
     func didFinishSubCategory() {
         
         let viewControllers:[UIViewController] = self.childViewControllers
@@ -80,7 +47,45 @@ class HomeVC: UIViewController,SubCategoryDelegate {
         self.containerView.addSubview(homeScrollVC.view)
     }
     
-    //MARK: - Other functions -
+    //set segment value and add into view
+    func setSegment(){
+        segment = TZSegmentedControl(sectionTitles: ["Goods","Dining Out", "Services", "Spa & Salon", "More"], sectionImages: [
+            UIImage(named: "a")!,
+            UIImage(named: "b")!,
+            UIImage(named: "c")!,
+            UIImage(named: "e")!,
+            UIImage(named: "moreselected")!
+            ],
+                                     selectedImages: [UIImage(named: "a")!,
+                                                      UIImage(named: "b")!,
+                                                      UIImage(named: "c")!,
+                                                      UIImage(named: "e")!,
+                                                      UIImage(named: "moreselected")!
+            ])
+        
+        
+        
+        segment?.backgroundColor = UIColor.red
+        segment?.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 64)
+        segment?.verticalDividerEnabled = false
+        segment?.segmentWidthStyle = .fixed
+        segment?.indicatorWidthPercent = 0.8
+//      segment?.selectionStyle = .box
+        segment?.selectionIndicatorColor = UIColor.lightGray
+        segment?.backgroundColor = UIColor.white
+        segment?.selectedTitleTextAttributes = [NSForegroundColorAttributeName:UIColor.darkGray]
+        segment?.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.darkGray,
+                                        NSFontAttributeName:UIFont(name: "Tahoma", size: 10.0) ?? UIFont.systemFont(ofSize: 9)]
+        segment?.indicatorWidthPercent = 0.0
+        segment?.indexChangeBlock = { (index) in
+            self.segmentSelect(selectedIndex: index)
+        }
+        self.view.addSubview(segment!)
+        let homeScrollVC = self.storyboard?.instantiateViewController(withIdentifier: "GreenViewController") as! GreenViewController
+        self.addChildViewController(homeScrollVC)
+        homeScrollVC.view.frame = CGRect.init(x: 0, y: 0, width: self.containerView.frame.size.width, height: self.containerView.frame.size.height)
+        self.containerView.addSubview(homeScrollVC.view)
+    }
     
     //MARK: - Actions -
     func segmentSelect(selectedIndex:Int){
