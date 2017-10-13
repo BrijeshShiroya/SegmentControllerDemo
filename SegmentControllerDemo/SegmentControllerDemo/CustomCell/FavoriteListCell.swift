@@ -9,30 +9,28 @@
 import UIKit
 
 class FavoriteListCell: UITableViewCell {
-  //MARK: - Outlets -
-  
-  @IBOutlet var btnBuy: AwfirButton!
-  //MARK: - Variables -
-  
-  //MARK: - Life Cycle -
-  @IBOutlet var ViewMain: UIView!
-  override func awakeFromNib() {
-        super.awakeFromNib()
-    self.ViewMain.layer.borderWidth = 2.0
-    self.ViewMain.layer.borderColor = UIColor.darkGray.cgColor
-    self.ViewMain.layer.cornerRadius = 10.0
-    self.ViewMain.layer.masksToBounds = true
+    //MARK: - Outlets -
+    @IBOutlet var ViewMain: UIView!
+    @IBOutlet var btnBuy: AwfirButton!
+    //MARK: - Variables -
     
-    self.btnBuy.layer.cornerRadius = 5.0
-    self.btnBuy.layer.masksToBounds = true
+    //MARK: - Life Cycle -
+    override func awakeFromNib() {
+        super.awakeFromNib()
         // Initialization code
+        self.ViewMain.layer.borderWidth = 2.0
+        self.ViewMain.layer.borderColor = UIColor.darkGray.cgColor
+        self.ViewMain.layer.cornerRadius = 10.0
+        self.ViewMain.layer.masksToBounds = true
+        self.btnBuy.layer.cornerRadius = 5.0
+        self.btnBuy.layer.masksToBounds = true
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         // Configure the view for the selected state
     }
-  
-  //MARK: - Other functions -
+    
+    //MARK: - Other functions -
     
 }

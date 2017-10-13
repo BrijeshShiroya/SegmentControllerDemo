@@ -43,9 +43,9 @@ class DealDetailVC: UIViewController {
     //MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.isNavigationBarHidden = true
         self.setHeaderView()
         self.setDealDetailData()
-        self.setupNavigationBar(isLeft: false, isRightFirst: true, isRightSecond: true)
         if !isMultipleExpansionAllowed{
             arrSelectedSectionIndex.add(NSNumber.init(value: count+2))
         }
@@ -62,6 +62,10 @@ class DealDetailVC: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = false
     }
     
     //MARK: - Other functions

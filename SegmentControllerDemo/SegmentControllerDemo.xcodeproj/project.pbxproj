@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		39BB58D4C7E9CDB9783AC917 /* Pods_SegmentControllerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047F708EDDFEF5054134CFB4 /* Pods_SegmentControllerDemo.framework */; };
 		84BA8B4DED570204978EC1D8 /* Pods_SegmentControllerDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4194CC20F09AA58FF740704C /* Pods_SegmentControllerDemoTests.framework */; };
+		E9047F541F90F6D9008306F0 /* PurchaseActiveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9047F521F90F6D9008306F0 /* PurchaseActiveCell.swift */; };
+		E9047F551F90F6D9008306F0 /* PurchaseActiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9047F531F90F6D9008306F0 /* PurchaseActiveCell.xib */; };
 		E926FE1C1F8F64B7009629A2 /* NotificationListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E926FE1B1F8F64B7009629A2 /* NotificationListVC.swift */; };
 		E926FE1E1F8F65D9009629A2 /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E926FE1D1F8F65D9009629A2 /* Notification.storyboard */; };
 		E926FE211F8F6866009629A2 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E926FE1F1F8F6866009629A2 /* NotificationCell.swift */; };
@@ -101,6 +103,8 @@
 		4194CC20F09AA58FF740704C /* Pods_SegmentControllerDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SegmentControllerDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56B9B9262835FFD5D0FC2AD2 /* Pods-SegmentControllerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SegmentControllerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SegmentControllerDemo/Pods-SegmentControllerDemo.release.xcconfig"; sourceTree = "<group>"; };
 		8ED6DCA3C3FF2E3477927F74 /* Pods-SegmentControllerDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SegmentControllerDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SegmentControllerDemoTests/Pods-SegmentControllerDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		E9047F521F90F6D9008306F0 /* PurchaseActiveCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseActiveCell.swift; sourceTree = "<group>"; };
+		E9047F531F90F6D9008306F0 /* PurchaseActiveCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PurchaseActiveCell.xib; sourceTree = "<group>"; };
 		E926FE1B1F8F64B7009629A2 /* NotificationListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationListVC.swift; sourceTree = "<group>"; };
 		E926FE1D1F8F65D9009629A2 /* Notification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notification.storyboard; sourceTree = "<group>"; };
 		E926FE1F1F8F6866009629A2 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
@@ -273,6 +277,8 @@
 				E926FE201F8F6866009629A2 /* NotificationCell.xib */,
 				E926FE291F8F83B2009629A2 /* ReviewListCell.swift */,
 				E926FE2A1F8F83B2009629A2 /* ReviewListCell.xib */,
+				E9047F521F90F6D9008306F0 /* PurchaseActiveCell.swift */,
+				E9047F531F90F6D9008306F0 /* PurchaseActiveCell.xib */,
 			);
 			path = CustomCell;
 			sourceTree = "<group>";
@@ -493,6 +499,7 @@
 				E9CBCF3C1F8B9B350038F111 /* DealDetailCollapsedCell.xib in Resources */,
 				E9E337151F8C946C00207EE0 /* DealOfferCell.xib in Resources */,
 				E9BBA7FD1F7A623D00EF15A4 /* LaunchScreen.storyboard in Resources */,
+				E9047F551F90F6D9008306F0 /* PurchaseActiveCell.xib in Resources */,
 				E9E62C201F84F7B2008C9618 /* FavoriteListCell.xib in Resources */,
 				E926FE241F8F6FEE009629A2 /* MyPurchase.storyboard in Resources */,
 				E926FE2C1F8F83B2009629A2 /* ReviewListCell.xib in Resources */,
@@ -644,6 +651,7 @@
 				E926FE1C1F8F64B7009629A2 /* NotificationListVC.swift in Sources */,
 				E95A3B321F8794A5009F441D /* FilterVC.swift in Sources */,
 				E95A3B281F875F67009F441D /* SubCategoryVC.swift in Sources */,
+				E9047F541F90F6D9008306F0 /* PurchaseActiveCell.swift in Sources */,
 				E9BBA7F31F7A623D00EF15A4 /* AppDelegate.swift in Sources */,
 				E9DF40891F834E7300E1037D /* TZSegmentedControl.swift in Sources */,
 				E9BE12E61F863D2B005696E4 /* CGFloat+Extensions.swift in Sources */,

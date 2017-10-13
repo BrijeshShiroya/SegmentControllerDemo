@@ -51,7 +51,23 @@
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kgx-4a-Jo4">
                                         <rect key="frame" x="0.0" y="58" width="375" height="589"/>
+                                        <subviews>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wfu-Mp-woG">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="589"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="jgs-ul-6gi" id="Pzs-wP-TqG"/>
+                                                    <outlet property="delegate" destination="jgs-ul-6gi" id="Bc3-7M-gvi"/>
+                                                </connections>
+                                            </tableView>
+                                        </subviews>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="wfu-Mp-woG" firstAttribute="top" secondItem="Kgx-4a-Jo4" secondAttribute="top" id="2Vi-77-UvH"/>
+                                            <constraint firstAttribute="trailing" secondItem="wfu-Mp-woG" secondAttribute="trailing" id="6WV-fS-ZL3"/>
+                                            <constraint firstAttribute="bottom" secondItem="wfu-Mp-woG" secondAttribute="bottom" id="RW5-6G-jiY"/>
+                                            <constraint firstItem="wfu-Mp-woG" firstAttribute="leading" secondItem="Kgx-4a-Jo4" secondAttribute="leading" id="mRP-nK-yPQ"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -79,6 +95,7 @@
                         <outlet property="containerView" destination="Kgx-4a-Jo4" id="kXv-tG-SeJ"/>
                         <outlet property="segmentControl" destination="dby-Tq-ZrP" id="tZK-yR-m62"/>
                         <outlet property="segmentView" destination="Oud-vJ-rgn" id="uTY-8p-hNE"/>
+                        <outlet property="tblPurchaseActive" destination="wfu-Mp-woG" id="FkM-gM-735"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H4Y-7f-Xbc" userLabel="First Responder" sceneMemberID="firstResponder"/>

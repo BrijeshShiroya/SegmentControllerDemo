@@ -23,7 +23,7 @@ let APP_FONT_NAME = "Avenir"
 let NAV_FONT_NAME = "Avenir"
 
 let APP_FONT_SIZE = 17.0
-let NAV_FONT_SIZE = 21.0
+let NAV_FONT_SIZE = 17.0
 
 extension UIFont{
   //application main font
