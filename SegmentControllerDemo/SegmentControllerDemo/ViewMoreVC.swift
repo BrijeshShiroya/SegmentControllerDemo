@@ -12,7 +12,7 @@ class ViewMoreVC: UIViewController {
 
   @IBOutlet var btnClose: UIButton!
   override func viewDidLoad() {
-        super.viewDidLoad()
+    super.viewDidLoad()
     self.contentSizeInPopup = CGSize(width: 375, height: 500)
 
         // Do any additional setup after loading the view.

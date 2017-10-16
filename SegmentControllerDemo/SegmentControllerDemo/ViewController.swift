@@ -9,6 +9,15 @@
 import UIKit
 import STPopup
 
+extension Dictionary {
+    public init(keyValuePairs: [(Key, Value)]) {
+        self.init()
+        for (pair,value) in keyValuePairs {
+            self[pair] = value
+        }
+    }
+}
+
 class ViewController: UIViewController {
     
     
@@ -52,7 +61,6 @@ class ViewController: UIViewController {
         self.navigationController?.setTitle(strTitle: "")
     }
     override func didTapSearchButton() {
-        
         print("search tap from viewController")
     }
     

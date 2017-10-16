@@ -85,9 +85,9 @@ extension UIViewController{
         print("Pressed right")
     }
     
-    /*  ____________________________________
-     | isLeft   isRightFirst   isRightSecond|
-     ---------------------------------------
+    /*  ___________________________________________
+     | isLeft           isRightFirst  isRightSecond|
+     ----------------------------------------------
      */
     
     func setupNavigationBar(isLeft:Bool, isRightFirst:Bool, isRightSecond:Bool){

@@ -27,6 +27,8 @@
 		E93B5EDC1F838A0200B370D6 /* ViewMoreCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E93B5EDA1F838A0200B370D6 /* ViewMoreCollectionViewCell.xib */; };
 		E93B5EF01F839B2900B370D6 /* ViewMoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93B5EEF1F839B2900B370D6 /* ViewMoreVC.swift */; };
 		E93B5F361F83A22A00B370D6 /* FloatRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93B5F351F83A22900B370D6 /* FloatRatingView.swift */; };
+		E93BA3CA1F94C08C009E147A /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93BA3C91F94C08C009E147A /* UIImage+Extensions.swift */; };
+		E93BA3CC1F94CC6D009E147A /* AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93BA3CB1F94CC6D009E147A /* AlertVC.swift */; };
 		E95A3B281F875F67009F441D /* SubCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95A3B271F875F67009F441D /* SubCategoryVC.swift */; };
 		E95A3B2B1F87626A009F441D /* SubCategoryExpandedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95A3B291F87626A009F441D /* SubCategoryExpandedCell.swift */; };
 		E95A3B2C1F87626A009F441D /* SubCategoryExpandedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E95A3B2A1F87626A009F441D /* SubCategoryExpandedCell.xib */; };
@@ -122,6 +124,8 @@
 		E93B5EDD1F8398CA00B370D6 /* SegmentControllerDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SegmentControllerDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		E93B5EEF1F839B2900B370D6 /* ViewMoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewMoreVC.swift; sourceTree = "<group>"; };
 		E93B5F351F83A22900B370D6 /* FloatRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatRatingView.swift; sourceTree = "<group>"; };
+		E93BA3C91F94C08C009E147A /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		E93BA3CB1F94CC6D009E147A /* AlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVC.swift; sourceTree = "<group>"; };
 		E95A3B271F875F67009F441D /* SubCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoryVC.swift; sourceTree = "<group>"; };
 		E95A3B291F87626A009F441D /* SubCategoryExpandedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoryExpandedCell.swift; sourceTree = "<group>"; };
 		E95A3B2A1F87626A009F441D /* SubCategoryExpandedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubCategoryExpandedCell.xib; sourceTree = "<group>"; };
@@ -368,6 +372,7 @@
 				E93B5F351F83A22900B370D6 /* FloatRatingView.swift */,
 				E9DF40881F834E7200E1037D /* TZScrollView.swift */,
 				E9DF40871F834E7200E1037D /* TZSegmentedControl.swift */,
+				E93BA3CB1F94CC6D009E147A /* AlertVC.swift */,
 			);
 			path = ThirdParty;
 			sourceTree = "<group>";
@@ -399,6 +404,7 @@
 				E9BE12DB1F8609C5005696E4 /* UINavigation+Extensions.swift */,
 				E9BE12DD1F860A02005696E4 /* UIFont+Extensions.swift */,
 				E9BE12E51F863D2B005696E4 /* CGFloat+Extensions.swift */,
+				E93BA3C91F94C08C009E147A /* UIImage+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -656,6 +662,7 @@
 				E9DF40891F834E7300E1037D /* TZSegmentedControl.swift in Sources */,
 				E9BE12E61F863D2B005696E4 /* CGFloat+Extensions.swift in Sources */,
 				E9CBCF371F8B9A580038F111 /* DealDetailExpandedCell.swift in Sources */,
+				E93BA3CC1F94CC6D009E147A /* AlertVC.swift in Sources */,
 				E95A3B391F87AC42009F441D /* FilterSubCategoryCell.swift in Sources */,
 				E926FE2B1F8F83B2009629A2 /* ReviewListCell.swift in Sources */,
 				E9CBCF3B1F8B9B350038F111 /* DealDetailCollapsedCell.swift in Sources */,
@@ -675,6 +682,7 @@
 				E93B5EF01F839B2900B370D6 /* ViewMoreVC.swift in Sources */,
 				E93B5F361F83A22A00B370D6 /* FloatRatingView.swift in Sources */,
 				E926FE211F8F6866009629A2 /* NotificationCell.swift in Sources */,
+				E93BA3CA1F94C08C009E147A /* UIImage+Extensions.swift in Sources */,
 				E9E62C1C1F84F72D008C9618 /* UIViewController+extensions.swift in Sources */,
 				E9BBA8171F7A651800EF15A4 /* GreenViewController.swift in Sources */,
 			);
