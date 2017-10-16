@@ -770,12 +770,21 @@
                                             <action selector="btnShowAlertClicked:" destination="FcZ-a2-7PD" eventType="touchUpInside" id="4Z1-z7-zup"/>
                                         </connections>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HES-Xl-LPp">
+                                        <rect key="frame" x="72" y="214" width="231" height="218"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="HES-Xl-LPp" secondAttribute="height" multiplier="231:218" id="5Cv-LA-IqS"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.90167197450000003" green="0.036649084390000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="saP-uV-KI1" firstAttribute="centerX" secondItem="GMI-Vx-CYF" secondAttribute="centerX" id="7G4-pC-fmk"/>
                                     <constraint firstItem="GMI-Vx-CYF" firstAttribute="centerY" secondItem="uHg-Ig-ZRL" secondAttribute="centerY" id="7jB-v2-2cv"/>
                                     <constraint firstItem="saP-uV-KI1" firstAttribute="top" secondItem="GMI-Vx-CYF" secondAttribute="bottom" constant="53" id="B5s-a0-aMz"/>
+                                    <constraint firstItem="HES-Xl-LPp" firstAttribute="height" secondItem="GMI-Vx-CYF" secondAttribute="height" id="Bx0-xT-Q5g"/>
+                                    <constraint firstItem="HES-Xl-LPp" firstAttribute="centerX" secondItem="uHg-Ig-ZRL" secondAttribute="centerX" id="LXk-CI-AtX"/>
+                                    <constraint firstItem="HES-Xl-LPp" firstAttribute="centerY" secondItem="uHg-Ig-ZRL" secondAttribute="centerY" id="QVr-3h-XOH"/>
                                     <constraint firstItem="GMI-Vx-CYF" firstAttribute="centerX" secondItem="uHg-Ig-ZRL" secondAttribute="centerX" id="XYn-gc-lfc"/>
                                     <constraint firstItem="GMI-Vx-CYF" firstAttribute="width" secondItem="uHg-Ig-ZRL" secondAttribute="width" id="XoN-ed-ZGO"/>
                                 </constraints>
@@ -792,6 +801,7 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="imgView" destination="GMI-Vx-CYF" id="g59-Gp-yTs"/>
+                        <outlet property="imgView2" destination="HES-Xl-LPp" id="Sem-X7-4jn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="27w-dY-1X0" userLabel="First Responder" sceneMemberID="firstResponder"/>

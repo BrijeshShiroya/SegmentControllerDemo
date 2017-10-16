@@ -8,16 +8,38 @@
 
 import UIKit
 import STPopup
+import SDWebImage
 
 
 class RedViewController: UIViewController,AlertDelegate {
     //MARK: - Outlets
     @IBOutlet var imgView: UIImageView!
+    @IBOutlet var imgView2: UIImageView!
     //MARK: - Variables
     
     //MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        let imgViewFrame = self.imgView.frame
+        let url1 = "https://i.pinimg.com/736x/eb/c8/fb/ebc8fb3971bd50c666a167d524d8f5ba--portrait-photography-men-men-portrait.jpg"
+        let url2 = "https://www.learnupon.com/wp-content/uploads/how-customers-love-LU-750x300.jpg"
+        
+        self.imgView2.contentMode = .scaleAspectFill
+        
+        
+        
+     //   imgView2.sd_setImage(with: URL(string: url1), placeholderImage: UIImage(named: "room1"))
+        imgView2.sd_setImage(with: URL(string: url1), placeholderImage:  UIImage(named: "room1")) { (image, error, nil, url) in
+            let newFrame = self.imgView2.frame
+            print(imgViewFrame)
+            print(newFrame)
+            let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.dark)
+            let blurEffectView = UIVisualEffectView(effect: blurEffect)
+            blurEffectView.frame = self.imgView.bounds
+            blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+            self.imgView.addSubview(blurEffectView)
+        }
+        
         // Do any additional setup after loading the view.
     }
     

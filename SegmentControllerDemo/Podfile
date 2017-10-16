@@ -7,6 +7,7 @@ target 'SegmentControllerDemo' do
 
 pod 'STPopup'
 pod 'EasyTransition', '~> 2.0'
+pod 'SDWebImage', '~> 4.0'
 
   # Pods for SegmentControllerDemo
 

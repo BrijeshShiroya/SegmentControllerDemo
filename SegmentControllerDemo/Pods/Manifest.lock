@@ -1,15 +1,20 @@
 PODS:
   - EasyTransition (2.0)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
   - STPopup (1.8.2)
 
 DEPENDENCIES:
   - EasyTransition (~> 2.0)
+  - SDWebImage (~> 4.0)
   - STPopup
 
 SPEC CHECKSUMS:
   EasyTransition: 82ed335e8cf9760329f8b0ccc7b99e09ff946e73
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   STPopup: b69b3e7484ef7d2baec5f9ab2939f8a7bcdfe218
 
-PODFILE CHECKSUM: ae13c5dd4be3caa77c5f3dc134d818236c014fad
+PODFILE CHECKSUM: 2f73100c2cd4eddc4f84c2494eb1632957f4d2f3
 
 COCOAPODS: 1.2.1
