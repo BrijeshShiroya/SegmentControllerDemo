@@ -20,19 +20,18 @@ class RedViewController: UIViewController,AlertDelegate {
     //MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        let imgViewFrame = self.imgView.frame
+        let bottomViewFrame  = self.imgView.frame
         let url1 = "https://i.pinimg.com/736x/eb/c8/fb/ebc8fb3971bd50c666a167d524d8f5ba--portrait-photography-men-men-portrait.jpg"
         let url2 = "https://www.learnupon.com/wp-content/uploads/how-customers-love-LU-750x300.jpg"
+        let url3 = "http://stuffershack.com/wp-content/uploads/2014/04/Fantasy-Barbarian-414x165.png"
         
         self.imgView2.contentMode = .scaleAspectFill
         
-        
-        
      //   imgView2.sd_setImage(with: URL(string: url1), placeholderImage: UIImage(named: "room1"))
-        imgView2.sd_setImage(with: URL(string: url1), placeholderImage:  UIImage(named: "room1")) { (image, error, nil, url) in
-            let newFrame = self.imgView2.frame
-            print(imgViewFrame)
-            print(newFrame)
+        
+        imgView2.sd_setImage(with: URL(string: url3), placeholderImage:  UIImage(named: "room1")) { (image, error, nil, url) in
+            self.imgView2.image? = (self.imgView2.image?.scaleImageToSize(newSize: self.imgView.frame.size))!
+            self.imgView.image = self.imgView2.image
             let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.dark)
             let blurEffectView = UIVisualEffectView(effect: blurEffect)
             blurEffectView.frame = self.imgView.bounds
@@ -48,6 +47,7 @@ class RedViewController: UIViewController,AlertDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    //delegate alert delegate
     func alertSuccess(success: Bool) {
         if success{
             print("hello brijesh congratulation!! its come from red and success")
@@ -55,9 +55,6 @@ class RedViewController: UIViewController,AlertDelegate {
             print("Sorry")
         }
     }
-    
-    
-    
     
     //MARK: - Other functions
     
