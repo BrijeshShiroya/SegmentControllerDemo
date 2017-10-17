@@ -8,34 +8,38 @@
 
 import UIKit
 
+protocol ViewMoreDelegate {
+    func viewMoreFinish()
+}
+
 class ViewMoreVC: UIViewController {
-
-  @IBOutlet var btnClose: UIButton!
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    self.contentSizeInPopup = CGSize(width: 375, height: 500)
-
+    
+    //MARK: - Outlets
+    @IBOutlet var btnClose: UIButton!
+    
+    //MARK: - Variables
+    var delegate:ViewMoreDelegate?
+    
+    //MARK: - Life cycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.contentSizeInPopup = CGSize(width: CGFloat(289.0).getProprtionalWidth(), height: CGFloat(385.0).getProprtionalHeight())
+        
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-  
-  
-  @IBAction func btnCloseClicked(_ sender: UIButton) {
-    self.dismiss(animated: true, completion: nil)
-  }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    //MARK: - Other functions
+    
+    @IBAction func btnCloseClicked(_ sender: UIButton) {
+        delegate?.viewMoreFinish()
+        self.dismiss(animated: true, completion: nil)
     }
-    */
-
+    
+    //MARK: - Actions
+    
 }

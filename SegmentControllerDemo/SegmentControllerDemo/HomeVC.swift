@@ -9,7 +9,7 @@
 import UIKit
 import STPopup
 
-class HomeVC: UIViewController {
+class HomeVC: UIViewController,ViewMoreDelegate {
     //MARK: - Outlets -
     @IBOutlet var containerView: UIView!
     
@@ -35,6 +35,11 @@ class HomeVC: UIViewController {
     
    
     //MARK: - Other functions -
+    //Viewmore delegate
+    
+    func viewMoreFinish() {
+        self.segment?.selectedSegmentIndex = 0
+    }
     
     //subcategory delegate
     func didFinishSubCategory(strTitle:String) {
@@ -135,6 +140,7 @@ class HomeVC: UIViewController {
         else if selectedIndex == 4{
             
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "ViewMoreVC") as! ViewMoreVC
+            vc.delegate = self
             let stVC = STPopupController.init(rootViewController: vc)
             //  stVC.backgroundView?.backgroundColor = UIColor.black
             stVC.style = .formSheet

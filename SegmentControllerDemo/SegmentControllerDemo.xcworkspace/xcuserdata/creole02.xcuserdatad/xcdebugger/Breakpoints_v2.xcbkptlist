@@ -58,7 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SegmentControllerDemo/ViewController.swift"
-            timestampString = "529926296.359922"
+            timestampString = "529928391.057681"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "39"
@@ -106,7 +106,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SegmentControllerDemo/HomeVC.swift"
-            timestampString = "529926296.360926"
+            timestampString = "529928391.058302"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "33"
@@ -122,7 +122,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SegmentControllerDemo/RedViewController.swift"
-            timestampString = "529926296.361021"
+            timestampString = "529928391.058547"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "33"
@@ -138,12 +138,12 @@
                   moduleName = "SegmentControllerDemo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/creole02/Desktop/Brijesh/Project/Awfir/Research/SegmentControllerDemo/SegmentControllerDemo/SegmentControllerDemo/RedViewController.swift"
-                  timestampString = "529915428.138812"
+                  timestampString = "529928391.296867"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "33"
                   endingLineNumber = "33"
-                  offsetFromSymbolStart = "40">
+                  offsetFromSymbolStart = "44">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -153,12 +153,12 @@
                   moduleName = "SegmentControllerDemo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/creole02/Desktop/Brijesh/Project/Awfir/Research/SegmentControllerDemo/SegmentControllerDemo/SegmentControllerDemo/RedViewController.swift"
-                  timestampString = "529915428.141153"
+                  timestampString = "529928391.299663"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "33"
                   endingLineNumber = "33"
-                  offsetFromSymbolStart = "2515">
+                  offsetFromSymbolStart = "2184">
                </Location>
             </Locations>
          </BreakpointContent>
