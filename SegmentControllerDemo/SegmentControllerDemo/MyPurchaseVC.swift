@@ -57,7 +57,7 @@ class MyPurchaseVC: UIViewController {
 //            homeScrollVC.view.frame = CGRect.init(x: 0, y: 0, width: self.containerView.frame.size.width, height: self.containerView.frame.size.height)
 //            self.containerView.addSubview(homeScrollVC.view)
         }else{
-            let homeScrollVC = STORYBOARD_MAIN.instantiateViewController(withIdentifier: "CartVC") as! CartVC
+            let homeScrollVC = STORYBOARD_MYPURCHASE.instantiateViewController(withIdentifier: "MyPurchasePastVC") as! MyPurchasePastVC
             self.addChildViewController(homeScrollVC)
             homeScrollVC.view.frame = CGRect.init(x: 0, y: 0, width: self.containerView.frame.size.width, height: self.containerView.frame.size.height)
             self.containerView.addSubview(homeScrollVC.view)

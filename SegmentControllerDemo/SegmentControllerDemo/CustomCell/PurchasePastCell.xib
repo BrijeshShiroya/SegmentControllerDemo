@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PurchasePastCell" rowHeight="86" id="KGk-i7-Jjw" customClass="PurchasePastCell" customModule="SegmentControllerDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="86.5"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="86"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3uD-07-lrf" userLabel="MainView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="86"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A5a-es-W2E">
+                                <rect key="frame" x="0.0" y="84" width="320" height="2"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="Ofn-Ma-vkd"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="room1" translatesAutoresizingMaskIntoConstraints="NO" id="prX-mF-KQD">
+                                <rect key="frame" x="191" y="12" width="121" height="62"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terecce Top restaurant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m0A-aT-j5H" customClass="AwfirLabel" customModule="SegmentControllerDemo" customModuleProvider="target">
+                                <rect key="frame" x="8" y="12" width="176" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                        <real key="value" value="13"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="North indian, Chinese, Continental" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qqj-5N-uln" customClass="AwfirLabel" customModule="SegmentControllerDemo" customModuleProvider="target">
+                                <rect key="frame" x="8" y="33" width="176" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                        <real key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAf-s1-KSc" customClass="AwfirButton" customModule="SegmentControllerDemo" customModuleProvider="target">
+                                <rect key="frame" x="8" y="54" width="105" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Review deal"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="m0A-aT-j5H" firstAttribute="leading" secondItem="3uD-07-lrf" secondAttribute="leading" constant="8" id="1rB-g4-hYs"/>
+                            <constraint firstItem="prX-mF-KQD" firstAttribute="width" secondItem="3uD-07-lrf" secondAttribute="width" multiplier="121/320" id="AnM-Vr-56B"/>
+                            <constraint firstItem="zAf-s1-KSc" firstAttribute="width" secondItem="3uD-07-lrf" secondAttribute="width" multiplier="105/320" id="ByE-RJ-cIS"/>
+                            <constraint firstItem="prX-mF-KQD" firstAttribute="centerY" secondItem="3uD-07-lrf" secondAttribute="centerY" id="Fxx-DA-NR2"/>
+                            <constraint firstItem="Qqj-5N-uln" firstAttribute="centerX" secondItem="m0A-aT-j5H" secondAttribute="centerX" id="GSr-O4-ilw"/>
+                            <constraint firstAttribute="trailing" secondItem="prX-mF-KQD" secondAttribute="trailing" constant="8" id="L7p-HK-HTC"/>
+                            <constraint firstItem="zAf-s1-KSc" firstAttribute="leading" secondItem="Qqj-5N-uln" secondAttribute="leading" id="NzJ-s5-BZ2"/>
+                            <constraint firstItem="Qqj-5N-uln" firstAttribute="top" secondItem="m0A-aT-j5H" secondAttribute="bottom" id="b2C-sI-QlZ"/>
+                            <constraint firstItem="A5a-es-W2E" firstAttribute="leading" secondItem="3uD-07-lrf" secondAttribute="leading" id="b6L-Iv-2pL"/>
+                            <constraint firstItem="m0A-aT-j5H" firstAttribute="width" secondItem="3uD-07-lrf" secondAttribute="width" multiplier="176/320" id="fRU-Gj-UGT"/>
+                            <constraint firstAttribute="trailing" secondItem="A5a-es-W2E" secondAttribute="trailing" id="gE2-by-IqJ"/>
+                            <constraint firstItem="Qqj-5N-uln" firstAttribute="height" secondItem="m0A-aT-j5H" secondAttribute="height" id="hM8-f0-5jZ"/>
+                            <constraint firstAttribute="bottom" secondItem="A5a-es-W2E" secondAttribute="bottom" id="jZX-7H-s59"/>
+                            <constraint firstItem="m0A-aT-j5H" firstAttribute="height" secondItem="3uD-07-lrf" secondAttribute="height" multiplier="21/86" id="oRt-si-kZs"/>
+                            <constraint firstItem="zAf-s1-KSc" firstAttribute="height" secondItem="3uD-07-lrf" secondAttribute="height" multiplier="24/86" id="s9U-yt-lkr"/>
+                            <constraint firstItem="Qqj-5N-uln" firstAttribute="width" secondItem="m0A-aT-j5H" secondAttribute="width" id="sF5-pf-ykF"/>
+                            <constraint firstItem="prX-mF-KQD" firstAttribute="height" secondItem="3uD-07-lrf" secondAttribute="height" multiplier="62/86" id="uye-yL-n8a"/>
+                            <constraint firstItem="zAf-s1-KSc" firstAttribute="top" secondItem="Qqj-5N-uln" secondAttribute="bottom" id="vJ1-uF-5DJ"/>
+                            <constraint firstItem="m0A-aT-j5H" firstAttribute="top" secondItem="3uD-07-lrf" secondAttribute="top" constant="12" id="xTg-yW-jp9"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3uD-07-lrf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2aa-ow-JmO"/>
+                    <constraint firstAttribute="trailing" secondItem="3uD-07-lrf" secondAttribute="trailing" id="Idc-pW-01l"/>
+                    <constraint firstAttribute="bottom" secondItem="3uD-07-lrf" secondAttribute="bottom" id="Wvx-Xc-Uz7"/>
+                    <constraint firstItem="3uD-07-lrf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bzj-F3-f4c"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="25" y="72.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="room1" width="318" height="159"/>
+    </resources>
+</document>
