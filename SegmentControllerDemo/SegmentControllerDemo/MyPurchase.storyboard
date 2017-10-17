@@ -102,5 +102,54 @@
             </objects>
             <point key="canvasLocation" x="3085.5999999999999" y="1095.2023988005999"/>
         </scene>
+        <!--My Purchase PastVC-->
+        <scene sceneID="mOw-6o-8uP">
+            <objects>
+                <viewController storyboardIdentifier="MyPurchasePastVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wMp-Ho-eDM" customClass="MyPurchasePastVC" customModule="SegmentControllerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Jx-6h-E1C"/>
+                        <viewControllerLayoutGuide type="bottom" id="wY2-GB-p3P"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oBk-iQ-xgJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ONN-Ir-TnA" userLabel="MainView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zcz-cA-Xtk">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="wMp-Ho-eDM" id="PSm-Va-Uv5"/>
+                                            <outlet property="delegate" destination="wMp-Ho-eDM" id="3ur-U6-kJx"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Zcz-cA-Xtk" secondAttribute="bottom" id="3zU-f4-XMN"/>
+                                    <constraint firstItem="Zcz-cA-Xtk" firstAttribute="top" secondItem="ONN-Ir-TnA" secondAttribute="top" id="ivb-ON-5Qn"/>
+                                    <constraint firstItem="Zcz-cA-Xtk" firstAttribute="leading" secondItem="ONN-Ir-TnA" secondAttribute="leading" id="tXA-o8-gfW"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zcz-cA-Xtk" secondAttribute="trailing" id="un6-pn-Eon"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ONN-Ir-TnA" firstAttribute="leading" secondItem="oBk-iQ-xgJ" secondAttribute="leading" id="Px6-s8-cL6"/>
+                            <constraint firstItem="ONN-Ir-TnA" firstAttribute="top" secondItem="oBk-iQ-xgJ" secondAttribute="top" id="bpO-8p-K67"/>
+                            <constraint firstItem="wY2-GB-p3P" firstAttribute="top" secondItem="ONN-Ir-TnA" secondAttribute="bottom" id="oRC-Y9-Dyg"/>
+                            <constraint firstAttribute="trailing" secondItem="ONN-Ir-TnA" secondAttribute="trailing" id="xo0-Rn-TEl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tblPurchasePastList" destination="Zcz-cA-Xtk" id="aCk-Uz-kS2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L14-NB-cRG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4040" y="732"/>
+        </scene>
     </scenes>
 </document>

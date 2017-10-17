@@ -40,6 +40,9 @@
 		E95A3B391F87AC42009F441D /* FilterSubCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95A3B371F87AC42009F441D /* FilterSubCategoryCell.swift */; };
 		E95A3B3A1F87AC42009F441D /* FilterSubCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E95A3B381F87AC42009F441D /* FilterSubCategoryCell.xib */; };
 		E95E3EF21F95D47300A84106 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95E3EF11F95D47300A84106 /* String+Extensions.swift */; };
+		E95E3EF51F95FD1300A84106 /* PurchasePastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95E3EF31F95FD1300A84106 /* PurchasePastCell.swift */; };
+		E95E3EF61F95FD1300A84106 /* PurchasePastCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E95E3EF41F95FD1300A84106 /* PurchasePastCell.xib */; };
+		E95E3EF81F96001E00A84106 /* MyPurchasePastVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95E3EF71F96001E00A84106 /* MyPurchasePastVC.swift */; };
 		E9BBA7F31F7A623D00EF15A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BBA7F21F7A623D00EF15A4 /* AppDelegate.swift */; };
 		E9BBA7F51F7A623D00EF15A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BBA7F41F7A623D00EF15A4 /* ViewController.swift */; };
 		E9BBA7F81F7A623D00EF15A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9BBA7F61F7A623D00EF15A4 /* Main.storyboard */; };
@@ -138,6 +141,9 @@
 		E95A3B371F87AC42009F441D /* FilterSubCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSubCategoryCell.swift; sourceTree = "<group>"; };
 		E95A3B381F87AC42009F441D /* FilterSubCategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterSubCategoryCell.xib; sourceTree = "<group>"; };
 		E95E3EF11F95D47300A84106 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		E95E3EF31F95FD1300A84106 /* PurchasePastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasePastCell.swift; sourceTree = "<group>"; };
+		E95E3EF41F95FD1300A84106 /* PurchasePastCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PurchasePastCell.xib; sourceTree = "<group>"; };
+		E95E3EF71F96001E00A84106 /* MyPurchasePastVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPurchasePastVC.swift; sourceTree = "<group>"; };
 		E9BBA7EF1F7A623D00EF15A4 /* SegmentControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SegmentControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9BBA7F21F7A623D00EF15A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9BBA7F41F7A623D00EF15A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -285,6 +291,8 @@
 				E926FE2A1F8F83B2009629A2 /* ReviewListCell.xib */,
 				E9047F521F90F6D9008306F0 /* PurchaseActiveCell.swift */,
 				E9047F531F90F6D9008306F0 /* PurchaseActiveCell.xib */,
+				E95E3EF31F95FD1300A84106 /* PurchasePastCell.swift */,
+				E95E3EF41F95FD1300A84106 /* PurchasePastCell.xib */,
 			);
 			path = CustomCell;
 			sourceTree = "<group>";
@@ -345,6 +353,7 @@
 				E926FE1D1F8F65D9009629A2 /* Notification.storyboard */,
 				E926FE231F8F6FEE009629A2 /* MyPurchase.storyboard */,
 				E926FE2D1F8F8482009629A2 /* ReviewListVC.swift */,
+				E95E3EF71F96001E00A84106 /* MyPurchasePastVC.swift */,
 			);
 			path = SegmentControllerDemo;
 			sourceTree = "<group>";
@@ -522,6 +531,7 @@
 				E9BE12F61F865FBC005696E4 /* MyProfileCollapsedCell.xib in Resources */,
 				E9BBA7F81F7A623D00EF15A4 /* Main.storyboard in Resources */,
 				E95A3B2C1F87626A009F441D /* SubCategoryExpandedCell.xib in Resources */,
+				E95E3EF61F95FD1300A84106 /* PurchasePastCell.xib in Resources */,
 				E93B5ED81F83891300B370D6 /* dealCollectionCell.xib in Resources */,
 				E9CBCF381F8B9A580038F111 /* DealDetailExpandedCell.xib in Resources */,
 				E93B5EC21F83838B00B370D6 /* DealCell.xib in Resources */,
@@ -674,6 +684,7 @@
 				E95A3B2F1F876294009F441D /* SubCategoryCollapsedCell.swift in Sources */,
 				E9E62C041F84B9B0008C9618 /* CategoryListCell.swift in Sources */,
 				E926FE2E1F8F8482009629A2 /* ReviewListVC.swift in Sources */,
+				E95E3EF51F95FD1300A84106 /* PurchasePastCell.swift in Sources */,
 				E9E62C1F1F84F7B2008C9618 /* FavoriteListCell.swift in Sources */,
 				E9BE12EE1F86561B005696E4 /* MyProfileVC.swift in Sources */,
 				E9E337211F8CF62E00207EE0 /* MyPurchaseVC.swift in Sources */,
@@ -681,6 +692,7 @@
 				E95A3B2B1F87626A009F441D /* SubCategoryExpandedCell.swift in Sources */,
 				E9BE12E31F8639B7005696E4 /* SettingCell.swift in Sources */,
 				E9BE12E81F863D55005696E4 /* Constant.swift in Sources */,
+				E95E3EF81F96001E00A84106 /* MyPurchasePastVC.swift in Sources */,
 				E9BE12DA1F86025C005696E4 /* HomeVC.swift in Sources */,
 				E9BBA8191F7A652A00EF15A4 /* BlueViewController.swift in Sources */,
 				E93B5EF01F839B2900B370D6 /* ViewMoreVC.swift in Sources */,
