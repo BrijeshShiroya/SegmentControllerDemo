@@ -23,8 +23,8 @@ class RedViewController: UIViewController,AlertDelegate {
         let bottomViewFrame  = self.imgView.frame
         let url1 = "https://i.pinimg.com/736x/eb/c8/fb/ebc8fb3971bd50c666a167d524d8f5ba--portrait-photography-men-men-portrait.jpg"
         let url2 = "https://www.learnupon.com/wp-content/uploads/how-customers-love-LU-750x300.jpg"
-        let url3 = "http://stuffershack.com/wp-content/uploads/2014/04/Fantasy-Barbarian-414x165.png"
-        
+        let url3 = "http://www.burjdubaiskyscraper.com/2010/04/BK0506.jpg"
+       
         self.imgView2.contentMode = .scaleAspectFill
         
      //   imgView2.sd_setImage(with: URL(string: url1), placeholderImage: UIImage(named: "room1"))

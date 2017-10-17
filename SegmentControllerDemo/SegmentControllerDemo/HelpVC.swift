@@ -83,7 +83,6 @@ class HelpVC: UIViewController {
     }
     else if selectedIndex == 4{
     
-      // self.showAlertWithTitleForTime(strTitle: "Naresh alert", andMessage: "testing", andOkButtonTitle: "OK")
     }
   }
 }
