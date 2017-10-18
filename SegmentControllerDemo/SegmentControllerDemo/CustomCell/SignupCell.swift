@@ -27,4 +27,8 @@ class SignupCell: UITableViewCell {
     }
     
     //MARK: - Other functions
+    func setSignupCellData(dictionary:NSMutableDictionary){
+        self.lblPlaceholderTitle.text = dictionary[SignupKey.placeholder] as! String
+        self.txtSignup.text = dictionary[SignupKey.value] as! String
+    }
 }

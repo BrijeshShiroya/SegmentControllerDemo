@@ -42,6 +42,12 @@ class SignUpVC: UIViewController {
     //MARK: - Outlets
     @IBOutlet var tblSignup: UITableView!
     
+    @IBOutlet var btnEditProfilePic: UIButton!
+    @IBOutlet var imgViewProfile: UIImageView!
+    @IBOutlet var btnSignup: UIButton!
+    @IBOutlet var footerView: UIView!
+    @IBOutlet var headerView: UIView!
+    
     //MARK: - Variables
     let arrMainData:NSMutableArray = NSMutableArray()
     //MARK: - View life cycle
@@ -49,6 +55,11 @@ class SignUpVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tblSignup.register(UINib(nibName: "SignupCell", bundle: nil), forCellReuseIdentifier: "SignupCell")
+        self.headerView.frame.size = CGSize.init(width: SCREEN_WIDTH, height: CGFloat(120.0).proportionalSizeRelatedToOther(actualSize: 375, toRelatedSize: SCREEN_WIDTH))
+        self.footerView.frame.size = CGSize.init(width: SCREEN_WIDTH, height: CGFloat(100.0).proportionalSizeRelatedToOther(actualSize: 375, toRelatedSize: SCREEN_WIDTH))
+        self.tblSignup.tableHeaderView = self.headerView
+        self.tblSignup.tableFooterView = self.footerView
+        setSignupData()
         // Do any additional setup after loading the view.
     }
 
@@ -135,11 +146,12 @@ extension SignUpVC : UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SignupCell", for: indexPath) as! SignupCell
+        cell.setSignupCellData(dictionary: self.arrMainData[indexPath.row] as! NSMutableDictionary)
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10//self.arrTitle.count
+        return self.arrMainData.count
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -151,7 +163,7 @@ extension SignUpVC : UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return CGFloat(50.0).proportionalSizeRelatedToOther(actualSize: 320, toRelatedSize: SCREEN_WIDTH)
+        return CGFloat(60.0).proportionalSizeRelatedToOther(actualSize: 320, toRelatedSize: SCREEN_WIDTH)
     }
 }
 

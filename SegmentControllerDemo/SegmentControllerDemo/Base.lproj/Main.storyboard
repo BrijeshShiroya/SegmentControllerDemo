@@ -1232,7 +1232,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UcT-x2-bxv" userLabel="MainView">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dw1-Az-fMc">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dw1-Az-fMc">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
@@ -1259,12 +1259,68 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnEditProfilePic" destination="ZCG-44-SA6" id="T51-o7-gEn"/>
+                        <outlet property="btnSignup" destination="aDk-RF-9Iw" id="9fV-0l-ufB"/>
+                        <outlet property="footerView" destination="kVv-V7-Rxy" id="Ioq-MO-8cZ"/>
+                        <outlet property="headerView" destination="Gak-eq-FZn" id="fUl-dt-W0g"/>
+                        <outlet property="imgViewProfile" destination="icT-Z4-qt2" id="PT3-jb-ske"/>
                         <outlet property="tblSignup" destination="dw1-Az-fMc" id="NuA-zr-jQX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2IV-Mt-oTq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="kVv-V7-Rxy" userLabel="FooterView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDk-RF-9Iw">
+                            <rect key="frame" x="77" y="31" width="221" height="39"/>
+                            <color key="backgroundColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="aDk-RF-9Iw" secondAttribute="height" multiplier="17:3" id="iDC-ol-PcD"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                            <state key="normal" title="Signup">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="aDk-RF-9Iw" firstAttribute="centerY" secondItem="kVv-V7-Rxy" secondAttribute="centerY" id="Hek-yC-sxD"/>
+                        <constraint firstItem="aDk-RF-9Iw" firstAttribute="centerX" secondItem="kVv-V7-Rxy" secondAttribute="centerX" id="cIh-Dh-Aws"/>
+                        <constraint firstItem="aDk-RF-9Iw" firstAttribute="height" secondItem="kVv-V7-Rxy" secondAttribute="height" multiplier="39/100" id="fkz-Sl-xcx"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" id="Gak-eq-FZn" userLabel="HeaderView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="icT-Z4-qt2">
+                            <rect key="frame" x="127" y="15" width="120" height="120"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="icT-Z4-qt2" secondAttribute="height" multiplier="1:1" id="BM3-09-AOD"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCG-44-SA6">
+                            <rect key="frame" x="217" y="105" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="Jy2-he-1VG"/>
+                                <constraint firstAttribute="height" constant="30" id="avG-6c-oMx"/>
+                            </constraints>
+                            <state key="normal" image="pencil"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="ZCG-44-SA6" firstAttribute="bottom" secondItem="icT-Z4-qt2" secondAttribute="bottom" id="1Ou-Sc-ZGS"/>
+                        <constraint firstItem="icT-Z4-qt2" firstAttribute="centerY" secondItem="Gak-eq-FZn" secondAttribute="centerY" id="Zvy-Cp-jcY"/>
+                        <constraint firstItem="icT-Z4-qt2" firstAttribute="centerX" secondItem="Gak-eq-FZn" secondAttribute="centerX" id="btU-0Q-vYG"/>
+                        <constraint firstItem="ZCG-44-SA6" firstAttribute="trailing" secondItem="icT-Z4-qt2" secondAttribute="trailing" id="d1w-NJ-ywi"/>
+                        <constraint firstItem="icT-Z4-qt2" firstAttribute="height" secondItem="Gak-eq-FZn" secondAttribute="height" multiplier="120/150" id="n15-pd-D30"/>
+                    </constraints>
+                </view>
             </objects>
-            <point key="canvasLocation" x="1180" y="1114"/>
+            <point key="canvasLocation" x="1146" y="1228"/>
         </scene>
         <!--Category ListVC-->
         <scene sceneID="ft5-pi-SuY">
@@ -2329,6 +2385,8 @@ Si1KMEpCSkVKSgAAAAAAAAIBAAAAAAAAAEEAAAAAAAAAAAAAAAAAAEpMA
         <image name="filter" width="64" height="64"/>
         <image name="fire" width="25" height="25"/>
         <image name="hourglass" width="25" height="25"/>
+        <image name="pencil" width="24" height="24"/>
+        <image name="profile" width="128" height="128"/>
         <image name="right-arrow" width="64" height="64"/>
         <image name="room1" width="318" height="159"/>
         <image name="share" width="25" height="25"/>
