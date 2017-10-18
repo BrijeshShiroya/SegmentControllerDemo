@@ -64,7 +64,7 @@ extension SettingVC : UITableViewDataSource, UITableViewDelegate{
       let nextVC = storyboard?.instantiateViewController(withIdentifier: "SignUpVC") as! SignUpVC
       self.pushToViewControllerWithClass(nextVC, andAnimated: true)
     case 1:
-      let nextVC = storyboard?.instantiateViewController(withIdentifier: "RedViewController") as! RedViewController
+      let nextVC = storyboard?.instantiateViewController(withIdentifier: "SignInVC") as! SignInVC
       self.pushToViewControllerWithClass(nextVC, andAnimated: true)
     case 2:
       let nextVC = storyboard?.instantiateViewController(withIdentifier: "HelpVC") as! HelpVC

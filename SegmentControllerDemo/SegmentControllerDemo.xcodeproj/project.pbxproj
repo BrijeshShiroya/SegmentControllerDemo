@@ -33,6 +33,7 @@
 		E955C9AE1F9727C200089231 /* ListingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955C9AC1F9727C200089231 /* ListingCell.swift */; };
 		E955C9AF1F9727C200089231 /* ListingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E955C9AD1F9727C200089231 /* ListingCell.xib */; };
 		E955C9B11F9727DA00089231 /* ListingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955C9B01F9727DA00089231 /* ListingVC.swift */; };
+		E955C9B31F97595200089231 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E955C9B21F97595200089231 /* SignInVC.swift */; };
 		E95A3B281F875F67009F441D /* SubCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95A3B271F875F67009F441D /* SubCategoryVC.swift */; };
 		E95A3B2B1F87626A009F441D /* SubCategoryExpandedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95A3B291F87626A009F441D /* SubCategoryExpandedCell.swift */; };
 		E95A3B2C1F87626A009F441D /* SubCategoryExpandedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E95A3B2A1F87626A009F441D /* SubCategoryExpandedCell.xib */; };
@@ -142,6 +143,7 @@
 		E955C9AC1F9727C200089231 /* ListingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingCell.swift; sourceTree = "<group>"; };
 		E955C9AD1F9727C200089231 /* ListingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListingCell.xib; sourceTree = "<group>"; };
 		E955C9B01F9727DA00089231 /* ListingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingVC.swift; sourceTree = "<group>"; };
+		E955C9B21F97595200089231 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		E95A3B271F875F67009F441D /* SubCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoryVC.swift; sourceTree = "<group>"; };
 		E95A3B291F87626A009F441D /* SubCategoryExpandedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoryExpandedCell.swift; sourceTree = "<group>"; };
 		E95A3B2A1F87626A009F441D /* SubCategoryExpandedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubCategoryExpandedCell.xib; sourceTree = "<group>"; };
@@ -386,6 +388,7 @@
 				E926FE2D1F8F8482009629A2 /* ReviewListVC.swift */,
 				E95E3EF71F96001E00A84106 /* MyPurchasePastVC.swift */,
 				E95E3EF91F9614F800A84106 /* SignUpVC.swift */,
+				E955C9B21F97595200089231 /* SignInVC.swift */,
 			);
 			path = SegmentControllerDemo;
 			sourceTree = "<group>";
@@ -694,6 +697,7 @@
 				E9BE12F51F865FBC005696E4 /* MyProfileCollapsedCell.swift in Sources */,
 				E95A3B351F87AA22009F441D /* FilterMainCategoryCell.swift in Sources */,
 				E9E62C071F84DDC2008C9618 /* FavoriteListVC.swift in Sources */,
+				E955C9B31F97595200089231 /* SignInVC.swift in Sources */,
 				E9BE12D81F85FDF0005696E4 /* AwfirButton.swift in Sources */,
 				E9BE12D61F85F63A005696E4 /* AwfirLabel.swift in Sources */,
 				E9E337171F8C9BF300207EE0 /* GMStepper.swift in Sources */,

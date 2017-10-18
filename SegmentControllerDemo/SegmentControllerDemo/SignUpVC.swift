@@ -29,7 +29,7 @@ struct placeHolder{
     static var lastname = "Lastname"
     static var mobile = "Mobile Number"
     static var email = "Email Address"
-    static var password = "password"
+    static var password = "Password"
     static var confirmPassword = "Confirm Password"
     static var gender = "Gender"
     static var dob = "Date of Birth"
@@ -84,49 +84,49 @@ class SignUpVC: UIViewController {
         dicSignup[SignupKey.isValid] = true
         arrMainData.add(dicSignup)
         
-        //firstname
+        //mobile
         dicSignup = NSMutableDictionary()
         dicSignup[SignupKey.placeholder] = placeHolder.mobile
         dicSignup[SignupKey.value] = "9558050804"
         dicSignup[SignupKey.isValid] = true
         arrMainData.add(dicSignup)
         
-        //firstname
+        //password
         dicSignup = NSMutableDictionary()
         dicSignup[SignupKey.placeholder] = placeHolder.password
         dicSignup[SignupKey.value] = "111111"
         dicSignup[SignupKey.isValid] = true
         arrMainData.add(dicSignup)
         
-        //firstname
+        //cpassword
         dicSignup = NSMutableDictionary()
         dicSignup[SignupKey.placeholder] = placeHolder.confirmPassword
         dicSignup[SignupKey.value] = "111111"
         dicSignup[SignupKey.isValid] = true
         arrMainData.add(dicSignup)
         
-        //firstname
+        //gender
         dicSignup = NSMutableDictionary()
         dicSignup[SignupKey.placeholder] = placeHolder.gender
         dicSignup[SignupKey.value] = "Male"
         dicSignup[SignupKey.isValid] = true
         arrMainData.add(dicSignup)
         
-        //firstname
+        //dob
         dicSignup = NSMutableDictionary()
         dicSignup[SignupKey.placeholder] = placeHolder.dob
         dicSignup[SignupKey.value] = "02 Aug 1994"
         dicSignup[SignupKey.isValid] = true
         arrMainData.add(dicSignup)
         
-        //firstname
+        //location
         dicSignup = NSMutableDictionary()
         dicSignup[SignupKey.placeholder] = placeHolder.location
         dicSignup[SignupKey.value] = "Ahmedabad"
         dicSignup[SignupKey.isValid] = true
         arrMainData.add(dicSignup)
         
-        //firstname
+        //category
         dicSignup = NSMutableDictionary()
         dicSignup[SignupKey.placeholder] = placeHolder.interestedCategory
         dicSignup[SignupKey.value] = "Food"

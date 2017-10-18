@@ -41,6 +41,83 @@ class ViewController: UIViewController {
         self.addChildViewController(vc2)
         vc2.view.frame = CGRect.init(x: 0, y: 0, width: self.containerView.frame.size.width, height: self.containerView.frame.size.height)
         self.containerView.addSubview(vc2.view)
+        
+        /*
+         ["ilaJxPojEhZn3mvzg3qVdnD2Wpp1”: {
+         mobile; : "+919999999999"
+         }, "lh97Ovi7GMZm80fN2fc0aW3LstB2”: {
+         mobile : "+919999999999"
+         }, "id4h95x7Feb5RxFWWURdY9S1gbn2”: {
+         mobile : "+919999999999"
+         }, "3mt0f8q69lOpv7KT1gHkwU0Lv723”: {
+         mobile : "+919999999999"
+         }, "GGF8IkLs8Jh3F2sZcl3sAh5jmdL2”: {
+         mobile : "+919999999999"
+         }, "kuwKPQQIvKc3UpwYwthdZBuwvmS2”: {
+         mobile : "+919999999999"
+         }, "LohenHVNwDV0N0uL6vcNHcOat413”: {
+         mobile : "+919999999999"
+         }, "V8v2QfsgRQcSeGIZtx66yuJ3Vnf2”: {
+         mobile : "+919999999999"
+         }, "UlMyVXona5TOmtBQoAKoD6FzXxA3”: {
+         mobile : "+919999999999"
+         }, "HpaQIoXj9FQpeG0fq7t1IEuJ91N2”: {
+         mobile : "+919999999999"
+         }]
+         */
+        let arr = NSMutableArray()
+        
+        //1
+        var dic = NSMutableDictionary()
+        dic["ilaJxPojEhZn3mvzg3qVdnD2Wpp1"] = NSDictionary.init(object: "+919999999999", forKey: "mobile" as NSCopying)
+        arr.add(dic)
+        
+        //2
+        dic = NSMutableDictionary()
+        dic["lh97Ovi7GMZm80fN2fc0aW3LstB2"] = NSDictionary.init(object: "+919999999999", forKey: "mobile" as NSCopying)
+        arr.add(dic)
+        
+        //3
+        dic = NSMutableDictionary()
+        dic["id4h95x7Feb5RxFWWURdY9S1gbn2"] = NSDictionary.init(object: "+919999999999", forKey: "mobile" as NSCopying)
+        arr.add(dic)
+        
+        //4
+        dic = NSMutableDictionary()
+        dic["3mt0f8q69lOpv7KT1gHkwU0Lv723"] = NSDictionary.init(object: "+919999999999", forKey: "mobile" as NSCopying)
+        arr.add(dic)
+        
+        //5
+        dic = NSMutableDictionary()
+        dic["GGF8IkLs8Jh3F2sZcl3sAh5jmdL2"] = NSDictionary.init(object: "+919999999999", forKey: "mobile" as NSCopying)
+        arr.add(dic)
+        
+        //6
+        dic = NSMutableDictionary()
+        dic["kuwKPQQIvKc3UpwYwthdZBuwvmS2"] = NSDictionary.init(object: "+919999999999", forKey: "mobile" as NSCopying)
+        arr.add(dic)
+        
+        //7
+        dic = NSMutableDictionary()
+        dic["LohenHVNwDV0N0uL6vcNHcOat413"] = NSDictionary.init(object: "+919999999999", forKey: "mobile" as NSCopying)
+        arr.add(dic)
+        
+        //8
+        dic = NSMutableDictionary()
+        dic["V8v2QfsgRQcSeGIZtx66yuJ3Vnf2"] = NSDictionary.init(object: "+919999999999", forKey: "mobile" as NSCopying)
+        arr.add(dic)
+        
+        //9
+        dic = NSMutableDictionary()
+        dic["UlMyVXona5TOmtBQoAKoD6FzXxA3"] = NSDictionary.init(object: "+919999999999", forKey: "mobile" as NSCopying)
+        arr.add(dic)
+        
+        //10
+        dic = NSMutableDictionary()
+        dic["HpaQIoXj9FQpeG0fq7t1IEuJ91N2"] = NSDictionary.init(object: "+919999999999", forKey: "mobile" as NSCopying)
+        arr.add(dic)
+        
+        print(arr.value(forKeyPath: "mobile"))
        
         // Do any additional setup after loading the view, typically from a nib.
     }
