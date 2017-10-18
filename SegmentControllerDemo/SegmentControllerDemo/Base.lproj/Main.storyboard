@@ -925,12 +925,12 @@
                                     <constraint firstAttribute="height" constant="385" id="z7s-Es-6zP"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iYJ-JX-078">
-                                <rect key="frame" x="167.5" y="20" width="39" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iYJ-JX-078">
+                                <rect key="frame" x="175.5" y="20" width="24" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="6em-f9-h3M"/>
                                 </constraints>
-                                <state key="normal" title="Close"/>
+                                <state key="normal" image="close-1"/>
                                 <connections>
                                     <action selector="btnCloseClicked:" destination="Dzt-cl-PaG" eventType="touchUpInside" id="m0y-Lr-W8v"/>
                                 </connections>
@@ -1216,6 +1216,55 @@
                 </view>
             </objects>
             <point key="canvasLocation" x="3508" y="-260.41979010494754"/>
+        </scene>
+        <!--Sign UpVC-->
+        <scene sceneID="oOn-V8-ssm">
+            <objects>
+                <viewController storyboardIdentifier="SignUpVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9cF-R2-gZU" customClass="SignUpVC" customModule="SegmentControllerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jpp-tW-By9"/>
+                        <viewControllerLayoutGuide type="bottom" id="efp-OA-6Fc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g8D-Gs-Vov">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UcT-x2-bxv" userLabel="MainView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dw1-Az-fMc">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="9cF-R2-gZU" id="71G-AK-CAN"/>
+                                            <outlet property="delegate" destination="9cF-R2-gZU" id="0Xf-bo-tHB"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="dw1-Az-fMc" firstAttribute="top" secondItem="UcT-x2-bxv" secondAttribute="top" id="1Vd-Vo-dZ0"/>
+                                    <constraint firstAttribute="bottom" secondItem="dw1-Az-fMc" secondAttribute="bottom" id="9Qm-Nx-894"/>
+                                    <constraint firstItem="dw1-Az-fMc" firstAttribute="leading" secondItem="UcT-x2-bxv" secondAttribute="leading" id="T53-sO-4bX"/>
+                                    <constraint firstAttribute="trailing" secondItem="dw1-Az-fMc" secondAttribute="trailing" id="plY-Ll-mEC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="efp-OA-6Fc" firstAttribute="top" secondItem="UcT-x2-bxv" secondAttribute="bottom" id="7Zi-Pa-aXb"/>
+                            <constraint firstAttribute="trailing" secondItem="UcT-x2-bxv" secondAttribute="trailing" id="dQr-yo-FMf"/>
+                            <constraint firstItem="UcT-x2-bxv" firstAttribute="top" secondItem="g8D-Gs-Vov" secondAttribute="top" id="vGO-3d-XRr"/>
+                            <constraint firstItem="UcT-x2-bxv" firstAttribute="leading" secondItem="g8D-Gs-Vov" secondAttribute="leading" id="ves-DZ-5Wv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tblSignup" destination="dw1-Az-fMc" id="NuA-zr-jQX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2IV-Mt-oTq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1180" y="1114"/>
         </scene>
         <!--Category ListVC-->
         <scene sceneID="ft5-pi-SuY">
@@ -2273,6 +2322,7 @@ Si1KMEpCSkVKSgAAAAAAAAIBAAAAAAAAAEEAAAAAAAAAAAAAAAAAAEpMA
 </mutableData>
         </image>
         <image name="c" width="70" height="44"/>
+        <image name="close-1" width="24" height="24"/>
         <image name="cross" width="64" height="64"/>
         <image name="e" width="70" height="44"/>
         <image name="fav-remove" width="25" height="25"/>

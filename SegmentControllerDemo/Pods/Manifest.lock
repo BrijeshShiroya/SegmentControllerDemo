@@ -1,20 +1,32 @@
 PODS:
+  - Alamofire (4.5.1)
+  - AlamofireSwiftyJSON (1.0.0):
+    - Alamofire (~> 4.0)
+    - SwiftyJSON (~> 3.0)
   - EasyTransition (2.0)
+  - IQKeyboardManagerSwift (5.0.4)
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
   - STPopup (1.8.2)
+  - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
+  - AlamofireSwiftyJSON
   - EasyTransition (~> 2.0)
+  - IQKeyboardManagerSwift (~> 5.0.0)
   - SDWebImage (~> 4.0)
   - STPopup
 
 SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  AlamofireSwiftyJSON: 78908b766483a28aa5cc90fd191a687467042973
   EasyTransition: 82ed335e8cf9760329f8b0ccc7b99e09ff946e73
+  IQKeyboardManagerSwift: a0592bb636b10a9a1cf75d2b2c61144226226c84
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   STPopup: b69b3e7484ef7d2baec5f9ab2939f8a7bcdfe218
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 2f73100c2cd4eddc4f84c2494eb1632957f4d2f3
+PODFILE CHECKSUM: 3063efa5fc6c4d0bddfe731e0d98981a016d58b4
 
 COCOAPODS: 1.2.1

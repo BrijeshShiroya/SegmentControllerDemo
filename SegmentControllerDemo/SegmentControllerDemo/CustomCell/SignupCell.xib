@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SignupCell" rowHeight="58" id="KGk-i7-Jjw" customClass="SignupCell" customModule="SegmentControllerDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Firstname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3Y-yM-Gdc" customClass="AwfirLabel" customModule="SegmentControllerDemo" customModuleProvider="target">
+                        <rect key="frame" x="8" y="4" width="304" height="13"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="iPhoneFontSize">
+                                <real key="value" value="11"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RLZ-UH-otD">
+                        <rect key="frame" x="8" y="19.5" width="304" height="30"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="h3Y-yM-Gdc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="JKt-ww-7ZQ"/>
+                    <constraint firstItem="RLZ-UH-otD" firstAttribute="width" secondItem="h3Y-yM-Gdc" secondAttribute="width" id="L7Z-jU-UrI"/>
+                    <constraint firstItem="RLZ-UH-otD" firstAttribute="top" secondItem="h3Y-yM-Gdc" secondAttribute="bottom" constant="2.5" id="Sgv-k3-koA"/>
+                    <constraint firstItem="h3Y-yM-Gdc" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="304/320" id="Xxd-rK-UIz"/>
+                    <constraint firstItem="RLZ-UH-otD" firstAttribute="centerX" secondItem="h3Y-yM-Gdc" secondAttribute="centerX" id="f16-Wm-4BX"/>
+                    <constraint firstAttribute="bottom" secondItem="RLZ-UH-otD" secondAttribute="bottom" id="hXR-Ct-stb"/>
+                    <constraint firstItem="h3Y-yM-Gdc" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="13/50" id="m69-dM-lx9"/>
+                    <constraint firstItem="h3Y-yM-Gdc" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="rpP-gy-McI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblPlaceholderTitle" destination="h3Y-yM-Gdc" id="AjH-as-6RF"/>
+                <outlet property="txtSignup" destination="RLZ-UH-otD" id="t0t-vj-CIG"/>
+            </connections>
+            <point key="canvasLocation" x="33" y="94"/>
+        </tableViewCell>
+    </objects>
+</document>

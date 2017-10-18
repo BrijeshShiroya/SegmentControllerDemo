@@ -141,9 +141,11 @@ class HomeVC: UIViewController,ViewMoreDelegate {
             
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "ViewMoreVC") as! ViewMoreVC
             vc.delegate = self
+            vc.contentSizeInPopup = CGSize(width: CGFloat(289.0).getProprtionalWidth(), height: CGFloat(385.0).getProprtionalHeight())
             let stVC = STPopupController.init(rootViewController: vc)
             //  stVC.backgroundView?.backgroundColor = UIColor.black
             stVC.style = .formSheet
+            stVC.navigationBarHidden = true
             stVC.transitionStyle = .fade
             stVC.present(in: self)
             
