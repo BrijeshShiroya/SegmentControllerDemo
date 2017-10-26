@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import STPopup
 
 class MyPurchasePastVC: UIViewController {
     //MARK: - Outlets -
@@ -29,7 +30,20 @@ class MyPurchasePastVC: UIViewController {
     //MARK: - Other functions
     
     //MARK: - Actions
-
+    
+    func btnReviewDealClick(sender:UIButton){
+        let vc = STORYBOARD_MAIN.instantiateViewController(withIdentifier: "AddReviewVC") as! AddReviewVC
+        let width = SCREEN_WIDTH - 16
+        vc.contentSizeInPopup = CGSize(width: width, height: CGFloat(245.0).proportionalSizeRelatedToOther(actualSize: 375.0, toRelatedSize: width))
+        let stVC = STPopupController.init(rootViewController: vc)
+        stVC.backgroundView?.backgroundColor = UIColor.clear
+        stVC.navigationBar.tintColor = UIColor.lightGray
+        stVC.navigationBar.backgroundColor = UIColor.lightGray
+        stVC.style = .formSheet
+        stVC.transitionStyle = .fade
+        stVC.present(in: self)
+    }
+ 
 }
 //MARK: - TableView Delegates -
 
@@ -40,6 +54,7 @@ extension MyPurchasePastVC : UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PurchasePastCell", for: indexPath) as! PurchasePastCell
+        cell.btnReviewDeal.addTarget(self, action: #selector(self.btnReviewDealClick(sender:)), for: .touchUpInside)
         return cell
     }
     

@@ -23,7 +23,7 @@ class AwfirLabel : UILabel {
     let bounds = UIScreen.main.bounds
     let height = bounds.size.height
     switch height {
-    case 568.0: //iphone 5, 5s SE0 => 4 inch
+    case 568.0: //iphone 5, 5s SE => 4 inch
       calculatedFont = UIFont(name: currentFontName, size: fontSize)
       self.font = calculatedFont
       break

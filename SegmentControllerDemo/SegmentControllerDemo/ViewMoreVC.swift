@@ -25,6 +25,7 @@ class ViewMoreVC: UIViewController {
         super.viewDidLoad()
         self.contentSizeInPopup = CGSize(width: CGFloat(289.0).getProprtionalWidth(), height: CGFloat(385.0).getProprtionalHeight())
         
+        
         // Do any additional setup after loading the view.
     }
     

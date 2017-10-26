@@ -12,6 +12,7 @@ class PurchasePastCell: UITableViewCell {
     //MARK :- Outlets
     
     
+    @IBOutlet var btnReviewDeal: AwfirButton!
     //MARK: - Life cycle
     override func awakeFromNib() {
         super.awakeFromNib()

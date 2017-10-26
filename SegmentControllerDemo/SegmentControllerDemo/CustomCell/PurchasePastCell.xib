@@ -91,6 +91,9 @@
                     <constraint firstItem="3uD-07-lrf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bzj-F3-f4c"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="btnReviewDeal" destination="zAf-s1-KSc" id="RBM-8c-mzP"/>
+            </connections>
             <point key="canvasLocation" x="25" y="72.5"/>
         </tableViewCell>
     </objects>
