@@ -76,7 +76,7 @@ class HomeVC: UIViewController,ViewMoreDelegate {
         
         
         segment?.backgroundColor = UIColor.red
-        segment?.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 64)
+        segment?.frame = CGRect(x: 0, y: 64.0, width: UIScreen.main.bounds.width, height: 64)
         segment?.verticalDividerEnabled = false
         segment?.segmentWidthStyle = .fixed
         segment?.indicatorWidthPercent = 0.8
@@ -93,7 +93,7 @@ class HomeVC: UIViewController,ViewMoreDelegate {
         self.view.addSubview(segment!)
         let homeScrollVC = self.storyboard?.instantiateViewController(withIdentifier: "GreenViewController") as! GreenViewController
         self.addChildViewController(homeScrollVC)
-        homeScrollVC.view.frame = CGRect.init(x: 0, y: 0, width: self.containerView.frame.size.width, height: self.containerView.frame.size.height)
+        homeScrollVC.view.frame = CGRect.init(x: 0, y: 64.0, width: self.containerView.frame.size.width, height: self.containerView.frame.size.height - 64.0)
         self.containerView.addSubview(homeScrollVC.view)
     }
     
@@ -104,7 +104,7 @@ class HomeVC: UIViewController,ViewMoreDelegate {
         if selectedIndex == 0{
             let homeScrollVC = self.storyboard?.instantiateViewController(withIdentifier: "GreenViewController") as! GreenViewController
             self.addChildViewController(homeScrollVC)
-            homeScrollVC.view.frame = CGRect.init(x: 0, y: 0, width: self.containerView.frame.size.width, height: self.containerView.frame.size.height)
+            homeScrollVC.view.frame = CGRect.init(x: 0, y: 64.0, width: self.containerView.frame.size.width, height: self.containerView.frame.size.height)
             self.containerView.addSubview(homeScrollVC.view)
             //            let viewControllers:[UIViewController] = self.childViewControllers
             //            for viewContoller in viewControllers{
