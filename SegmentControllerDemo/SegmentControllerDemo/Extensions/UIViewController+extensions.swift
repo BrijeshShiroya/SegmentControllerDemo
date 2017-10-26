@@ -67,24 +67,6 @@ extension UIViewController{
         }
     }
     
-    //setup menubar button
-    func setupMenuBarButtonItems(isleftButton:Bool, isRightButton:Bool){
-        if isleftButton{
-            self.navigationItem.leftBarButtonItem =  UIBarButtonItem.init(image: UIImage.init(named: "menu"), style: .plain, target: self, action: #selector(self.leftSideMenuButtonPressed))
-        }
-        if isRightButton{
-            self.navigationItem.rightBarButtonItem =  UIBarButtonItem.init(image: UIImage.init(named: "menu"), style: .plain, target: self, action: #selector(self.rightSideMenuButtonPressed))
-        }
-    }
-    
-    func leftSideMenuButtonPressed(){
-        print("Pressed left")
-    }
-    
-    func rightSideMenuButtonPressed(){
-        print("Pressed right")
-    }
-    
     /*  ___________________________________________
      | isLeft           isRightFirst  isRightSecond|
      ----------------------------------------------
@@ -128,6 +110,11 @@ extension UIViewController{
     func didTapSearchButton(){
         print("call search")
     }
+    
+    func leftSideMenuButtonPressed(){
+        print("Pressed left")
+    }
+    
     
 }
 

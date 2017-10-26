@@ -39,9 +39,24 @@ class SubCategoryVC: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.setTitle(strTitle: "Goods")
-        self.navigationController?.isNavigationBarHidden = false
+       self.setNavigationBar()
     }
+    
+    //MARK:- NavigationBar -
+    
+    //resert navigationbar
+    func setNavigationBar(){
+        self.setupNavigationBar(isLeft: false, isRightFirst: true, isRightSecond: true)
+        self.navigationController?.setTitle(strTitle: "Goods")
+    }
+    override func didTapSearchButton() {
+        print("search tap from viewController")
+    }
+    
+    override func didTapCartButton() {
+        print("cart tap from viewController")
+    }
+   
     
     //MARK: - Other functions -
     

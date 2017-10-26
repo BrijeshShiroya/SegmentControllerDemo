@@ -61,11 +61,17 @@ class DealDetailVC: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        APPDELEGATE.tabBarController?.tabBar.isHidden = true
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = false
+        APPDELEGATE.tabBarController?.tabBar.isHidden = false
     }
     
     //MARK: - Other functions

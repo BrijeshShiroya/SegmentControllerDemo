@@ -19,6 +19,7 @@ class HomeVC: UIViewController,ViewMoreDelegate {
     //MARK: - Life cycle -
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setNavigationBar()
         self.setSegment()
         
         // Do any additional setup after loading the view.
@@ -32,6 +33,26 @@ class HomeVC: UIViewController,ViewMoreDelegate {
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setTitle(strTitle: "")
     }
+    
+    //MARK:- NavigationBar -
+    
+    //resert navigationbar
+    func setNavigationBar(){
+        self.setupNavigationBar(isLeft: true, isRightFirst: true, isRightSecond: true)
+        self.navigationController?.setTitle(strTitle: "")
+    }
+    override func didTapSearchButton() {
+        print("search tap from viewController")
+    }
+    
+    override func didTapCartButton() {
+        print("cart tap from viewController")
+    }
+    
+    override func leftSideMenuButtonPressed() {
+        print("Select location tap from viewController")
+    }
+    
     
    
     //MARK: - Other functions -

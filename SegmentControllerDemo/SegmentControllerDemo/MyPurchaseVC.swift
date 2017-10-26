@@ -82,7 +82,7 @@ extension MyPurchaseVC : UITableViewDataSource, UITableViewDelegate{
         return 10//self.arrTitle.count
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return CGFloat(170.5).getProprtionalHeight()
+        return 172.5//CGFloat(170.5).getProprtionalHeight()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

@@ -8,10 +8,14 @@
 
 import UIKit
 import EasyTransition
+import STPopup
 
-class CategoryListVC: UIViewController {
+
+class CategoryListVC: UIViewController,SortByDelegate {
     //MARK: - Outlets -
     
+    @IBOutlet var btnSortBy: UIButton!
+    @IBOutlet var btnFilter: UIButton!
     @IBOutlet var filterView: UIView!
     @IBOutlet var tblCategoryList: UITableView!
     //MARK: - Variables -
@@ -27,6 +31,15 @@ class CategoryListVC: UIViewController {
         self.setupNavigationBar(isLeft: false, isRightFirst: true, isRightSecond: true)
         self.navigationController?.setTitle(strTitle: strCategoryName)
         setData()
+        self.btnSortBy.layer.borderWidth = 2.0
+        self.btnSortBy.layer.borderColor = UIColor.darkGray.cgColor
+        self.btnSortBy.layer.cornerRadius = 5.0
+        self.btnSortBy.layer.masksToBounds = true
+        
+        self.btnFilter.layer.borderWidth = 2.0
+        self.btnFilter.layer.borderColor = UIColor.darkGray.cgColor
+        self.btnFilter.layer.cornerRadius = 5.0
+        self.btnFilter.layer.masksToBounds = true
         // Do any additional setup after loading the view.
     }
     
@@ -148,6 +161,23 @@ class CategoryListVC: UIViewController {
         //    transition?.blurEffectStyle = .light
         transition?.margins = UIEdgeInsets(top: 64.0, left: 60, bottom: 0, right: 0)
         present(menuVC, animated: true, completion: nil)
+    }
+    
+    @IBAction func btnSortByClicked(_ sender: UIButton) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SortByVC") as! SortByVC
+        vc.delegate = self
+        vc.contentSizeInPopup = CGSize(width: CGFloat(289.0).getProprtionalWidth(), height: 250.0)
+        let stVC = STPopupController.init(rootViewController: vc)
+        //  stVC.backgroundView?.backgroundColor = UIColor.black
+        stVC.style = .bottomSheet
+        stVC.navigationBarHidden = true
+        stVC.present(in: self)
+    }
+    
+    //MARK: - SortByDelegate
+    
+    func sortByFinish(){
+        print("sort by finish")
     }
     
 }

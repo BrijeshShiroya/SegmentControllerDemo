@@ -184,7 +184,7 @@
     <resources>
         <image name="StarEmpty" width="22" height="22"/>
         <image name="StarFull" width="22" height="22"/>
-        <image name="fav-remove" width="64" height="64"/>
+        <image name="fav-remove" width="25" height="25"/>
         <image name="fav.png" width="16" height="16"/>
         <image name="room1" width="318" height="159"/>
     </resources>

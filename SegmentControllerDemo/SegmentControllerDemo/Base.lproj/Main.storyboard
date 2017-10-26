@@ -12,6 +12,126 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Sort ByVC-->
+        <scene sceneID="b7q-1J-WwQ">
+            <objects>
+                <viewController storyboardIdentifier="SortByVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ls2-tS-5NQ" customClass="SortByVC" customModule="SegmentControllerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SI7-Zm-Rig"/>
+                        <viewControllerLayoutGuide type="bottom" id="8qx-yD-ECZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mtn-wy-ywQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCM-2T-9Y2">
+                                <rect key="frame" x="64" y="27" width="247" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="247" id="1cV-eE-OiA"/>
+                                    <constraint firstAttribute="height" constant="21" id="7wM-hT-5Mw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <inset key="titleEdgeInsets" minX="35" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Popular" image="filter">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJG-7Y-3Vy">
+                                <rect key="frame" x="64" y="62" width="247" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <inset key="titleEdgeInsets" minX="35" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Distance" image="sorting">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQf-ak-eci">
+                                <rect key="frame" x="64" y="97" width="247" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <inset key="titleEdgeInsets" minX="35" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Price low to high" image="filter">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVh-dw-PFU">
+                                <rect key="frame" x="64" y="132" width="247" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <inset key="titleEdgeInsets" minX="35" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Price high to low" image="sorting">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQ5-9n-xWa">
+                                <rect key="frame" x="64" y="167" width="247" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <inset key="titleEdgeInsets" minX="35" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Rating" image="filter">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KqK-PA-Lut">
+                                <rect key="frame" x="64" y="202" width="247" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <inset key="titleEdgeInsets" minX="35" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Newest First" image="sorting">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMd-uV-p4e">
+                                <rect key="frame" x="324" y="0.0" width="51" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="69F-HK-iG2"/>
+                                    <constraint firstAttribute="width" constant="51" id="u0R-yA-wac"/>
+                                </constraints>
+                                <state key="normal" image="close-1"/>
+                                <connections>
+                                    <action selector="btnCloseClicked:" destination="Ls2-tS-5NQ" eventType="touchUpInside" id="Zh9-f6-HmR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mQ5-9n-xWa" firstAttribute="height" secondItem="lVh-dw-PFU" secondAttribute="height" id="0m4-ga-MYw"/>
+                            <constraint firstItem="VJG-7Y-3Vy" firstAttribute="height" secondItem="TCM-2T-9Y2" secondAttribute="height" id="4bT-r0-AGh"/>
+                            <constraint firstItem="TCM-2T-9Y2" firstAttribute="top" secondItem="SI7-Zm-Rig" secondAttribute="bottom" constant="27" id="Cgw-i3-0UV"/>
+                            <constraint firstItem="VJG-7Y-3Vy" firstAttribute="centerX" secondItem="TCM-2T-9Y2" secondAttribute="centerX" id="DX2-6g-pua"/>
+                            <constraint firstItem="VJG-7Y-3Vy" firstAttribute="width" secondItem="TCM-2T-9Y2" secondAttribute="width" id="FFS-qQ-DCO"/>
+                            <constraint firstItem="mQ5-9n-xWa" firstAttribute="centerX" secondItem="lVh-dw-PFU" secondAttribute="centerX" id="Hjh-Dy-ziM"/>
+                            <constraint firstItem="VQf-ak-eci" firstAttribute="top" secondItem="VJG-7Y-3Vy" secondAttribute="bottom" constant="14" id="JJY-FN-P5l"/>
+                            <constraint firstItem="lVh-dw-PFU" firstAttribute="height" secondItem="VQf-ak-eci" secondAttribute="height" id="M6K-Lr-swP"/>
+                            <constraint firstItem="VQf-ak-eci" firstAttribute="height" secondItem="VJG-7Y-3Vy" secondAttribute="height" id="SBX-1w-7Fy"/>
+                            <constraint firstItem="VJG-7Y-3Vy" firstAttribute="top" secondItem="TCM-2T-9Y2" secondAttribute="bottom" constant="14" id="SNe-uh-brb"/>
+                            <constraint firstItem="KqK-PA-Lut" firstAttribute="centerX" secondItem="mQ5-9n-xWa" secondAttribute="centerX" id="Vat-sO-aZL"/>
+                            <constraint firstItem="mQ5-9n-xWa" firstAttribute="top" secondItem="lVh-dw-PFU" secondAttribute="bottom" constant="14" id="W37-Jb-4QY"/>
+                            <constraint firstItem="KqK-PA-Lut" firstAttribute="height" secondItem="mQ5-9n-xWa" secondAttribute="height" id="W4Q-Bc-3Nh"/>
+                            <constraint firstItem="lVh-dw-PFU" firstAttribute="top" secondItem="VQf-ak-eci" secondAttribute="bottom" constant="14" id="WSQ-HY-bKd"/>
+                            <constraint firstItem="KqK-PA-Lut" firstAttribute="top" secondItem="mQ5-9n-xWa" secondAttribute="bottom" constant="14" id="WzU-rT-zxf"/>
+                            <constraint firstItem="VQf-ak-eci" firstAttribute="width" secondItem="VJG-7Y-3Vy" secondAttribute="width" id="Y1v-Ea-5uf"/>
+                            <constraint firstItem="KMd-uV-p4e" firstAttribute="top" secondItem="SI7-Zm-Rig" secondAttribute="bottom" id="cbB-U2-EeR"/>
+                            <constraint firstItem="lVh-dw-PFU" firstAttribute="width" secondItem="VQf-ak-eci" secondAttribute="width" id="dOX-QK-LHf"/>
+                            <constraint firstItem="lVh-dw-PFU" firstAttribute="centerX" secondItem="VQf-ak-eci" secondAttribute="centerX" id="kTc-mr-Ykn"/>
+                            <constraint firstItem="TCM-2T-9Y2" firstAttribute="centerX" secondItem="Mtn-wy-ywQ" secondAttribute="centerX" id="l4t-p3-ntf"/>
+                            <constraint firstAttribute="trailing" secondItem="KMd-uV-p4e" secondAttribute="trailing" id="msl-zQ-1BT"/>
+                            <constraint firstItem="KqK-PA-Lut" firstAttribute="width" secondItem="mQ5-9n-xWa" secondAttribute="width" id="rjU-XN-wwL"/>
+                            <constraint firstItem="VQf-ak-eci" firstAttribute="centerX" secondItem="VJG-7Y-3Vy" secondAttribute="centerX" id="to7-WO-133"/>
+                            <constraint firstItem="mQ5-9n-xWa" firstAttribute="width" secondItem="lVh-dw-PFU" secondAttribute="width" id="yFi-yC-c8E"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="250"/>
+                    <connections>
+                        <outlet property="btnClose" destination="KMd-uV-p4e" id="P42-Mk-N8K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1jr-qC-0TC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-228" y="365.21739130434787"/>
+        </scene>
         <!--HomeVC-->
         <scene sceneID="JN6-0D-Hdg">
             <objects>
@@ -1337,26 +1457,21 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CVD-zO-OZn" userLabel="MainView">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8rN-Du-UzN">
-                                        <rect key="frame" x="67.5" y="492" width="240" height="128"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zld-Fw-toy">
+                                        <rect key="frame" x="296" y="5" width="68" height="30"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="128" id="Feh-1c-Kte"/>
-                                            <constraint firstAttribute="width" constant="240" id="v6y-1l-d2f"/>
+                                            <constraint firstAttribute="width" constant="68" id="Dir-GM-s2Y"/>
+                                            <constraint firstAttribute="height" constant="30" id="vpd-aX-V1b"/>
                                         </constraints>
-                                    </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEi-Ti-eNZ">
-                                        <rect key="frame" x="270" y="8" width="105" height="30"/>
-                                        <color key="backgroundColor" red="1" green="0.53371317679999997" blue="0.1577428344" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="24S-fD-MSO"/>
-                                        </constraints>
-                                        <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="Filter" image="filter">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Sort by" image="sorting">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="btnFilterClicked:" destination="RxL-JF-G8L" eventType="touchUpInside" id="hnA-vH-r2u"/>
+                                            <action selector="btnSortByClicked:" destination="RxL-JF-G8L" eventType="touchUpInside" id="KBh-rT-oH5"/>
                                         </connections>
                                     </button>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="o0H-X8-dqE">
@@ -1367,18 +1482,34 @@
                                             <outlet property="delegate" destination="RxL-JF-G8L" id="neS-f8-ffy"/>
                                         </connections>
                                     </tableView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEi-Ti-eNZ">
+                                        <rect key="frame" x="220" y="5" width="68" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="6SJ-xg-ZRO"/>
+                                            <constraint firstAttribute="width" constant="68" id="oyX-37-6li"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Filter" image="filter">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnFilterClicked:" destination="RxL-JF-G8L" eventType="touchUpInside" id="hnA-vH-r2u"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.44148089169999999" green="0.57396994430000003" blue="0.37216361460000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="hEi-Ti-eNZ" secondAttribute="trailing" id="Otc-u5-t5f"/>
-                                    <constraint firstItem="8rN-Du-UzN" firstAttribute="centerX" secondItem="CVD-zO-OZn" secondAttribute="centerX" id="Ywo-hR-hkJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="zld-Fw-toy" secondAttribute="trailing" constant="11" id="7b3-26-oSI"/>
+                                    <constraint firstItem="zld-Fw-toy" firstAttribute="leading" secondItem="hEi-Ti-eNZ" secondAttribute="trailing" constant="8" id="PWy-jI-ZxW"/>
+                                    <constraint firstItem="hEi-Ti-eNZ" firstAttribute="centerY" secondItem="zld-Fw-toy" secondAttribute="centerY" id="QKV-Kl-k0n"/>
                                     <constraint firstAttribute="trailing" secondItem="o0H-X8-dqE" secondAttribute="trailing" id="Z1q-QZ-cf7"/>
-                                    <constraint firstItem="hEi-Ti-eNZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="CVD-zO-OZn" secondAttribute="leading" constant="20" symbolic="YES" id="fHT-Tb-DAe"/>
                                     <constraint firstItem="o0H-X8-dqE" firstAttribute="leading" secondItem="CVD-zO-OZn" secondAttribute="leading" id="hQ0-lP-yYT"/>
                                     <constraint firstItem="o0H-X8-dqE" firstAttribute="top" secondItem="CVD-zO-OZn" secondAttribute="top" constant="40" id="nAD-4d-1z9"/>
-                                    <constraint firstItem="hEi-Ti-eNZ" firstAttribute="top" secondItem="CVD-zO-OZn" secondAttribute="top" constant="8" id="nbF-Tv-RvO"/>
+                                    <constraint firstItem="zld-Fw-toy" firstAttribute="top" secondItem="CVD-zO-OZn" secondAttribute="top" constant="5" id="noW-YT-I0t"/>
                                     <constraint firstAttribute="bottom" secondItem="o0H-X8-dqE" secondAttribute="bottom" id="u7F-X0-hBe"/>
-                                    <constraint firstAttribute="bottom" secondItem="8rN-Du-UzN" secondAttribute="bottom" constant="27" id="uFN-zF-Atl"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -1391,6 +1522,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnFilter" destination="hEi-Ti-eNZ" id="YmZ-lw-a2r"/>
+                        <outlet property="btnSortBy" destination="zld-Fw-toy" id="lHN-oM-2VD"/>
                         <outlet property="tblCategoryList" destination="o0H-X8-dqE" id="oXv-Kf-5Da"/>
                     </connections>
                 </viewController>
@@ -1457,7 +1590,7 @@
                     </constraints>
                 </view>
             </objects>
-            <point key="canvasLocation" x="1946" y="1009"/>
+            <point key="canvasLocation" x="1944.8" y="1008.8455772113944"/>
         </scene>
         <!--Favorite ListVC-->
         <scene sceneID="t3b-Ho-h8A">
@@ -2641,7 +2774,7 @@ Si1KMEpCSkVKSgAAAAAAAAIBAAAAAAAAAEEAAAAAAAAAAAAAAAAAAEpMA
         <image name="e" width="70" height="44"/>
         <image name="fav-remove" width="25" height="25"/>
         <image name="fb" width="32" height="32"/>
-        <image name="filter" width="64" height="64"/>
+        <image name="filter" width="12" height="12"/>
         <image name="fire" width="25" height="25"/>
         <image name="google+" width="32" height="32"/>
         <image name="hourglass" width="25" height="25"/>
@@ -2651,5 +2784,6 @@ Si1KMEpCSkVKSgAAAAAAAAIBAAAAAAAAAEEAAAAAAAAAAAAAAAAAAEpMA
         <image name="right-arrow" width="64" height="64"/>
         <image name="room1" width="318" height="159"/>
         <image name="share" width="25" height="25"/>
+        <image name="sorting" width="12" height="12"/>
     </resources>
 </document>
