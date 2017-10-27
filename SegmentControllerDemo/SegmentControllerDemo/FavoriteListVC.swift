@@ -13,13 +13,16 @@ class FavoriteListVC: UIViewController {
     @IBOutlet var tblFavoriteList: UITableView!
     
     //MARK: - Variables -
-    
+    var refreshControl: UIRefreshControl!
     //MARK: - Life cycle -
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.setTitle(strTitle: "My Favorite")
         tblFavoriteList.register(UINib(nibName: "FavoriteListCell", bundle: nil), forCellReuseIdentifier: "FavoriteListCell")
-        
+        refreshControl = UIRefreshControl()
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.addTarget(self, action: #selector(self.refresh), for: .valueChanged)
+        tblFavoriteList.addSubview(refreshControl)
         // Do any additional setup after loading the view.
     }
     
@@ -36,6 +39,10 @@ class FavoriteListVC: UIViewController {
     }
     
     //MARK: - Actions -
+    func refresh(){
+        self.tblFavoriteList.reloadData()
+        refreshControl.endRefreshing()
+    }
     
     //MARK: - Other functions -
     

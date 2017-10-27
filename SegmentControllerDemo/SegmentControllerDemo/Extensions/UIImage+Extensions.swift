@@ -115,6 +115,98 @@ extension UIImage {
         
         return scaledImage!
     }
+/*
+    //MARK: - Image scale and rotate
+ func scaleAndRotateImage() -> UIImage {
+        let imgViewTemp = UIImageView(image: self)
+        let kMaxResolution = imgViewTemp.frame.size.width / 2
+        let imgRef = self.cgImage!
+        let width: CGFloat = CGFloat.init(imgRef.width)//CGFloat(CGImageGetWidth(imgRef))
+        let height: CGFloat = CGFloat(CGImageGetHeight(imgRef))
+        var transform = CGAffineTransformIdentity
+        var bounds = CGRectMake(0, 0, width, height)
+        if width > kMaxResolution || height > kMaxResolution {
+            let ratio: CGFloat = width / height
+            if ratio > 1 {
+                bounds.size.width = kMaxResolution
+                bounds.size.height = bounds.size.width / ratio
+            }
+            else {
+                bounds.size.height = kMaxResolution
+                bounds.size.width = bounds.size.height * ratio
+            }
+        }
+        let scaleRatio: CGFloat = bounds.size.width / width
+        let imageSize = CGSizeMake(CGFloat(CGImageGetWidth(imgRef)), CGFloat(CGImageGetHeight(imgRef)))
+        var boundHeight: CGFloat
+        let orient = image.imageOrientation
+        switch orient {
+        case .Up:
+            //EXIF = 1
+            transform = CGAffineTransformIdentity
+        case .UpMirrored:
+            //EXIF = 2
+            transform = CGAffineTransformMakeTranslation(imageSize.width, 0.0)
+            transform = CGAffineTransformScale(transform, -1.0, 1.0)
+        case .Down:
+            //EXIF = 3
+            transform = CGAffineTransformMakeTranslation(imageSize.width, imageSize.height)
+            transform = CGAffineTransformRotate(transform, CGFloat(M_PI))
+        case .DownMirrored:
+            //EXIF = 4
+            transform = CGAffineTransformMakeTranslation(0.0, imageSize.height)
+            transform = CGAffineTransformScale(transform, 1.0, -1.0)
+        case .LeftMirrored:
+            //EXIF = 5
+            boundHeight = bounds.size.height
+            bounds.size.height = bounds.size.width
+            bounds.size.width = boundHeight
+            transform = CGAffineTransformMakeTranslation(imageSize.height, imageSize.width)
+            transform = CGAffineTransformScale(transform, -1.0, 1.0)
+            transform = CGAffineTransformRotate(transform, 3.0 * CGFloat(M_PI / 2.0))
+        case .Left:
+            //EXIF = 6
+            boundHeight = bounds.size.height
+            bounds.size.height = bounds.size.width
+            bounds.size.width = boundHeight
+            transform = CGAffineTransformMakeTranslation(0.0, imageSize.width)
+            transform = CGAffineTransformRotate(transform, 3.0 * CGFloat(M_PI / 2.0))
+        case .RightMirrored:
+            //EXIF = 7
+            boundHeight = bounds.size.height
+            bounds.size.height = bounds.size.width
+            bounds.size.width = boundHeight
+            transform = CGAffineTransformMakeScale(-1.0, 1.0)
+            transform = CGAffineTransformRotate(transform, CGFloat(M_PI / 2.0))
+        case .Right:
+            //EXIF = 8
+            boundHeight = bounds.size.height
+            bounds.size.height = bounds.size.width
+            bounds.size.width = boundHeight
+            transform = CGAffineTransformMakeTranslation(imageSize.height, 0.0)
+            transform = CGAffineTransformRotate(transform, CGFloat(M_PI / 2.0))
+        default:
+            let error: NSError?
+            NSException.raise(NSInternalInconsistencyException, format: "Invalid image orientation", arguments:getVaList([error ?? "nil"]))
+        }
+        
+        UIGraphicsBeginImageContext(bounds.size)
+        let context = UIGraphicsGetCurrentContext()
+        if orient == .Right || orient == .Left {
+            CGContextScaleCTM(context, -scaleRatio, scaleRatio)
+            CGContextTranslateCTM(context, -height, 0)
+        }
+        else {
+            CGContextScaleCTM(context, scaleRatio, -scaleRatio)
+            CGContextTranslateCTM(context, 0, -height)
+        }
+        CGContextConcatCTM(context, transform)
+        CGContextDrawImage(UIGraphicsGetCurrentContext(), CGRectMake(0, 0, width, height), imgRef)
+        let imageCopy = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return imageCopy
+    }
+ */
 }
 
 

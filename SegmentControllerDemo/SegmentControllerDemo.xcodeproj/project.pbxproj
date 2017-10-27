@@ -77,6 +77,9 @@
 		E9BE12F21F865F89005696E4 /* MyProfileExpandedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9BE12F01F865F89005696E4 /* MyProfileExpandedCell.xib */; };
 		E9BE12F51F865FBC005696E4 /* MyProfileCollapsedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BE12F31F865FBC005696E4 /* MyProfileCollapsedCell.swift */; };
 		E9BE12F61F865FBC005696E4 /* MyProfileCollapsedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9BE12F41F865FBC005696E4 /* MyProfileCollapsedCell.xib */; };
+		E9C175F41FA304790000AF7D /* MyProfileSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C175F21FA304790000AF7D /* MyProfileSwitchCell.swift */; };
+		E9C175F51FA304790000AF7D /* MyProfileSwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9C175F31FA304790000AF7D /* MyProfileSwitchCell.xib */; };
+		E9C175F71FA30A540000AF7D /* GiftDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C175F61FA30A540000AF7D /* GiftDetailVC.swift */; };
 		E9CBCF341F8B93820038F111 /* DealDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CBCF331F8B93820038F111 /* DealDetailVC.swift */; };
 		E9CBCF371F8B9A580038F111 /* DealDetailExpandedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CBCF351F8B9A580038F111 /* DealDetailExpandedCell.swift */; };
 		E9CBCF381F8B9A580038F111 /* DealDetailExpandedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9CBCF361F8B9A580038F111 /* DealDetailExpandedCell.xib */; };
@@ -193,6 +196,9 @@
 		E9BE12F01F865F89005696E4 /* MyProfileExpandedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyProfileExpandedCell.xib; sourceTree = "<group>"; };
 		E9BE12F31F865FBC005696E4 /* MyProfileCollapsedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileCollapsedCell.swift; sourceTree = "<group>"; };
 		E9BE12F41F865FBC005696E4 /* MyProfileCollapsedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyProfileCollapsedCell.xib; sourceTree = "<group>"; };
+		E9C175F21FA304790000AF7D /* MyProfileSwitchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileSwitchCell.swift; sourceTree = "<group>"; };
+		E9C175F31FA304790000AF7D /* MyProfileSwitchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyProfileSwitchCell.xib; sourceTree = "<group>"; };
+		E9C175F61FA30A540000AF7D /* GiftDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftDetailVC.swift; sourceTree = "<group>"; };
 		E9CBCF331F8B93820038F111 /* DealDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealDetailVC.swift; sourceTree = "<group>"; };
 		E9CBCF351F8B9A580038F111 /* DealDetailExpandedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealDetailExpandedCell.swift; sourceTree = "<group>"; };
 		E9CBCF361F8B9A580038F111 /* DealDetailExpandedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DealDetailExpandedCell.xib; sourceTree = "<group>"; };
@@ -303,6 +309,8 @@
 				E95E3EF41F95FD1300A84106 /* PurchasePastCell.xib */,
 				E95E3EFF1F961C4800A84106 /* SignupCell.swift */,
 				E95E3F001F961C4800A84106 /* SignupCell.xib */,
+				E9C175F21FA304790000AF7D /* MyProfileSwitchCell.swift */,
+				E9C175F31FA304790000AF7D /* MyProfileSwitchCell.xib */,
 			);
 			path = CustomCell;
 			sourceTree = "<group>";
@@ -381,6 +389,7 @@
 				E955C9B21F97595200089231 /* SignInVC.swift */,
 				E9E5DC051FA1C525003009D6 /* SortByVC.swift */,
 				E9E5DC3B1FA1F3E1003009D6 /* AddReviewVC.swift */,
+				E9C175F61FA30A540000AF7D /* GiftDetailVC.swift */,
 			);
 			path = SegmentControllerDemo;
 			sourceTree = "<group>";
@@ -528,6 +537,7 @@
 				E926FE241F8F6FEE009629A2 /* MyPurchase.storyboard in Resources */,
 				E926FE2C1F8F83B2009629A2 /* ReviewListCell.xib in Resources */,
 				E9BBA7FA1F7A623D00EF15A4 /* Assets.xcassets in Resources */,
+				E9C175F51FA304790000AF7D /* MyProfileSwitchCell.xib in Resources */,
 				E93B5EDC1F838A0200B370D6 /* ViewMoreCollectionViewCell.xib in Resources */,
 				E926FE1E1F8F65D9009629A2 /* Notification.storyboard in Resources */,
 				E955C9AB1F97279300089231 /* Listing.storyboard in Resources */,
@@ -669,6 +679,7 @@
 				E9BE12F11F865F89005696E4 /* MyProfileExpandedCell.swift in Sources */,
 				E9BE12F51F865FBC005696E4 /* MyProfileCollapsedCell.swift in Sources */,
 				E95A3B351F87AA22009F441D /* FilterMainCategoryCell.swift in Sources */,
+				E9C175F41FA304790000AF7D /* MyProfileSwitchCell.swift in Sources */,
 				E9E62C071F84DDC2008C9618 /* FavoriteListVC.swift in Sources */,
 				E955C9B31F97595200089231 /* SignInVC.swift in Sources */,
 				E9BE12D81F85FDF0005696E4 /* AwfirButton.swift in Sources */,
@@ -689,6 +700,7 @@
 				E9047F541F90F6D9008306F0 /* PurchaseActiveCell.swift in Sources */,
 				E9BBA7F31F7A623D00EF15A4 /* AppDelegate.swift in Sources */,
 				E9DF40891F834E7300E1037D /* TZSegmentedControl.swift in Sources */,
+				E9C175F71FA30A540000AF7D /* GiftDetailVC.swift in Sources */,
 				E95E3EF21F95D47300A84106 /* String+Extensions.swift in Sources */,
 				E9BE12E61F863D2B005696E4 /* CGFloat+Extensions.swift in Sources */,
 				E9CBCF371F8B9A580038F111 /* DealDetailExpandedCell.swift in Sources */,

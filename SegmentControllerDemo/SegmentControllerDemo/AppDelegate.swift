@@ -22,6 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var settingNavController:UINavigationController?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+//        UIView.appearance().semanticContentAttribute = .forceRightToLeft
+
         IQKeyboardManager.sharedManager().enable = true
         window=UIWindow(frame: UIScreen.main.bounds)
         setupTabBarController()

@@ -29,5 +29,13 @@ class MyProfileCollapsedCell: UITableViewCell {
     
     // Configure the view for the selected state
   }
+    
+    //MARK: - Other functions
+    func setMyProfileCollapsedCell(dictionary:NSMutableDictionary){
+        self.imgUser.image = UIImage.init(named: dictionary[MyProfileKey.fieldImage] as! String)
+        self.lblName.text = dictionary[MyProfileKey.fieldName] as? String
+        self.lblUserName.text = dictionary[MyProfileKey.value] as? String
+        
+    }
   
 }
