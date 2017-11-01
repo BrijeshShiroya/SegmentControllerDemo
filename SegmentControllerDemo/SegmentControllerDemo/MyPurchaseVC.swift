@@ -16,6 +16,7 @@ class MyPurchaseVC: UIViewController {
     @IBOutlet var containerView: UIView!
     @IBOutlet var segmentControl: UISegmentedControl!
     @IBOutlet var segmentView: UIView!
+    
     //MARK: - Variables -
     
     //MARK: - Life cycle -

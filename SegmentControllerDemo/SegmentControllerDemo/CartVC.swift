@@ -48,6 +48,7 @@ extension CartVC : UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10//self.arrTitle.count
     }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return CGFloat(107.0).getProprtionalHeight()
     }
@@ -58,6 +59,7 @@ extension CartVC : UITableViewDataSource, UITableViewDelegate{
         cell.ViewExtra.backgroundColor = UIColor.blue
         cell.viewMain.backgroundColor = UIColor.white
     }
+    
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         if let cell = tableView.cellForRow(at: indexPath){
             (cell as! CartCell).ViewExtra.isHidden = true

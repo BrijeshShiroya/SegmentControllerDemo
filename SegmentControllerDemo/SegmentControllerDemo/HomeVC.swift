@@ -9,7 +9,7 @@
 import UIKit
 import STPopup
 
-class HomeVC: UIViewController,ViewMoreDelegate {
+class HomeVC: UIViewController,ViewMoreDelegate,SubCategoryDelegate {
     //MARK: - Outlets -
     @IBOutlet var containerView: UIView!
     
@@ -78,6 +78,11 @@ class HomeVC: UIViewController,ViewMoreDelegate {
         self.containerView.addSubview(homeScrollVC.view)
     }
     
+    //subcategory delegates
+    func didCloseSubCategory() {
+        self.segment?.selectedSegmentIndex = 0
+    }
+    
     //set segment value and add into view
     func setSegment(){
         segment = TZSegmentedControl(sectionTitles: ["Goods","Dining Out", "Services", "Spa & Salon", "More"], sectionImages: [
@@ -135,6 +140,7 @@ class HomeVC: UIViewController,ViewMoreDelegate {
             //            }
         }else if selectedIndex == 1{
             let subCategoryVC = self.storyboard?.instantiateViewController(withIdentifier: "SubCategoryVC") as! SubCategoryVC
+            subCategoryVC.delegate = self
             self.pushToViewControllerWithClass(subCategoryVC, andAnimated: true)
         }else if selectedIndex == 2{
             let subCategoryVC = self.storyboard?.instantiateViewController(withIdentifier: "SubCategoryVC") as! SubCategoryVC
@@ -159,7 +165,6 @@ class HomeVC: UIViewController,ViewMoreDelegate {
              */
         }
         else if selectedIndex == 4{
-            
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "ViewMoreVC") as! ViewMoreVC
             vc.delegate = self
             vc.contentSizeInPopup = CGSize(width: CGFloat(289.0).getProprtionalWidth(), height: CGFloat(385.0).getProprtionalHeight())

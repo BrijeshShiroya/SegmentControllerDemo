@@ -14,7 +14,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     var tabBarController:UITabBarController?
-    
     var homeNavController:UINavigationController?
     var favoriteNavController:UINavigationController?
     var purchaseNavController:UINavigationController?

@@ -7,11 +7,18 @@
 //
 
 import UIKit
+
 struct SubCategoryKey{
     static let mainCategoryName = "mainCategoryName"
     static let subCategoryName = "subCategoryName"
     static let subCategoryItems = "subCategoryItems"
 }
+
+
+protocol SubCategoryDelegate {
+    func didCloseSubCategory()
+}
+
 class SubCategoryVC: UIViewController {
     //MARK: - Outlets -
     @IBOutlet var tblSubCategory: UITableView!
@@ -21,6 +28,7 @@ class SubCategoryVC: UIViewController {
     var arrMainData = NSMutableArray()
     let arrSelectedSectionIndex = NSMutableArray()
     var isMultipleExpansionAllowed:Bool = true
+    var delegate:SubCategoryDelegate?
     //MARK: - Life cycle -
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +48,10 @@ class SubCategoryVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
        self.setNavigationBar()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        delegate?.didCloseSubCategory()
     }
     
     //MARK:- NavigationBar -

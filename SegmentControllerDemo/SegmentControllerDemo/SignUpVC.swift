@@ -12,16 +12,6 @@ struct SignupKey{
     static var placeholder = "placeholder"
     static var isValid = "isValid"
     static var value = "value"
-//    static var firstname = "firstname"
-//    static var lastname = "lastname"
-//    static var mobile = "mobile"
-//    static var email = "email"
-//    static var password = "password"
-//    static var confirmPassword = "confirmPassword"
-//    static var gender = "gender"
-//    static var dob = "dob"
-//    static var location = "location"
-//    static var interestedCategory = "interestedCategory"
 }
 
 struct placeHolder{

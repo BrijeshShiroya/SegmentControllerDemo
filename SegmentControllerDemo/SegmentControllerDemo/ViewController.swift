@@ -90,8 +90,6 @@ class ViewController: UIViewController {
                                                       UIImage(named: "moreselected")!
             ])
         
-        
-        
         segment?.backgroundColor = UIColor.red
         segment?.frame = CGRect(x: 0, y: UIApplication.shared.statusBarFrame.size.height, width: UIScreen.main.bounds.width, height: 64)
         segment?.verticalDividerEnabled = false
