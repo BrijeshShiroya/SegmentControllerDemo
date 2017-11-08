@@ -210,7 +210,7 @@ extension EasyTransition : UIViewControllerTransitioningDelegate ,UIViewControll
         
         animatingView?.frame = initialFrame
         
-        let animations : ((Void)->Void) = {
+        let animations : (()->Void) = {
             animatingView?.frame = finalFrame
         }
         

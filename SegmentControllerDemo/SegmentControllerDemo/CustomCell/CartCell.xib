@@ -26,7 +26,6 @@
                         <subviews>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ifr-pp-36Z">
                                 <rect key="frame" x="0.0" y="0.0" width="10" height="97"/>
-                                <color key="backgroundColor" red="0.44148089169999999" green="0.57396994430000003" blue="0.37216361460000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="10" id="RLH-Me-XUe"/>
                                 </constraints>
@@ -147,6 +146,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="ViewExtra" destination="Ifr-pp-36Z" id="WsO-BN-Sk6"/>
+                <outlet property="stepper" destination="JxO-jR-hGH" id="hop-AZ-VnC"/>
                 <outlet property="viewMain" destination="Loy-GX-NpU" id="wUG-pY-7WO"/>
             </connections>
             <point key="canvasLocation" x="33" y="116"/>

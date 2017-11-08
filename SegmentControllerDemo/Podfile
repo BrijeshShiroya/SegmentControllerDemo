@@ -16,6 +16,7 @@ pod 'AlamofireSwiftyJSON'
   # Pods for SegmentControllerDemo
   
   target 'SegmentControllerDemoTests' do
+    pod 'KIF', :configurations => ['Debug']
     inherit! :search_paths
     # Pods for testing
   end

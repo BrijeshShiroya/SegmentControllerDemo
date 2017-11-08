@@ -10,10 +10,13 @@ import UIKit
 
 class CartCell: UITableViewCell {
 
+    @IBOutlet var stepper: GMStepper!
     @IBOutlet var viewMain: UIView!
     @IBOutlet var ViewExtra: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.stepper.buttonsFont = UIFont(name: "Avenir", size: 14.0)!
+        self.stepper.labelFont = UIFont(name: "Avenir", size: 14.0)!
         // Initialization code
     }
 

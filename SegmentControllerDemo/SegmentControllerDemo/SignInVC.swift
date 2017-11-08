@@ -11,6 +11,7 @@ import UIKit
 class SignInVC: UIViewController {
     //MARK: - Outlets
     
+    @IBOutlet var scrollView: UIScrollView!
     //MARK: - Variables
     
     //MARK: - View life cycle
@@ -23,6 +24,11 @@ class SignInVC: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewDidLayoutSubviews() {
+//        self.scrollView.translatesAutoresizingMaskIntoConstraints = true
+//        self.scrollView.contentSize = CGSize(width: SCREEN_WIDTH, height: 2000);
     }
     
     //MARK: - Other functions

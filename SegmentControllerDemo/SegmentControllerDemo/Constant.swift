@@ -28,6 +28,7 @@ let SCREEN_HEIGHT = UIScreen.main.bounds.height
 let STORYBOARD_MAIN = UIStoryboard.init(name: "Main", bundle: nil)
 let STORYBOARD_NOTIFICATION = UIStoryboard.init(name: "Notification", bundle: nil)
 let STORYBOARD_MYPURCHASE = UIStoryboard.init(name: "MyPurchase", bundle: nil)
+let USERDEFAULT = UserDefaults.standard
 
 
 let APPDELEGATE = UIApplication.shared.delegate as! AppDelegate

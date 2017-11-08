@@ -28,7 +28,7 @@ class SettingVC: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.setTitle(strTitle: "Settings")
+        self.navigationController?.setTitle(strTitle: "setting".localized())
         self.navigationController?.isNavigationBarHidden = false
     }
     //MARK: - Other functions -
@@ -70,7 +70,7 @@ extension SettingVC : UITableViewDataSource, UITableViewDelegate{
             let nextVC = storyboard?.instantiateViewController(withIdentifier: "HelpVC") as! HelpVC
             self.pushToViewControllerWithClass(nextVC, andAnimated: true)
         case 3:
-            let nextVC = STORYBOARD_MAIN.instantiateViewController(withIdentifier: "GiftDetailVC") as! GiftDetailVC
+            let nextVC = STORYBOARD_MAIN.instantiateViewController(withIdentifier: "CartVC") as! CartVC
             self.pushToViewControllerWithClass(nextVC, andAnimated: true)
         default:
             return

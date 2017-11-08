@@ -54,10 +54,12 @@ extension CartVC : UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         let cell = tableView.cellForRow(at: indexPath) as! CartCell
+        cell.contentView.backgroundColor = UIColor.white
         cell.ViewExtra.isHidden = false
         cell.ViewExtra.backgroundColor = UIColor.blue
-        cell.viewMain.backgroundColor = UIColor.white
+        cell.viewMain.backgroundColor = UIColor.yellow
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {

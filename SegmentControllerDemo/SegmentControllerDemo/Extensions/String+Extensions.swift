@@ -159,4 +159,20 @@ extension String{
     func toURL() -> URL{
         return URL.init(string: self)!
     }
+    
+    func localized() -> String{
+        USERDEFAULT.set("ar", forKey: "currentLang")
+        var path1 = Bundle.main.path(forResource: "Base", ofType: "lproj")!
+        if let strCurrentLanguage:String = USERDEFAULT.value(forKey: "currentLang") as? String{
+            if strCurrentLanguage == "en"{
+                path1 = Bundle.main.path(forResource: "en", ofType: "lproj")!
+            }else{
+                path1 = Bundle.main.path(forResource: "ar", ofType: "lproj")!
+            }
+        }
+        let strKey1 = self.replacingOccurrences(of: " ", with: "")
+        let languageBundle = Bundle(path: path1)
+        let str = languageBundle?.localizedString(forKey: strKey1, value: "", table: nil)
+        return str!
+    }
 }

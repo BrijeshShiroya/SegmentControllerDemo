@@ -51,6 +51,8 @@
 		E95E3EFA1F9614F800A84106 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95E3EF91F9614F800A84106 /* SignUpVC.swift */; };
 		E95E3F011F961C4800A84106 /* SignupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95E3EFF1F961C4800A84106 /* SignupCell.swift */; };
 		E95E3F021F961C4800A84106 /* SignupCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E95E3F001F961C4800A84106 /* SignupCell.xib */; };
+		E95EE81F1FAC7E5700ADB597 /* SumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95EE81E1FAC7E5700ADB597 /* SumTest.swift */; };
+		E95EE8201FAC807700ADB597 /* ScrollableSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BBA8121F7A627700EF15A4 /* ScrollableSegmentedControl.swift */; };
 		E9BBA7F31F7A623D00EF15A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BBA7F21F7A623D00EF15A4 /* AppDelegate.swift */; };
 		E9BBA7F51F7A623D00EF15A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BBA7F41F7A623D00EF15A4 /* ViewController.swift */; };
 		E9BBA7F81F7A623D00EF15A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9BBA7F61F7A623D00EF15A4 /* Main.storyboard */; };
@@ -85,6 +87,7 @@
 		E9CBCF381F8B9A580038F111 /* DealDetailExpandedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9CBCF361F8B9A580038F111 /* DealDetailExpandedCell.xib */; };
 		E9CBCF3B1F8B9B350038F111 /* DealDetailCollapsedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CBCF391F8B9B350038F111 /* DealDetailCollapsedCell.swift */; };
 		E9CBCF3C1F8B9B350038F111 /* DealDetailCollapsedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9CBCF3A1F8B9B350038F111 /* DealDetailCollapsedCell.xib */; };
+		E9DE85C01FA9FF7500EA6622 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9DE85C21FA9FF7500EA6622 /* Localizable.strings */; };
 		E9DF40891F834E7300E1037D /* TZSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DF40871F834E7200E1037D /* TZSegmentedControl.swift */; };
 		E9DF408A1F834E7300E1037D /* TZScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DF40881F834E7200E1037D /* TZScrollView.swift */; };
 		E9E337141F8C946C00207EE0 /* DealOfferCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E337121F8C946C00207EE0 /* DealOfferCell.swift */; };
@@ -103,6 +106,8 @@
 		E9E62C1C1F84F72D008C9618 /* UIViewController+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E62C1B1F84F72D008C9618 /* UIViewController+extensions.swift */; };
 		E9E62C1F1F84F7B2008C9618 /* FavoriteListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E62C1D1F84F7B2008C9618 /* FavoriteListCell.swift */; };
 		E9E62C201F84F7B2008C9618 /* FavoriteListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9E62C1E1F84F7B2008C9618 /* FavoriteListCell.xib */; };
+		E9F9FBA91FB02E8800B57E3B /* KIF+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F9FBA81FB02E8800B57E3B /* KIF+Swift.swift */; };
+		E9F9FBAB1FB02F2A00B57E3B /* MyFirstKIFTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F9FBAA1FB02F2A00B57E3B /* MyFirstKIFTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -166,6 +171,7 @@
 		E95E3EF91F9614F800A84106 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		E95E3EFF1F961C4800A84106 /* SignupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupCell.swift; sourceTree = "<group>"; };
 		E95E3F001F961C4800A84106 /* SignupCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupCell.xib; sourceTree = "<group>"; };
+		E95EE81E1FAC7E5700ADB597 /* SumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumTest.swift; sourceTree = "<group>"; };
 		E9BBA7EF1F7A623D00EF15A4 /* SegmentControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SegmentControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9BBA7F21F7A623D00EF15A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9BBA7F41F7A623D00EF15A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -204,6 +210,11 @@
 		E9CBCF361F8B9A580038F111 /* DealDetailExpandedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DealDetailExpandedCell.xib; sourceTree = "<group>"; };
 		E9CBCF391F8B9B350038F111 /* DealDetailCollapsedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealDetailCollapsedCell.swift; sourceTree = "<group>"; };
 		E9CBCF3A1F8B9B350038F111 /* DealDetailCollapsedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DealDetailCollapsedCell.xib; sourceTree = "<group>"; };
+		E9DE85C11FA9FF7500EA6622 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E9DE85C41FAA002300EA6622 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		E9DE85C51FAA004900EA6622 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		E9DE85C61FAA004A00EA6622 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		E9DE85C71FAA004A00EA6622 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E9DF40871F834E7200E1037D /* TZSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZSegmentedControl.swift; sourceTree = "<group>"; };
 		E9DF40881F834E7200E1037D /* TZScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TZScrollView.swift; sourceTree = "<group>"; };
 		E9E337121F8C946C00207EE0 /* DealOfferCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealOfferCell.swift; sourceTree = "<group>"; };
@@ -222,6 +233,8 @@
 		E9E62C1B1F84F72D008C9618 /* UIViewController+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extensions.swift"; sourceTree = "<group>"; };
 		E9E62C1D1F84F7B2008C9618 /* FavoriteListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListCell.swift; sourceTree = "<group>"; };
 		E9E62C1E1F84F7B2008C9618 /* FavoriteListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteListCell.xib; sourceTree = "<group>"; };
+		E9F9FBA81FB02E8800B57E3B /* KIF+Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KIF+Swift.swift"; sourceTree = "<group>"; };
+		E9F9FBAA1FB02F2A00B57E3B /* MyFirstKIFTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstKIFTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -323,6 +336,7 @@
 				E955C9AC1F9727C200089231 /* ListingCell.swift */,
 				E955C9AD1F9727C200089231 /* ListingCell.xib */,
 				E955C9B01F9727DA00089231 /* ListingVC.swift */,
+				E9DE85C21FA9FF7500EA6622 /* Localizable.strings */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -397,8 +411,11 @@
 		E9BBA8061F7A623E00EF15A4 /* SegmentControllerDemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				E95EE81E1FAC7E5700ADB597 /* SumTest.swift */,
 				E9BBA8071F7A623E00EF15A4 /* SegmentControllerDemoTests.swift */,
 				E9BBA8091F7A623E00EF15A4 /* Info.plist */,
+				E9F9FBA81FB02E8800B57E3B /* KIF+Swift.swift */,
+				E9F9FBAA1FB02F2A00B57E3B /* MyFirstKIFTest.swift */,
 			);
 			path = SegmentControllerDemoTests;
 			sourceTree = "<group>";
@@ -509,6 +526,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = E9BBA7E61F7A623D00EF15A4;
 			productRefGroup = E9BBA7F01F7A623D00EF15A4 /* Products */;
@@ -551,6 +569,7 @@
 				E95E3EF61F95FD1300A84106 /* PurchasePastCell.xib in Resources */,
 				E955C9AF1F9727C200089231 /* ListingCell.xib in Resources */,
 				E93B5ED81F83891300B370D6 /* dealCollectionCell.xib in Resources */,
+				E9DE85C01FA9FF7500EA6622 /* Localizable.strings in Resources */,
 				E9CBCF381F8B9A580038F111 /* DealDetailExpandedCell.xib in Resources */,
 				E95E3F021F961C4800A84106 /* SignupCell.xib in Resources */,
 				E93B5EC21F83838B00B370D6 /* DealCell.xib in Resources */,
@@ -736,7 +755,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9F9FBA91FB02E8800B57E3B /* KIF+Swift.swift in Sources */,
+				E95EE8201FAC807700ADB597 /* ScrollableSegmentedControl.swift in Sources */,
+				E9F9FBAB1FB02F2A00B57E3B /* MyFirstKIFTest.swift in Sources */,
 				E9BBA8081F7A623E00EF15A4 /* SegmentControllerDemoTests.swift in Sources */,
+				E95EE81F1FAC7E5700ADB597 /* SumTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -755,6 +778,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				E9BBA7F71F7A623D00EF15A4 /* Base */,
+				E9DE85C41FAA002300EA6622 /* en */,
+				E9DE85C51FAA004900EA6622 /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -763,8 +788,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				E9BBA7FC1F7A623D00EF15A4 /* Base */,
+				E9DE85C61FAA004A00EA6622 /* ar */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E9DE85C21FA9FF7500EA6622 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9DE85C11FA9FF7500EA6622 /* en */,
+				E9DE85C71FAA004A00EA6622 /* ar */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -774,6 +809,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -826,6 +862,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
