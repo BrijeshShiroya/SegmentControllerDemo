@@ -8,6 +8,12 @@
 
 import Foundation
 import UIKit
+
+//screentype for change fontsize based on screem
+enum defaultScreenType{
+    case big
+    case small
+}
 //MARK: - Device and Screen
 
 let IS_IPAD = (UIDevice.current.userInterfaceIdiom == .pad)
@@ -32,3 +38,5 @@ let USERDEFAULT = UserDefaults.standard
 
 
 let APPDELEGATE = UIApplication.shared.delegate as! AppDelegate
+
+let DEFAULT_SCREEN = defaultScreenType.small
